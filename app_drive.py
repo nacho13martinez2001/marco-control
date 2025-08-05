@@ -15,7 +15,7 @@ from docx import Document
 import re
 from werkzeug.utils import secure_filename
 from informes_utils import cargar_informes, guardar_informes
-from conversion_pdf import convertir_a_pdf
+#from conversion_pdf import convertir_a_pdf
 from drive_utils_editable_google_docx import download_template, upload_document, list_templates
 
 app = Flask(__name__)
