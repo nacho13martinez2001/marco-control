@@ -1,0 +1,88 @@
+<div class="card p-3 shadow-sm rounded-3 mb-4">
+  <h5 class="fw-bold mb-3">Informe combinado: Presupuestos, Plan Presupuestario y Derechos de Difícil Recaudación</h5>
+
+  <form id="formularioPresupuestos">
+
+    <!-- LÍNEAS FUNDAMENTALES -->
+    <h6 class="fw-bold mt-3">🔹 Líneas fundamentales del presupuesto</h6>
+    <div class="row mb-2">
+      <div class="col">
+        <label>Gasto computable previsto (€)</label>
+        <input type="number" class="form-control" id="gasto_computable_previsto" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Límite de crecimiento del gasto (%)</label>
+        <input type="number" step="0.01" class="form-control" id="limite_gasto" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Ingresos no financieros (€)</label>
+        <input type="number" class="form-control" id="ingresos_nf" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Gastos no financieros (€)</label>
+        <input type="number" class="form-control" id="gastos_nf" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Deuda viva (€)</label>
+        <input type="number" class="form-control" id="deuda_viva" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Ingresos corrientes liquidados (€)</label>
+        <input type="number" class="form-control" id="ingresos_corrientes" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+    </div>
+
+    <!-- PLAN PRESUPUESTARIO -->
+    <h6 class="fw-bold mt-4">🔹 Plan Presupuestario a Medio Plazo</h6>
+    <div class="row mb-2">
+      <div class="col">
+        <label>Ejercicio inicial</label>
+        <input type="number" class="form-control" id="ejercicio_inicio" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Ejercicio final</label>
+        <input type="number" class="form-control" id="ejercicio_fin" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+    </div>
+
+    <!-- DERECHOS DE DIFÍCIL RECAUDACIÓN -->
+    <h6 class="fw-bold mt-4">🔹 Derechos de Difícil o Imposible Recaudación</h6>
+    <div class="row mb-2">
+      <div class="col">
+        <label>Total derechos pendientes (€)</label>
+        <input type="number" class="form-control" id="total_derechos" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Importe minorado (€)</label>
+        <input type="number" class="form-control" id="importe_minoracion" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <label>Fecha de liquidación</label>
+        <input type="date" class="form-control" id="fecha_liquidacion" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Ejercicio liquidado</label>
+        <input type="number" class="form-control" id="ejercicio" oninput="MotorPresupuestos.actualizarVisor()">
+      </div>
+    </div>
+  </form>
+
+  <h6 class="fw-bold mt-3">🔎 Previsualización de datos</h6>
+  <div id="visorPresupuestos" class="alert alert-info mt-3" contenteditable="true" style="min-height:80px; outline:2px dashed #ccc;">
+    Los datos introducidos aparecerán aquí automáticamente.
+  </div>
+
+  <button onclick="MotorPresupuestos.generarInforme()" class="btn w-100 mt-3"
+    style="background-color: #0077cc; border: 2mm solid white; color: #ffffff; border-radius: 15px;">
+    Generar Informe Combinado
+  </button>
+</div>

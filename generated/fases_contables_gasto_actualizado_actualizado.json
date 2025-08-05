@@ -1,0 +1,66 @@
+{
+  "fases_ejecucion_gasto": [
+    {
+      "fase": "A - Autorización",
+      "descripcion": "Acto por el que se aprueba la realización de un gasto, reservando el crédito.",
+      "asientos": [
+        {
+          "condicion": "Crédito disponible",
+          "debe": "0030 - Créditos disponibles",
+          "haber": "004 - Presupuesto de gastos autorizados"
+        },
+        {
+          "condicion": "Crédito retenido",
+          "debe": "0031 - Créditos retenidos para gastar",
+          "haber": "004 - Presupuesto de gastos autorizados"
+        }
+      ],
+      "estado_ejecucion": "Columna: Gastos autorizados"
+    },
+    {
+      "fase": "D - Compromiso",
+      "descripcion": "Vinculación con un tercero para la realización del gasto.",
+      "asientos": [
+        {
+          "debe": "004 - Presupuesto de gastos autorizados",
+          "haber": "005 - Presupuesto de gastos comprometidos"
+        }
+      ],
+      "estado_ejecucion": "Columna: Gastos comprometidos"
+    },
+    {
+      "fase": "O - Reconocimiento de la obligación",
+      "descripcion": "Reconocimiento del derecho del acreedor tras recepción conforme del bien o servicio.",
+      "asientos": [
+        {
+          "debe": "6XX - Gasto según naturaleza",
+          "haber": "400 - Acreedores por obligaciones reconocidas"
+        }
+      ],
+      "estado_ejecucion": "Columna: Obligaciones reconocidas"
+    },
+    {
+      "fase": "P - Ordenación del pago",
+      "descripcion": "Orden al tesorero para realizar el pago.",
+      "asientos": [
+        {
+          "debe": "400 - Acreedores por obligaciones reconocidas",
+          "haber": "410 - Pagos pendientes o 572 - Tesorería"
+        }
+      ],
+      "estado_ejecucion": "Columna: Pagos ordenados"
+    },
+    {
+      "fase": "S - Pago",
+      "descripcion": "Desembolso efectivo del gasto.",
+      "asientos": [
+        {
+          "debe": "410 - Pagos pendientes",
+          "haber": "572 - Tesorería"
+        }
+      ],
+      "estado_ejecucion": "Columna: Pagos realizados"
+    }
+  ],
+  "categoria": "contabilidad"
+}

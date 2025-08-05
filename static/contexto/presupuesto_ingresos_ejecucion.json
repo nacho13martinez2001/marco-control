@@ -1,0 +1,30 @@
+[
+  {
+    "unidad": "UD2",
+    "titulo": "Operaciones de gestión de las previsiones",
+    "contenido": "Contabilización de la apertura del presupuesto de ingresos (cuentas 006, 008 y 000), funcionamiento y significado contable. Estructura del desarrollo presupuestario. Distinción entre previsiones iniciales y definitivas.",
+    "cuentas": ["000", "006", "008"],
+    "referencia_normativa": "PGCPAL 2013, Marco conceptual"
+  },
+  {
+    "unidad": "UD3",
+    "titulo": "Operaciones de ejecución presupuestaria",
+    "contenido": "Contabilización del reconocimiento y liquidación de derechos, así como su extinción. Uso de la cuenta 430 y sus divisionarias. Introducción al concepto de compromiso de ingreso y su reflejo en memoria.",
+    "cuentas": ["4300", "4301", "4302", "4303"],
+    "referencia_normativa": "PGCPAL 2013, Normas de valoración y Marco conceptual"
+  },
+  {
+    "unidad": "UD4",
+    "titulo": "Regularización y cierre del presupuesto",
+    "contenido": "Regularización de derechos anulados y cancelados (cuentas 433 y 438). Cierre de las cuentas del subgrupo 00. Preparación para traspaso a presupuestos cerrados.",
+    "cuentas": ["430", "433", "437", "438"],
+    "referencia_normativa": "PGCPAL 2013, Tercera parte"
+  },
+  {
+    "unidad": "UD5",
+    "titulo": "Operaciones de presupuestos cerrados y ejercicios futuros",
+    "contenido": "Contabilización de operaciones con derechos de ejercicios anteriores (cuenta 431), anulación y cancelación de los mismos (cuentas 434 y 439). Traspaso automático desde la cuenta 430.",
+    "cuentas": ["4310", "4311", "4312", "4313", "434", "439"],
+    "referencia_normativa": "PGCPAL 2013, Instrucciones de cierre y apertura"
+  }
+]

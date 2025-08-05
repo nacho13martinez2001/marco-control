@@ -1,0 +1,27 @@
+<!-- formulario_mayoriaespecial.html -->
+
+<div class="formulario-redactor">
+  <h2>Informe de materias con mayoría especial</h2>
+
+  <label for="expediente_tramitado">Expediente tramitado:</label>
+  <input type="text" id="expediente_tramitado" placeholder="Ej: Modificación del reglamento de participación ciudadana" />
+
+  <h3>Observaciones económicas o presupuestarias</h3>
+  <label for="observacion_a">Observación 1:</label>
+  <input type="text" id="observacion_a" placeholder="Ej: No consta memoria económica." />
+
+  <label for="observacion_b">Observación 2:</label>
+  <input type="text" id="observacion_b" placeholder="Opcional" />
+
+  <label for="observacion_c">Observación 3:</label>
+  <input type="text" id="observacion_c" placeholder="Opcional" />
+
+  <label for="resultado_control">Resultado del control:</label>
+  <input type="text" id="resultado_control" placeholder="Ej: FAVORABLE, CONDICIONADO, DESFAVORABLE..." />
+
+  <br><br>
+  <button onclick="MotorMayoriaEspecial.generarInforme()">Generar informe</button>
+
+  <h3>Informe generado:</h3>
+  <textarea id="salida_redaccion" rows="20" style="width:100%"></textarea>
+</div>

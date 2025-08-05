@@ -1,0 +1,43 @@
+<h3>Informe de OOFF y Precios Públicos</h3>
+
+<label>Tipo de figura (precio público u ordenanza fiscal):</label>
+<input type="text" id="tipo"><br><br>
+
+<label>Fecha del informe técnico-económico:</label>
+<input type="text" id="fecha_informe"><br><br>
+
+<label>Tipo de tributo (solo si aplica):</label>
+<input type="text" id="tipo_tributo"><br><br>
+
+<label>Resumen de costes (personal, inmovilizado, indirectos, etc.):</label>
+<textarea id="costes" rows="4" cols="80"></textarea><br><br>
+
+<label>Unidades previstas:</label>
+<input type="text" id="unidades_previstas"><br><br>
+
+<label>Ingreso previsto (€):</label>
+<input type="text" id="ingreso_previsto"><br><br>
+
+<label>¿Cumple el principio de equivalencia?</label>
+<textarea id="principio_equivalencia" rows="3" cols="80"></textarea><br><br>
+
+<label>[Si aplica] Motivos por los que no se cumple (razones sociales, culturales...):</label>
+<textarea id="motivos_subvencion" rows="2" cols="80"></textarea><br><br>
+
+<label>Beneficios fiscales recogidos (si los hay):</label>
+<textarea id="beneficios_fiscales" rows="3" cols="80"></textarea><br><br>
+
+<label>Observaciones fiscales adicionales:</label>
+<textarea id="observaciones_fiscales" rows="3" cols="80"></textarea><br><br>
+
+<label>Principios de buena regulación (necesidad, eficiencia, transparencia, etc.):</label>
+<textarea id="principios_buena_regulacion" rows="4" cols="80"></textarea><br><br>
+
+<label>Resultado del control permanente:</label>
+<input type="text" id="resultado_control"><br><br>
+
+<button onclick="MotorOoffPreciosPub.generarInforme()">Generar informe</button>
+
+<br><br>
+<label>Resultado generado:</label><br>
+<textarea id="salida_redaccion" rows="20" cols="100"></textarea>

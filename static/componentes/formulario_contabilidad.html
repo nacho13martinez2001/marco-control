@@ -1,0 +1,34 @@
+<div id="formulario-contabilidad" class="card p-3 shadow-sm rounded-3 mb-4" style="min-height: 600px;">
+  <h5 class="mb-3">Consulta experta de Contabilidad Pública Local</h5>
+
+  <!-- Selector de bloque temático -->
+  <select id="selectorBloqueContabilidad" class="form-select form-select-sm mb-3" style="max-width: 300px;">
+    <option value="reglas">Reglas</option>
+    <option value="marco_conceptual">Marco Conceptual</option>
+    <option value="normas_reconocimiento">Normas de Reconocimiento</option>
+    <option value="cuentas_anuales">Cuentas Anuales</option>
+    <option value="cuadro_cuentas">Cuadro de Cuentas</option>
+    <option value="definiciones">Definiciones y Movimientos</option>
+  </select>
+
+  <div class="row">
+    <!-- Índice lateral -->
+    <div class="col-3 border-end" style="height:530px; overflow-y:auto;">
+      <div class="mb-2">
+        <input id="inputBusquedaContabilidad" class="form-control form-control-sm" type="text"
+               placeholder="Buscar número, concepto o palabra clave..." />
+      </div>
+      <div id="indiceContabilidad"></div>
+    </div>
+    <!-- Panel principal de ficha -->
+    <div class="col-9" style="height:530px; overflow-y:auto;">
+      <div id="panelFichaContabilidad" class="p-2"></div>
+      <div class="mt-2">
+        <button id="btnEnviarAlChatContabilidad" class="btn w-100"
+          style="background-color: #b3d9ff; border: 2mm solid white; color: #003366; border-radius: 15px;">
+          Enviar a análisis por IA
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+{
+  "tema": "Contabilidad",
+  "subtema": "Ciclo Presupuestario y Contable",
+  "descripcion": "Fases del ciclo presupuestario y su reflejo contable según la normativa aplicable y la ICAL.",
+  "contenido_clave": [
+    {
+      "titulo": "Fases del ciclo presupuestario",
+      "descripcion": "1. Elaboración del presupuesto\n2. Aprobación inicial y definitiva\n3. Ejecución (gastos e ingresos)\n4. Modificaciones presupuestarias\n5. Liquidación del presupuesto\n6. Formación y remisión de la Cuenta General"
+    },
+    {
+      "titulo": "Presupuesto inicial",
+      "descripcion": "Es aprobado por el Pleno, debe ser equilibrado en términos de estabilidad, e incluir todas las previsiones de ingresos y autorizaciones de gasto."
+    },
+    {
+      "titulo": "Ejecución presupuestaria",
+      "descripcion": "Se refiere a la aplicación práctica del presupuesto aprobado. Cada operación genera un asiento contable y sigue las fases del gasto o ingreso."
+    },
+    {
+      "titulo": "Modificaciones presupuestarias",
+      "descripcion": "Incluyen transferencias, suplementos, créditos extraordinarios, generaciones, incorporaciones y ampliaciones. Requieren informe de intervención y, en algunos casos, de estabilidad o regla de gasto."
+    },
+    {
+      "titulo": "Liquidación del presupuesto",
+      "descripcion": "Proceso contable mediante el cual se cierra el ejercicio presupuestario. Incluye el cálculo del resultado presupuestario y del remanente de tesorería."
+    },
+    {
+      "titulo": "Cuenta General",
+      "descripcion": "Documento contable completo que recoge los resultados de la ejecución presupuestaria y financiera. Debe rendirse antes del 15 de octubre al órgano de control externo."
+    }
+  ],
+  "referencias": [
+    "ICAL 2013 – Reglas 1 a 13",
+    "TRLHL arts. 165 a 212",
+    "RD 500/1990",
+    "M1 C1 UD1 a UD7 – Máster Contabilidad UMA"
+  ],
+  "aplicacion_practica": [
+    "Permite seguir la trazabilidad completa de una operación desde su previsión inicial hasta su liquidación.",
+    "Base de los informes de seguimiento del presupuesto y control financiero permanente.",
+    "Determina las fechas clave para rendición de cuentas e informes preceptivos."
+  ],
+  "categoria": "comun",
+  "md_fuente": "/static/fuentes/comun/ficha_ciclo_presupuestario.md"
+}

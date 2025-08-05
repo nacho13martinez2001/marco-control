@@ -1,0 +1,77 @@
+<div class="card p-3 shadow-sm rounded-3 mb-4">
+  <h5 class="fw-bold mb-3">Informe del Plan de Saneamiento Financiero / Reducción de Deuda</h5>
+
+  <form id="formularioPlanSaneamiento">
+    <div class="row mb-2">
+      <div class="col">
+        <label>Ejercicio</label>
+        <input type="text" class="form-control" id="ejercicio">
+      </div>
+      <div class="col">
+        <label>Cumplimiento del Plan</label>
+        <select class="form-control" id="cumplimiento">
+          <option value="Favorable">Favorable</option>
+          <option value="Desfavorable">Desfavorable</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Ahorro Neto (€)</label>
+        <input type="number" class="form-control" id="ahorro_neto">
+      </div>
+      <div class="col">
+        <label>Endeudamiento (€)</label>
+        <input type="number" class="form-control" id="endeudamiento">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Remanente Tesorería (€)</label>
+        <input type="number" class="form-control" id="remanente">
+      </div>
+      <div class="col">
+        <label>Ingresos Corrientes (€)</label>
+        <input type="number" class="form-control" id="ingresos_corrientes">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Deuda Viva (€)</label>
+        <input type="number" class="form-control" id="deuda_viva">
+      </div>
+      <div class="col">
+        <label>% Deuda / Ingresos Corrientes</label>
+        <input type="number" step="0.01" class="form-control" id="porcentaje_deuda">
+      </div>
+    </div>
+
+    <div class="mb-2">
+      <label>Medida destacada sobre ingresos</label>
+      <input type="text" class="form-control" id="medida_ingreso_1">
+    </div>
+
+    <div class="mb-2">
+      <label>Medida destacada sobre gastos</label>
+      <input type="text" class="form-control" id="medida_gasto_1">
+    </div>
+
+    <div class="mb-3">
+      <label>Observaciones</label>
+      <textarea class="form-control" id="observaciones" rows="3"></textarea>
+    </div>
+  </form>
+
+  <h6 class="fw-bold mt-3">🔎 Previsualización del informe</h6>
+  <div id="editorTexto" class="alert alert-info mt-3" contenteditable="true" style="min-height:120px; outline:2px dashed #ccc;">
+    El texto del informe generado aparecerá aquí.
+  </div>
+
+  <button onclick="MotorPlanSaneamiento.generarInforme()" class="btn w-100 mt-3"
+    style="background-color: #003366; border: none; color: white; border-radius: 12px;">
+    Generar Informe
+  </button>
+</div>

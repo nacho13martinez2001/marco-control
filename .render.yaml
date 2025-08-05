@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: marco-control
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn wsgi:app
+    plan: free

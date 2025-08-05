@@ -1,0 +1,115 @@
+**0. Estructura del Informe** Este informe está organizado en siete secciones principales, cada una dedicada a analizar diferentes aspectos de la liquidación presupuestaria de la entidad local. A continuación, se detalla la estructura y el enfoque de cada sección: 1. **Introducción**: Presenta el propósito, la relevancia y el contexto del informe, estableciendo el marco normativo y los objetivos del análisis de la liquidación presupuestaria. 2. **Resultado Presupuestario**: Examina la diferencia entre los derechos reconocidos netos y las obligaciones reconocidas netas, ajustada por desviaciones de financiación, proporcionando una visión sobre el equilibrio financiero de la entidad. 3. **Remanente de Tesorería**: Analiza la capacidad de la entidad para gestionar sus recursos líquidos y hacer frente a sus compromisos a corto plazo, crucial para su liquidez y estabilidad financiera. 4. **Estabilidad Presupuestaria**: Evalúa la capacidad de la entidad de mantener un equilibrio o superávit estructural, cumpliendo con los mandatos de estabilidad presupuestaria según la normativa aplicable. 5. **Regla de Gasto**: Revisa el cumplimiento de los límites de crecimiento del gasto no financiero en relación con el PIB a medio plazo, reflejando la disciplina en la gestión del gasto público. 6. **Deuda Financiera y Deuda Comercial**: Considera los niveles de deuda viva y el Periodo Medio de Pago a proveedores, indicadores clave de la gestión de deuda y la salud financiera de la entidad. 7. **Dictamen Global**: Ofrece una conclusión general sobre el cumplimiento de la entidad con respecto a los objetivos del régimen presupuestario local y proporciona recomendaciones para la mejora continua en la gestión financiera. Cada sección del informe proporciona un análisis detallado basado en la normativa vigente y las prácticas recomendadas, con el objetivo de ofrecer una evaluación exhaustiva y fiable de la situación financiera de la entidad.
+
+
+
+
+**1. Introducción** La presente exposición tiene como finalidad analizar la liquidación presupuestaria de la entidad local correspondiente al último ejercicio económico, en conformidad con las disposiciones establecidas en el Texto Refundido de la Ley Reguladora de las Haciendas Locales (TRLHL), la Ley Orgánica de Estabilidad Presupuestaria y Sostenibilidad Financiera (LOEPSF), y demás normativa aplicable. Este informe desglosa y evalúa de manera detallada los principales componentes de la liquidación presupuestaria, incluyendo el resultado presupuestario, el remanente de tesorería, la estabilidad presupuestaria, la regla de gasto, y las deudas financiera y comercial. La evaluación se centra no solo en verificar el cumplimiento de los requisitos legales y fiscales, sino también en analizar la eficacia de la gestión financiera llevada a cabo por la entidad. La relevancia de este análisis radica en su capacidad para proporcionar una visión clara del estado financiero de la entidad, ofreciendo así una base sólida para la toma de decisiones futuras y la implementación de mejoras en la gestión presupuestaria y financiera. La información contenida en este informe busca ser una herramienta útil para los responsables de la planificación y control financiero, así como para los diferentes grupos de interés de la entidad local. Este documento se estructura en varias secciones que corresponden a cada uno de los aspectos mencionados, comenzando con el análisis del resultado presupuestario y finalizando con recomendaciones basadas en los hallazgos de la evaluación realizada.
+
+
+
+
+**2. Resultado Presupuestario** El resultado presupuestario es un indicador crucial que refleja la capacidad de la entidad local para gestionar sus recursos y obligaciones de manera equilibrada. Según el artículo 165 del Texto Refundido de la Ley Reguladora de las Haciendas Locales (TRLHL), este resultado se obtiene de la diferencia entre los derechos reconocidos netos y las obligaciones reconocidas netas, ajustados por las desviaciones de financiación. Para el período analizado, la entidad reportó los siguientes valores: - **Derechos Reconocidos Netos**: €32,616,052.79 - **Obligaciones Reconocidas Netas**: €32,597,058.62 Estos valores muestran una gestión efectiva en la generación de ingresos suficientes para cubrir casi en su totalidad las obligaciones del período. Además, se registraron desviaciones en la financiación, detalladas como sigue: - **Desviaciones positivas de financiación**: €866,700.66 - **Desviaciones negativas de financiación**: €1,180,127.49 Al considerar estos ajustes, el Resultado Presupuestario del Ejercicio se calcula restando las desviaciones negativas de las positivas y sumando este resultado a la diferencia entre derechos y obligaciones reconocidos, lo que conduce a un resultado presupuestario final positivo de €2,242,317.5. Este superávit indica no solo un equilibrio financiero durante el período analizado, sino también una gestión prudente y eficaz que permite a la entidad disponer de un margen financiero para futuras necesidades o imprevistos. Este resultado positivo es fundamental, pues refleja no solo la capacidad de la entidad para cumplir con sus obligaciones corrientes, sino también su potencial para financiar actividades futuras sin comprometer su estabilidad financiera. El adecuado manejo de los recursos y las obligaciones, ajustado por las variaciones en la financiación, demuestra una planificación y control presupuestario eficiente que es esencial para la sostenibilidad financiera a largo plazo de la entidad.
+
+
+
+
+**3. Remanente de Tesorería** El remanente de tesorería es un indicador clave de la liquidez de la entidad local, que muestra la capacidad para hacer frente a sus obligaciones a corto plazo. El cálculo de este indicador se basa en los principios establecidos en el artículo 193 del Texto Refundido de la Ley Reguladora de las Haciendas Locales (TRLHL), que se articula a partir de los fondos líquidos, los derechos pendientes de cobro y las obligaciones pendientes de pago, ajustados por la financiación afectada. Para el ejercicio analizado, la entidad reportó los siguientes componentes del remanente de tesorería: - **Fondos Líquidos**: €13,249,075.22 - **Derechos Pendientes de Cobro**: €4,774,499.36 - **Obligaciones Pendientes de Pago**: €2,743,957.39 El cálculo del remanente de tesorería para gastos generales se realiza sumando los fondos líquidos y los derechos pendientes de cobro, y restando las obligaciones pendientes de pago, resultando en un remanente de €15,279,617.19. Sin embargo, es importante ajustar este valor por los ajustes de financiación afectada, que en este caso no han sido especificados en los datos proporcionados. **Remanente de Tesorería para Gastos Generales**: €8,488,044.56 Este valor del remanente para gastos generales indica que la entidad tiene suficiente liquidez para cubrir sus gastos corrientes y otras necesidades no planificadas a corto plazo, lo cual es un indicador positivo de gestión financiera saludable. Es esencial, para futuras evaluaciones, que se especifique y detalle cualquier ajuste por financiación afectada, ya que estos pueden tener un impacto significativo en la interpretación final del remanente de tesorería. La transparencia en estos ajustes contribuye a un mejor entendimiento y análisis de la capacidad financiera real de la entidad.
+
+
+
+
+**4. Estabilidad Presupuestaria** La estabilidad presupuestaria es un principio fundamental en la gestión financiera de las entidades locales, como lo estipula el artículo 3 de la Ley Orgánica de Estabilidad Presupuestaria y Sostenibilidad Financiera (LOEPSF). Este principio exige que las administraciones públicas mantengan un equilibrio o superávit estructural, sin comprometer su viabilidad financiera a largo plazo. Para el ejercicio fiscal examinado, los datos referentes a la estabilidad presupuestaria son los siguientes: - **Capacidad de Financiación Bruta**: €934,395.80 - **Ajustes SEC10 Estabilidad**: -€358,277.64 Tras aplicar los ajustes SEC10, requeridos para alinear las cuentas locales con las normativas europeas de contabilidad, la **Capacidad de Financiación Neta** resultante es de €576,118.16. Este resultado indica que, después de considerar los ajustes necesarios, la entidad local ha logrado mantener un superávit en su gestión presupuestaria. Este superávit demuestra la capacidad de la entidad para generar ingresos que no solo cubren sus gastos corrientes, sino que también proporcionan un margen que refuerza la posición financiera y la sostenibilidad a largo plazo. Es importante destacar que el mantenimiento de esta capacidad de financiación positiva es esencial para cumplir con los requisitos de la normativa europea y nacional, asegurando así la estabilidad financiera y la capacidad de la entidad para afrontar futuros compromisos económicos sin recurrir a endeudamiento excesivo. **Conclusiones sobre la Estabilidad Presupuestaria:** La entidad local ha cumplido con el requisito de estabilidad presupuestaria durante el período analizado. Este cumplimiento no solo fortalece la confianza en la gestión financiera de la entidad, sino que también posiciona favorablemente a la administración para futuras operaciones financieras y para la obtención de fondos tanto nacionales como europeos, que a menudo requieren demostrar una sólida estabilidad financiera.
+
+
+
+
+**5. Regla de Gasto** La Regla de Gasto es un mecanismo de control fiscal establecido en el artículo 12 de la Ley Orgánica de Estabilidad Presupuestaria y Sostenibilidad Financiera (LOEPSF). Este precepto limita el crecimiento del gasto computable de las entidades locales, asegurando que no superen la tasa de referencia de crecimiento del Producto Interior Bruto (PIB) a medio plazo. Su cumplimiento es crucial para evitar el deterioro de la sostenibilidad financiera a causa de un incremento no controlado en el gasto público. Para el período evaluado, los datos relativos a la regla de gasto son los siguientes: - **Límite de Gasto No Financiero**: €29,490,383.44 - **Empleos No Financieros**: €29,470,068.93 La entidad ha gestionado su gasto no financiero de manera que se sitúa €20,314.51 por debajo del límite establecido, lo cual indica un cumplimiento efectivo de la regla de gasto. Este margen, aunque ajustado, refleja una disciplina financiera que contribuye a la estabilidad presupuestaria al mantener los gastos dentro de los parámetros económicos previstos. **Implicaciones del Cumplimiento de la Regla de Gasto:** El cumplimiento de esta regla es un indicador positivo de la capacidad de la entidad para gestionar sus recursos de manera eficiente y responsable. Mantener el gasto controlado en relación con el crecimiento económico del país no solo es una exigencia legal, sino que también es una práctica prudente que protege a la entidad de riesgos financieros asociados a un endeudamiento excesivo y a la insostenibilidad económica. Además, el cumplimiento de la regla de gasto facilita el acceso a financiación en condiciones más favorables y transmite una señal positiva a los mercados financieros y a las agencias de calificación, reforzando la imagen y la credibilidad financiera de la entidad. **Recomendaciones:** Se recomienda continuar con la vigilancia y el control del gasto, especialmente en periodos de incertidumbre económica o fluctuaciones del PIB. Asimismo, es aconsejable implementar mecanismos de revisión periódica del gasto para ajustar y optimizar los recursos de acuerdo con las necesidades y los objetivos estratégicos de la entidad.
+
+
+
+
+**6. Deuda Financiera y Deuda Comercial** La gestión de la deuda es un aspecto crucial en la administración financiera de las entidades locales, que debe ser manejada con prudencia para garantizar la sostenibilidad financiera a largo plazo. Este apartado se divide en dos secciones: Deuda Financiera y Deuda Comercial. **Deuda Financiera:** La Deuda Viva refleja el total de las obligaciones financieras a largo plazo de la entidad. Según la información proporcionada: - **Deuda Viva**: €15,145,329.28 - **Porcentaje sobre los Ingresos Corrientes**: 0.47% Este porcentaje indica que la Deuda Viva se mantiene dentro de los límites prudentes estipulados por la normativa, concretamente el artículo 14 de la Ley Orgánica de Estabilidad Presupuestaria y Sostenibilidad Financiera (LOEPSF). Mantener un nivel de deuda manejable es esencial para evitar el sobreendeudamiento y preservar la capacidad de inversión y respuesta financiera de la entidad frente a necesidades futuras. **Deuda Comercial:** El Periodo Medio de Pago (PMP) es un indicador de la agilidad con que la entidad cumple sus obligaciones comerciales a corto plazo. Los datos muestran: - **Periodo Medio de Pago (PMP)**: 15.25 días Este periodo está significativamente por debajo del límite de 30 días establecido por el artículo 4 de la LOEPSF, lo que demuestra una gestión eficiente y responsable de las obligaciones comerciales. Un PMP reducido no solo mejora la relación con los proveedores, sino que también refleja una buena salud financiera y una administración de tesorería eficaz. **Conclusiones y Recomendaciones:** La entidad ha demostrado una gestión prudente y efectiva de su deuda, tanto financiera como comercial. Es crucial continuar monitoreando y controlando ambas formas de deuda para asegurar que se mantengan en niveles sostenibles. Se recomienda revisar periódicamente las políticas de endeudamiento y pago a proveedores para adaptarlas a las circunstancias económicas y a los cambios en la normativa. La gestión proactiva de la deuda no solo cumple con los requisitos legales, sino que también fortalece la posición financiera de la entidad y su credibilidad en los mercados financieros.
+
+
+
+
+**7. Dictamen Global** Tras un exhaustivo análisis de los distintos componentes de la liquidación presupuestaria, esta sección proporciona un dictamen consolidado sobre el cumplimiento de los objetivos fundamentales del régimen presupuestario local, basado en los criterios y normativas previamente discutidos. **Evaluación de Cumplimientos:** - **Estabilidad Presupuestaria**: Cumple. La entidad ha demostrado mantener un equilibrio financiero adecuado, reflejando un superávit en su capacidad de financiación neta, lo que evidencia una gestión económica acorde a los principios de estabilidad y sostenibilidad financiera exigidos por la LOEPSF y la normativa europea. - **Regla de Gasto**: Cumple. La administración ha gestionado efectivamente su gasto no financiero, manteniéndose dentro de los límites establecidos por la ley, lo que denota una disciplina presupuestaria alineada con el crecimiento económico a medio plazo y las directrices de sostenibilidad. - **Deuda Comercial (PMP ≤ 30 días)**: Cumple. Con un Periodo Medio de Pago de 15.25 días, la entidad supera los requisitos de la normativa sobre morosidad, gestionando sus pagos comerciales de manera eficiente y fortaleciendo sus relaciones con proveedores. **Conclusiones Generales:** La revisión de la liquidación presupuestaria indica que la entidad local ha cumplido satisfactoriamente con los principales objetivos de estabilidad presupuestaria, control del gasto, y gestión de la deuda, tanto financiera como comercial. Estos resultados son indicativos de una administración fiscal responsable y un manejo eficiente de los recursos públicos. **Recomendaciones:** 1. **Continuidad en la Gestión Prudente**: Es crucial que la entidad continúe con su enfoque prudente en la gestión del presupuesto y la deuda, especialmente en contextos de incertidumbre económica o fluctuaciones financieras. 2. **Monitoreo y Ajustes Regulares**: Se recomienda establecer mecanismos de monitoreo y revisión regulares para adaptar las políticas financieras y presupuestarias a los cambios en el entorno económico y en la normativa. 3. **Transparencia y Comunicación**: Incrementar la transparencia en la presentación de los datos financieros y fortalecer la comunicación con los ciudadanos y otros grupos de interés para mejorar la comprensión y la confianza en la gestión financiera de la entidad. En conclusión, este dictamen favorable refleja la solidez y la responsabilidad en la gestión económica de la entidad local, y su capacidad para afrontar futuros desafíos financieros manteniendo un compromiso firme con la sostenibilidad y la estabilidad presupuestaria.
+
+
+
+
+Anexo: Datos Considerados:
+1. Resultado Presupuestario
+Derechos Reconocidos Netos: 32616052.79 €
+Obligaciones Reconocidas Netas: 32597058.62 €
+Desviaciones positivas de financiación: 866700.66 €
+Desviaciones negativas de financiación: 1180127.49 €
+Resultado Presupuestario del Ejercicio: 2242317.5 €
+“El resultado presupuestario es el indicador fundamental que refleja la diferencia entre los derechos reconocidos netos y las obligaciones reconocidas netas, ajustadas por desviaciones de financiación, conforme al art. 165 TRLRHL y la doctrina técnica. Su valor positivo acredita el equilibrio financiero de la ejecución, mientras que un valor negativo evidenciaría insuficiencia de ingresos para cubrir las obligaciones reconocidas.”
+(Régimen Presupuestario, Unidad 2, pág. 16 y ss.)
+
+
+
+
+2. Remanente de Tesorería
+Fondos Líquidos: 13249075.22 €
+Derechos Pendientes de Cobro: 4774499.36 €
+Obligaciones Pendientes de Pago: 2743957.39 €
+Ajustes financiación afectada: €
+Remanente de Tesorería para Gastos Generales: 8488044.56 €
+Remanente de Tesorería para Gastos con Financiación Afectada: €
+Saldo cuentas de financiación afectada: €
+Remanente de Tesorería Ajustado: €
+“El remanente de tesorería constituye el principal indicador de liquidez de la entidad local, calculado a partir de los fondos líquidos, derechos pendientes de cobro y obligaciones pendientes de pago, con los ajustes previstos en la normativa. Un remanente de tesorería positivo asegura la capacidad de la entidad para hacer frente a sus compromisos y la sostenibilidad financiera a corto plazo.”
+(Régimen Presupuestario, Unidad 2, pág. 19 y ss.)
+
+
+
+
+3. Estabilidad Presupuestaria
+Capacidad/Necesidad Financiación antes de ajustes SEC10: €
+Capacidad de Financiación Bruta: 934395.8 €
+Ajustes SEC10 Estabilidad: -358277.64 €
+Estabilidad Presupuestaria en la Liquidación: 576118.16 €
+“La estabilidad presupuestaria, conforme al artículo 3 de la LOEPSF, exige la posición de equilibrio o superávit estructural de las Administraciones públicas. En la liquidación, la verificación del cumplimiento se concreta en que los capítulos 1 a 7 de gastos deben financiarse íntegramente con ingresos no financieros, asegurando la viabilidad financiera y el cumplimiento del marco de sostenibilidad europeo.”
+(Régimen Presupuestario, Unidad 2, pág. 24-25 y LOEPSF art. 3)
+
+
+
+
+4. Regla de Gasto
+Límite de Gasto No Financiero: 29490383.44 €
+Empleos No Financieros: 29470068.93 €
+Regla de Gasto: 20314.51 €
+“La regla de gasto, regulada en el artículo 12 de la LOEPSF, impide que la variación del gasto computable supere la tasa de referencia de crecimiento del PIB a medio plazo. Su cumplimiento es obligado en la aprobación, ejecución y liquidación del presupuesto local, y la inobservancia requiere la elaboración de un plan económico-financiero.”
+(Régimen Presupuestario, Unidad 2, pág. 27 y LOEPSF art. 12)
+
+
+
+
+5. Deuda Financiera
+Deuda Viva: 15145329.28 €
+% Deuda Viva: 0.47 %
+“El volumen de deuda viva debe situarse dentro de los márgenes establecidos por la normativa básica y la LOEPSF, que determina que no podrá superar el valor de referencia europeo. Una gestión responsable de la deuda es imprescindible para la sostenibilidad financiera y el acceso a nuevas fuentes de financiación.”
+(Régimen Presupuestario, Unidad 2, pág. 33 y ss.; LOEPSF art. 14-15)
+
+
+
+
+6. Deuda Comercial
+Periodo Medio de Pago (PMP): 15.25 días
+“La deuda comercial, medida a través del Periodo Medio de Pago (PMP), está regulada en la normativa sobre morosidad y sostenibilidad financiera (art. 4 LOEPSF). Un PMP elevado evidencia riesgo de tensiones de liquidez y puede conllevar medidas restrictivas en caso de incumplimiento.”
+(Régimen Presupuestario, Unidad 2, pág. 36 y LOEPSF art. 4)
+
+
+
+
+7. Dictamen Global
+Estabilidad: Cumple
+Regla de Gasto: Cumple
+Deuda Comercial (PMP ≤ 30 días): Cumple
+
+
+
+
+En atención a los datos precedentes, y conforme a la doctrina y normativa desarrollada, esta Intervención emite dictamen favorable respecto al cumplimiento de los objetivos fundamentales del régimen presupuestario local.

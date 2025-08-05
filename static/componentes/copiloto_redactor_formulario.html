@@ -1,0 +1,36 @@
+
+<div class="container py-3">
+
+<select id="selectorFlujoCopiloto" class="form-select mt-3"
+  style="background-color: #e6f7ff; color: #003366; border: 1px solid #05fcfe;">
+
+  <option value="aprobacion">Aprobación</option>
+  <option value="modificaciones">Modificaciones</option>
+  <option value="liquidacion">Liquidación</option>
+  <option value="reglas">Reglas fiscales</option>
+  <option value="cuenta_general">Cuenta General</option>
+</select>
+
+
+  <!-- Botón del Copiloto Redactor -->
+  <button id="btnCopilotoRedactor" onclick="activarCopilotoRedactor()" class="btn w-100"
+    style="background-color: #ffcc00; border: 2mm solid white; color: #003366; border-radius: 15px;">
+    Generar Informe con el Copiloto Redactor
+  </button>
+
+  <!-- Editor del Copiloto -->
+  <textarea id="editorTextoCopiloto" class="mt-3 p-3" style="
+    background-color: #f5faff;
+    color: #003366;
+    font-family: 'Century Gothic', monospace;
+    font-size: 15px;
+    width: 100%;
+    height: calc(68vh - 160px);
+    resize: none;
+    border-radius: 12px;
+    border: 3.5px solid #05fcfe;
+    white-space: pre-wrap;"></textarea>
+</div>
+
+<!-- Script del copiloto -->
+<script type="module" src="/static/js/copiloto_redactor.js"></script>

@@ -1,0 +1,61 @@
+{
+  "ajustes_contables": [
+    {
+      "operacion": "Periodificación de ingresos anticipados",
+      "descripcion": "Registro del ingreso devengado en el ejercicio sobre ingresos anticipados.",
+      "asiento": {
+        "debe": "485 - Ingresos anticipados",
+        "haber": "7XX - Ingreso correspondiente al ejercicio"
+      }
+    },
+    {
+      "operacion": "Periodificación de gastos anticipados",
+      "descripcion": "Reconocimiento del gasto que corresponde al ejercicio, procedente de pagos anticipados.",
+      "asiento": {
+        "debe": "6XX - Gasto del ejercicio",
+        "haber": "480 - Gastos anticipados"
+      }
+    },
+    {
+      "operacion": "Devengo de intereses",
+      "descripcion": "Reconocimiento del gasto por intereses acumulados aún no vencidos.",
+      "asiento": {
+        "debe": "662 - Intereses de deuda",
+        "haber": "475 - Intereses a pagar"
+      }
+    },
+    {
+      "operacion": "Regularización de cuentas de resultado",
+      "descripcion": "Cierre contable de ingresos y gastos del ejercicio.",
+      "asiento": {
+        "debe": "7XX - Ingresos del ejercicio",
+        "haber": "129 - Resultado del ejercicio"
+      }
+    },
+    {
+      "operacion": "Regularización de cuentas de gasto",
+      "descripcion": "Cierre contable de las cuentas de gasto del ejercicio.",
+      "asiento": {
+        "debe": "129 - Resultado del ejercicio",
+        "haber": "6XX - Gastos del ejercicio"
+      }
+    },
+    {
+      "operacion": "Cierre de cuentas de activo",
+      "descripcion": "Traspaso del saldo de cuentas de activo al libro de cierre.",
+      "asiento": {
+        "debe": "89X - Cuenta de cierre",
+        "haber": "2XX / 3XX / 4XX (Activo)"
+      }
+    },
+    {
+      "operacion": "Cierre de cuentas de pasivo",
+      "descripcion": "Traspaso del saldo de cuentas de pasivo al libro de cierre.",
+      "asiento": {
+        "debe": "1XX / 4XX / 5XX (Pasivo)",
+        "haber": "89X - Cuenta de cierre"
+      }
+    }
+  ],
+  "categoria": "contabilidad"
+}

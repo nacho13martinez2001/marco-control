@@ -1,0 +1,111 @@
+
+<div class="card p-3 shadow-sm rounded-3 mb-4">
+  <h5 class="fw-bold mb-3">Actualización del Plan de Ajuste</h5>
+
+  <form id="formularioPlanAjuste">
+    <div class="row mb-2">
+      <div class="col">
+        <label>Normativa de origen</label>
+        <input type="text" class="form-control" id="normativa_origen" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Fecha de aprobación original</label>
+        <input type="text" class="form-control" id="fecha_aprobacion_original" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Año fin de vigencia</label>
+        <input type="text" class="form-control" id="anio_fin_vigencia" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Nueva situación detectada</label>
+        <input type="text" class="form-control" id="nueva_situacion_detectada" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Norma de apoyo</label>
+        <input type="text" class="form-control" id="norma_apoyo" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Objetivo de la actualización</label>
+        <input type="text" class="form-control" id="objetivo_actualizacion" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Valoración técnica</label>
+        <input type="text" class="form-control" id="valoracion_tecnica" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Evolución SEC</label>
+        <input type="text" class="form-control" id="evolucion_sec" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Ahorro neto (€)</label>
+        <input type="number" class="form-control" id="ahorro_neto" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Reducción deuda</label>
+        <input type="text" class="form-control" id="reduccion_deuda" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Cumplimiento de objetivos</label>
+        <input type="text" class="form-control" id="cumplimiento_objetivos" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Resultado presupuestario ajustado</label>
+        <input type="text" class="form-control" id="resultado_ajustado" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <label>Juicio técnico</label>
+        <input type="text" class="form-control" id="juicio_tecnico" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Cumplimiento formal</label>
+        <input type="text" class="form-control" id="cumplimiento_formal" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <label>Resultado del control</label>
+        <input type="text" class="form-control" id="resultado_control" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Motivos del resultado</label>
+        <input type="text" class="form-control" id="motivos_resultado" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <label>Observaciones adicionales</label>
+        <input type="text" class="form-control" id="observaciones" oninput="MotorPlanAjuste.actualizarVisor()">
+      </div>
+    </div>
+  </form>
+
+  <h6 class="fw-bold mt-3">🔎 Previsualización de datos</h6>
+  <div id="visorPlanAjuste" class="alert alert-info mt-3" contenteditable="true" style="min-height:80px; outline:2px dashed #ccc;">
+    Los datos introducidos aparecerán aquí automáticamente.
+  </div>
+
+  <button onclick="MotorPlanAjuste.generarInforme()" class="btn w-100 mt-3"
+    style="background-color: #ffcc00; border: 2mm solid white; color: #003366; border-radius: 15px;">
+    Generar Informe
+  </button>
+</div>

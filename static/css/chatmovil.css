@@ -1,0 +1,88 @@
+/* /static/css/chatmovil.css */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f1f1f1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: #003366;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background: #f1f1f1;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 0.5rem;
+  background: white;
+  border-top: 1px solid #ccc;
+  position: sticky;
+  bottom: 1cm;
+  z-index: 10;
+}
+
+.chat-footer textarea {
+  flex: 1;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  resize: none;
+  font-size: 1rem;
+}
+
+.chat-footer button {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.burbuja {
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 1.2rem;
+  max-width: 85%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.usuario {
+  background-color: #cce5ff;
+  color: #003366;
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+}
+
+.ia {
+  background-color: #336699;
+  color: #ffffff;
+  align-self: flex-start;
+  text-align: left;
+  margin-right: auto;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+  max-width: 85%;
+}

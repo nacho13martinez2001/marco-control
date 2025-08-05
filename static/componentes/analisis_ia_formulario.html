@@ -1,0 +1,36 @@
+<div class="container py-3">
+
+  <!-- Botón de IA real -->
+<button id="btnAnalisisIA" onclick="lanzarAnalisisIAReal()" style="
+  width: 100%;
+  background-color: #cce6ff;
+  color: #003366;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 16px;
+  font-weight: normal;
+  font-size: 15px;
+  margin-top: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);">
+  Ejecutar análisis con IA
+</button>
+
+
+  <!-- Resultado del análisis -->
+  <div id="resultadoAnalisisIA" class="mt-3 p-3" style="
+    background-color: #e6f0f5 !important;
+    color: #003366;
+    font-family: 'Century Gothic', monospace;
+    font-size: 15px;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    resize: none;
+    border-radius: 12px;
+    border: 3.5px solid #05fcfe;
+    height: calc(77vh - 160px);">
+    <!-- Aquí aparecerá el resultado -->
+  </div>
+</div>
+
+<!-- Script para IA real -->
+<script src="/static/js/analisis_ia_motor.js"></script>

@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Control Permanente</title>
+<link href="{{ url_for('static', filename='icono_chat.png') }}" rel="icon" sizes="150x150" type="image/png"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<style>
+
+
+#editorTexto.efecto-aplicado {
+  animation: resplandorAplicado 0.8s ease-in-out 2 !important;
+}
+
+
+  .matrixCanvasLocal {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 10;
+  }
+#botonInicioMatrix {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  font-size: 1rem; /* 🔽 tamaño de texto más armónico */
+  color: #003366;
+  background: #b3d9ff;
+  padding: 0.6rem 1.2rem; /* 🔽 menos padding */
+  border: none;
+  border-radius: 10px;
+  z-index: 9999;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* 🔽 menos espacio entre icono y texto */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#botonInicioMatrix img {
+  height: 16px;  /* 🔽 tamaño más discreto */
+  width: 16px;
+  vertical-align: middle;
+}
+
+  html, body { height: 100%; margin: 0; }
+  .full-height { height: 100vh; display: flex; flex-direction: row; overflow: hidden; }
+  
+  .form-column {
+    width: 33.3%;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #editorTexto {
+    background-color: #e6f0f5 !important;   /* Gris azulado claro */
+    color: #003366 !important;              /* Azul, legible */
+    font-family: "Century Gothic", monospace !important;
+    font-size: 15px;
+    white-space: pre-wrap;
+    padding: 1rem;
+    animation: parpadeoTexto 1.2s infinite alternate;
+  }
+
+
+  @keyframes parpadeoTexto {
+    from { opacity: 0.85; }
+    to { opacity: 1; }
+  }
+
+#buscadorTextoInforme,
+#buscadorExcel {
+  height: 32px;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+}
+
+.input-group > .btn {
+  height: 32px;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+}
+
+
+#selectorModulo {
+  background-color: #e0f7fa; /* fondo celeste claro */
+  color: #003366;            /* texto azul oscuro */
+  border: 1px solid #05fcfe; /* borde cian fosforescente (a juego con el sistema) */
+  font-weight: normal;
+}
+
+#selectorApartadosInforme {
+  height: 32px;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+}
+
+  #visor-texto {
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+
+  .leido {
+    background-color: #d0f0ff !important;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: parpadeoZoom 0.5s ease-in-out 2;
+    border-left: 4px solid #007bff;
+    padding-left: 8px;
+    scroll-margin-top: 40px;
+  }
+
+  @keyframes parpadeoZoom {
+    0% {
+      background-color: #d0f0ff;
+      transform: scale(1.02);
+      opacity: 0.6;
+    }
+    50% {
+      background-color: #bce6ff;
+      transform: scale(1.03);
+      opacity: 1;
+    }
+    100% {
+      background-color: #d0f0ff;
+      transform: scale(1.00);
+      opacity: 1;
+    }
+  }
+
+  .chat-column {
+    width: 33.3%;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 10px;
+  }
+
+  .viewer-column {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    background: #f8f9fa;
+    padding: 1rem;
+    font-size: 1.1rem;
+    scroll-behavior: smooth;
+    border: 1mm solid #eeeeee;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  .bubble {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    margin: 0.3rem 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+
+  .user {
+    background-color: #d0e8ff;
+    text-align: right;
+    align-self: flex-end;
+  }
+
+  .ia {
+    background-color: #e9ecef;
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  .chat-input { display: flex; gap: 0.5rem; padding: 0.5rem; background: #fff; border-top: 1px solid #ddd; }
+  .chat-input textarea {
+    flex-grow: 1;
+    resize: none;
+    min-height: 7em; /* altura mínima de 8 líneas aproximadamente */
+    line-height: 1.2em;
+  }
+
+  .form-column .form-control, .form-column .form-select {
+    max-width: 95%;
+    height: 60px;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-column .form-label {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .htCenter {
+    text-align: center !important;
+  }
+
+  .htCustomFont {
+    font-family: "Century Gothic", sans-serif !important;
+    font-size: 8pt !important;
+  }
+
+  #layout {
+    border: 1mm solid #05fcfe;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(5, 252, 254, 0.3);
+  }
+
+  #editorTexto,
+  #editorHandsontable {
+    border: 1mm solid #05fcfe;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(5, 252, 254, 0.3);
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 800px;
+    resize: none;
+    background-color: #e6f0f5 !important;
+  }
+
+  #userInput {
+    border: 1mm solid #05fcfe;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(5, 252, 254, 0.3);
+    box-sizing: border-box;
+  }
+
+  .form-column button.btn {
+    border: 1mm solid white !important;
+  }
+
+  .viewer-column button.btn {
+    border: 1mm solid white !important;
+  }
+
+  .leido {
+    background-color: #d0f0ff !important;
+    transition: background-color 0.2s ease;
+  }
+
+  #mensajeAnalisis {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #28a745;
+    display: none;
+  }
+
+  .leido {
+    background-color: #d0f0ff !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: parpadeo 0.3s ease-in-out alternate;
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+  }
+
+  @keyframes parpadeo {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+  }
+
+  /* ✅ Animación de desvanecimiento para paneles temporales */
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+  }
+  
+  #editorHandsontable .htCore td {
+  color: #003366;
+  border: 2px solid #05fcfe; /* Cian fosforito (a juego con el sistema) */
+  font-family: 'Century Gothic', monospace;
+  border: 1px solid #b3d9ff;
+}
+
+@keyframes resplandorAplicado {
+  0% { box-shadow: 0 0 5px #05fcfe; }
+  50% { box-shadow: 0 0 15px #05fcfe; }
+  100% { box-shadow: 0 0 5px #05fcfe; }
+}
+
+.chat-messages .mensaje-ia:first-child {
+  margin-top: 12px;
+}
+
+.mensaje-ia {
+  position: relative;
+  margin-bottom: 24px;
+  padding-top: 48px; /* espacio para el botón */
+}
+
+.mensaje-ia button {
+  top: 8px;
+  right: 12px;
+}
+
+#chat {
+  display: flex;
+  flex-direction: column;
+}
+
+#chat .mensaje-ia:first-child {
+  margin-top: 48px; /* deja espacio visual para el botón superior */
+}
+#chat {
+  padding-top: 8px; /* suaviza el borde superior */
+}
+
+</style>
+<link href="https://cdn.jsdelivr.net/npm/handsontable@14.1.0/dist/handsontable.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/hyperformula@2.6.0/dist/hyperformula.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/handsontable@14.1.0/dist/handsontable.min.js"></script>
+</head>
+<body>
+<audio id="matrixAudio" preload="auto" src="/static/sounds/beep1.mp3"></audio>
+<canvas class="matrixCanvasLocal" id="matrixCanvasTexto"></canvas>
+<canvas class="matrixCanvasLocal" id="matrixCanvasExcel"></canvas>
+<div class="full-height" id="layout">
+<div class="form-column d-flex flex-column" style="height: 99vh;">
+<label class="form-label fw-bold" for="selectorModulo" style="color: black;">Módulo activo</label>
+<select class="form-select form-select-sm mb-3" id="selectorModulo" onchange="cambiarModulo()">
+
+<option value="moduloAprobacion">1.- Aprobación</option>
+<option value="moduloModificaciones">2.1.- Modificaciones de Crédito</option>
+<option value="moduloEstabilidadModificaciones">2.2.- Estabilidad en Modificaciones de Crédito</option>
+<option value="moduloLiquidacion">3.- Liquidación</option>
+<option value="moduloCuenta">4.- Cuenta General</option>
+<option value="moduloCompetencias">5.- Competencias Impropias</option>
+<option value="moduloHoja">6.- Datos formato Tabla</option>
+<option value="moduloContabilidad">A) Contabilidad</option>
+<option value="moduloBiblioteca">B) Biblioteca</option>
+<option value="moduloEndeudamiento">7.- Endeudamiento</option>
+<option value="moduloEstabilidad">8.- Reglas fiscales / Estabilidad</option>
+<option value="moduloGastosPlurianuales">9.- Gastos Plurianuales</option>
+<option value="moduloGestionServicios">10.- Gestión de Servicios</option>
+<option value="moduloActividadEcas">11.- Actividad Ecas</option>
+<option value="moduloMediosPropios">12.- Medios Propios</option>
+<option value="moduloMayoriaEspecial">13.- Mayoría Especial</option>
+<option value="moduloModeloControl">14.- Modelo de Control Interno</option>
+<option value="moduloOOFF">15.- Ordenanzas fiscales</option>
+<option value="moduloPersonal">16.- Personal</option>
+<option value="moduloPlanAjuste">17.- Plan de Ajuste</option>
+<option value="moduloPlanEconomico">18.- Plan Económico Financiero</option>
+<option value="moduloPlanSaneamiento">19.- Plan de Saneamiento</option>
+<option value="moduloPMS">20.- Patrimonio Municipal del Suelo (PMS)</option>
+<option value="moduloPresupuestos">21.- Líneas Fundamentales / Plan Presupuestario</option>
+<option value="moduloProrroga">22.- Prórroga Presupuesto</option>
+<option value="moduloSubvenciones">23.- Subvenciones</option>
+</select>
+
+
+
+<div class="modulo-seccion" id="moduloEndeudamiento" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloEndeudamiento"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloEstabilidad" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloEstabilidad"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloGastosPlurianuales" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloGastosPlurianuales"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloGestionServicios" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloGestionServicios"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloActividadEcas" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloActividadEcas"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloMediosPropios" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloMediosPropios"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloMayoriaEspecial" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloMayoriaEspecial"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloModeloControl" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloModeloControl"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloOOFF" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloOOFF"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloPersonal" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloPersonal"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloPlanAjuste" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloPlanAjuste"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloPlanEconomico" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloPlanEconomico"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloPlanSaneamiento" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloPlanSaneamiento"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloPMS" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloPMS"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloPresupuestos" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloPresupuestos"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloProrroga" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloProrroga"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloSubvenciones" style="display: none; height: 100%;">
+  <div id="contenedorFormulario_moduloSubvenciones"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<!-- Contenedor del formulario de Aprobación -->
+<div class="modulo-seccion" id="moduloAprobacion" style="display: none; height: 100%;">
+  <div id="contenedorFormulario"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloLiquidacion" style="display: none; height: 100%;">
+  <div id="contenedorFormularioLiquidacion"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloContabilidad" style="display: none; height: 100%;">
+  <div id="contenedorFormularioContabilidad"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloModificaciones" style="display: none; height: 100%;">
+  <div id="contenedorFormularioModificaciones"
+       class="p-2 overflow-y-auto border rounded bg-light"
+       style="height: 900px; padding-right: 8px;">
+    <!-- Aquí se insertará el formulario de modificaciones -->
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloEstabilidadModificaciones" style="display: none; height: 100%;">
+  <div id="contenedorFormularioEstabilidadModificaciones"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+<div class="modulo-seccion" id="moduloBiblioteca" style="display: none;">
+<div id="contenedorBibliotecaHtml" style="width: 100%; height: 100%;"></div>
+</div>
+
+<div class="modulo-seccion" id="moduloCompetencias" style="display: none; height: 100%;">
+
+
+
+
+  <div id="contenedorFormularioCompetencias"
+       class="p-2 overflow-auto border rounded bg-light"
+       style="height: 900px; min-height: 0; overflow-y: auto; padding-right: 8px;">
+  </div>
+</div>
+
+
+
+<div class="tab-content mt-3" id="tabsContenido" style="flex-grow: 1; overflow-y: auto; min-height: 0;">
+<div class="modulo-seccion" id="moduloAnalisisIA" style="display: none;"></div>
+<div class="modulo-seccion" d-flex="" flex-column"="" id="moduloHoja" role="tabpanel" style="height: 100%; min-height: 0; overflow: hidden;">
+
+<!-- NUEVO VISOR INTERACTIVO CON HANDSONTABLE -->
+<div class="d-flex flex-column" id="visor-excel" style="max-height: 70vh; overflow-y: auto;"><div style="flex-grow: 1; overflow-y: auto; border-top: 1px solid #ccc;"><select class="form-select form-select-sm mb-2" id="selectorHoja" onchange="cambiarHoja()"></select><div class="mb-2">
+<input class="form-control form-control-sm rounded" id="buscadorExcel" oninput="filtrarExcel(this.value)" placeholder="Buscar en la hoja..." type="text"/>
+</div><div style="flex-shrink: 0; height: 500px; overflow: auto; border: 1px solid #ccc;">
+<div id="editorHandsontable" style="height: 100%;"></div>
+</div>
+
+<div class="p-3 border rounded shadow mt-1" id="formularioModificacionCredito" style="display: none; height: 500px; overflow-y: auto; background-color: #e6f0f5; color: #003366; border: 2px solid #b3d9ff;">
+<h5 class="mb-3">Datos de la modificación presupuestaria</h5>
+<div class="mb-3">
+<label class="form-label" for="tipoModificacion">Tipo de modificación:</label>
+<select class="form-select" id="tipoModificacion">
+<option value="">-- Selecciona --</option>
+<option>Transferencia</option>
+<option>Suplemento</option>
+<option>Generación</option>
+<option>Extraordinario</option>
+<option>Incorporación</option>
+<option>Ampliación</option>
+<option>Baja</option>
+<option>Reordenación</option>
+</select>
+</div>
+<h6>🔹 Recursos que financian la modificación</h6>
+<table class="table table-bordered table-sm align-middle" id="tablaRecursos">
+<thead class="table-light">
+<tr>
+<th>Código</th>
+<th>Descripción</th>
+<th>Importe (€)</th>
+<th></th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<button class="btn btn-outline-primary btn-sm mb-3" onclick="añadirFila('tablaRecursos')">+ Añadir recurso</button>
+<h6>🔸 Aplicaciones presupuestarias que se incrementan</h6>
+<table class="table table-bordered table-sm align-middle" id="tablaAplicaciones">
+<thead class="table-light">
+<tr>
+<th>Código</th>
+<th>Descripción</th>
+<th>Importe (€)</th>
+<th></th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<button class="btn btn-outline-primary btn-sm mb-3" onclick="añadirFila('tablaAplicaciones')">+ Añadir aplicación</button>
+<div class="text-end">
+<button class="btn w-100" onclick="enviarModificacion()" style="background-color: #003366; color: white; border-radius: 10px; border: 2mm solid white;">Insertar Datos en el Informe</button>
+</div>
+</div></div></div>
+</div>
+<div class="modulo-seccion" id="moduloejecucion" style="display: none;">
+<!-- Análisis de estabilidad desactivado -->
+</div>
+<div class="tab-pane fade" id="modificaciones" role="tabpanel" style="height: calc(100vh - 300px); overflow-y: auto;">
+<!-- Aquí irá el contenido del módulo de modificaciones -->
+</div>
+<div class="tab-pane fade" id="liquidacion" role="tabpanel" style="height: calc(100vh - 300px); overflow-y: auto;">
+<!-- Aquí irá el contenido del módulo de liquidación -->
+</div>
+</div>
+<!-- Botones funcionales panel izquierdo -->
+<input id="fileUpload" name="archivo_chat" style="display: none;" type="file"/>
+<div class="d-flex flex-column gap-2 mt-3 mb-3">
+<button class="btn btn-primary w-100" onclick="document.getElementById('fileUpload').click()">Subir *.DOCX - *.PDF - *.XLSX al editor</button>
+<button class="btn btn-primary w-100" onclick="enviarCeldasOTextoSeleccionado()" onmousedown="event.preventDefault()">Enviar celdas o texto seleccionado</button>
+</div>
+</div>
+<div class="chat-column">
+<div class="chat-messages" id="chat">
+</div>
+<!-- Input oculto para subir archivo -->
+<input class="" id="fileChatUpload" style="display: none;" type="file"/>
+<!-- Input de texto + botón "+" + botón enviar -->
+<div class="chat-input align-items-stretch">
+<button class="btn btn-primary px-3 d-flex align-items-center justify-content-center" onclick="document.getElementById('fileChatUpload').click()" style="min-width: 70px;">+</button>
+<textarea class="form-control" id="userInput" placeholder="Escribe tu pregunta..." rows="2"></textarea>
+<button class="btn btn-primary px-3 d-flex align-items-center justify-content-center" onclick="enviarMensaje()" style="min-width: 70px;">Enviar</button>
+</div>
+<!-- Botón Reiniciar -->
+<div class="mt-2">
+<button class="btn w-100" onclick="reiniciarConversacion()" style="background-color: #b3d9ff; border: 2mm solid white; color: #003366; border-radius: 15px;">Reiniciar conversación</button>
+</div>
+</div>
+<div class="viewer-column d-flex flex-column h-100" id="panel-visores">
+<div class="flex-grow-1 overflow-hidden d-flex flex-column" style="min-height: 0;">
+
+<!-- EDITOR DE TEXTO -->
+<div class="d-flex flex-column flex-grow-1" id="visor-texto">
+  <label class="form-label fw-bold mb-2 mt-2" for="editorTexto">Editor de texto del documento</label>
+
+  <div class="mb-2" id="zonaEnlacesDescarga"></div>
+
+  <!-- Selector de apartados -->
+  <select class="form-select form-select-sm mb-2" id="selectorApartadosInforme" onchange="irAApartadoInforme(this.value)">
+  </select>
+
+  <!-- Botones de IA -->
+  <div class="mb-2">
+    <button class="btn w-100" style="background-color: #b3d9ff; border: 2mm solid white; color: #003366; border-radius: 15px;" onclick="EditorTextoUtils.extraerApartadosDesdeIA()">
+      Detectar apartados del Informe con IA
+    </button>
+  </div>
+
+  <div class="mb-2">
+    <button id="btnMejorarApartadoIA" class="btn w-100"
+      style="background-color: #b3d9ff; border: 2mm solid white; color: #003366; border-radius: 15px;"
+      onclick="insertarConsultaIA_MejorarApartado()">
+      Mejorar Texto Seleccionado con IA
+    </button>
+  </div>
+
+  <div class="mb-2">
+    <button type="button" class="btn w-100"
+      onclick="MejoradorExterno.iniciarMejoraInformeExterno()"
+      style="background-color: #ffcc00; border: 2mm solid white; color: #003366; border-radius: 15px;">
+      Revisar informe por bloques con IA
+    </button>
+  </div>
+
+  <!-- 🔎 Buscador integrado justo debajo del botón -->
+  <div class="input-group mb-2">
+    <input class="form-control form-control-sm rounded" id="buscadorTextoInforme" placeholder="Buscar en el informe..." type="text"/>
+    <button class="btn btn-sm px-3"
+      style="background-color: #b3d9ff; color: #003366; border: 2mm solid white; border-radius: 15px;"
+      onclick="buscarEnInforme()" type="button">
+      Buscar
+    </button>
+  </div>
+
+  <!-- 📝 Editor que crece dinámicamente -->
+  <div class="form-control w-100 flex-grow-1" contenteditable="true" id="editorTexto"
+       style="min-height: 0; resize: none; white-space: pre-wrap; overflow-y: auto;">
+  </div>
+
+  <!-- Mensaje final -->
+  <div id="mensajeAnalisis" class="mt-2"></div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const selectorModulo = document.getElementById("selectorModulo");
+
+  if (!selectorModulo) return;
+
+  selectorModulo.addEventListener("change", (e) => {
+    const modulo = e.target.value;
+
+    // --- APROBACIÓN ---
+    if (modulo === "moduloAprobacion") {
+      fetch("/formulario_aprobacion")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("contenedorFormulario").innerHTML = html;
+
+          const script = document.createElement("script");
+          script.src = "/static/js/informe_aprobacion.js";
+          document.body.appendChild(script);
+
+          const scriptMejorador = document.createElement("script");
+          scriptMejorador.src = "/static/js/motores_especializados/mejorador_aprobacion_AUTO.js";
+          document.body.appendChild(scriptMejorador);
+
+          if (window.FlujoAprobacionFormulario?.inicializar) {
+            window.FlujoAprobacionFormulario.inicializar();
+          }
+
+          let btn = document.getElementById("btnInsertarResultadosEnInforme");
+          if (btn) btn.onclick = () => {
+            insertarResultadosEnInforme();
+            document.getElementById("selectorModulo").value = "moduloAnalisisIA";
+            cambiarModulo();
+          };
+
+          // 🟡 INSERCIÓN DIRECTA EN EL COPILOTO + CAMBIO DE PESTAÑA
+          const btnCopiloto = document.getElementById("btnInsertarResultadosEnEditorCopiloto");
+          if (btnCopiloto) {
+            btnCopiloto.onclick = () => {
+              const panel = document.getElementById("panel_resultados_aprobacion");
+              const textoGenerado = panel?.innerText.trim() || "(sin contenido)";
+              const informe = `INFORME DE INTERVENCIÓN SOBRE LA APROBACIÓN DEL PRESUPUESTO GENERAL\n\n${textoGenerado}`;
+
+              const editor = document.getElementById("editorTextoCopiloto");
+              if (editor) {
+                editor.innerText = informe;
+                console.log("✅ Informe insertado directamente en el Copiloto.");
+              } else {
+                console.warn("❌ No se encontró el editor del Copiloto.");
+              }
+
+              setTimeout(() => {
+                const selector = document.getElementById("selectorModulo");
+                if (selector) {
+                  selector.value = "moduloAnalisisIA";
+                  cambiarModulo();
+                  console.log("🟢 Cambio forzado a pestaña Copiloto desde acción directa.");
+                }
+              }, 300);
+            };
+          }
+        });
+    }
+
+    if (modulo === "moduloModificaciones") {
+      fetch("/static/componentes/formulario_modificaciones.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("contenedorFormularioModificaciones").innerHTML = html;
+          const tipoMod = document.getElementById("tipoModificacion");
+          if (tipoMod) {
+            tipoMod.addEventListener("change", () => {
+              window.filtrarFinanciacionPorTipo(tipoMod.value);
+              window.mostrarDoctrinaPorTipo(tipoMod.value);
+            });
+            if (tipoMod.value) {
+              tipoMod.dispatchEvent(new Event("change"));
+            }
+          }
+
+          const script = document.createElement("script");
+          script.src = "/static/js/motores_especializados/motor_redactor_modificaciones.js";
+          document.body.appendChild(script);
+          if (window.activarAutocompletadoCampos) activarAutocompletadoCampos();
+        });
+    }
+
+    if (modulo === "moduloLiquidacion") {
+      fetch("/static/componentes/formulario_liquidacion.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("contenedorFormularioLiquidacion").innerHTML = html;
+          if (window.FlujoLiquidacionFormulario?.inicializar) {
+            window.FlujoLiquidacionFormulario.inicializar();
+          }
+          let btn = document.getElementById("btnInsertarResultadosEnInforme");
+          if (btn) btn.onclick = insertarResultadosEnInformeLiquidacion;
+        });
+    }
+
+    if (modulo === "moduloEstabilidadModificaciones") {
+      fetch("/static/componentes/formulario_estabilidad_modificaciones.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("contenedorFormularioEstabilidadModificaciones").innerHTML = html;
+
+          const scriptRedactor = document.createElement("script");
+          scriptRedactor.src = "/static/js/motores_especializados/motor_redactor_estabilidad_modificaciones.js";
+          document.body.appendChild(scriptRedactor);
+
+          if (window.FlujoEstabilidadModificaciones?.inicializar) {
+            window.FlujoEstabilidadModificaciones.inicializar();
+          }
+
+          let btn = document.getElementById("btnInsertarResultadosEstabilidadMod");
+          if (btn) btn.onclick = insertarResultadosEnInformeEstabilidadMod;
+        });
+    }
+
+    if (modulo === "moduloContabilidad") {
+      fetch("/static/componentes/formulario_contabilidad.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("contenedorFormularioContabilidad").innerHTML = html;
+          if (window.inicializarFormularioContabilidad) {
+            window.inicializarFormularioContabilidad();
+          }
+        });
+    }
+
+    if (modulo === "moduloCompetencias") {
+      fetch("/static/componentes/formulario_competencias.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("contenedorFormularioCompetencias").innerHTML = html;
+
+          const script = document.createElement("script");
+          script.src = "/static/js/motores_especializados/motor_competencias_impropias.js";
+          document.body.appendChild(script);
+        });
+    }
+
+    // --- AÑADE AQUÍ OTROS MÓDULOS DINÁMICOS SI LOS NECESITAS ---
+    // Ejemplo:
+    // if (modulo === "moduloOtraCosa") { ... }
+  });
+
+  // ✅ Establecer módulo por defecto al cargar
+  document.getElementById("selectorModulo").value = "moduloAprobacion";
+  document.getElementById("selectorModulo").dispatchEvent(new Event("change"));
+});
+</script>
+
+<!-- VISOR DE ANÁLISIS DE ESTABILIDAD PRESUPUESTARIA -->
+<!-- Botones comunes -->
+<div class="d-flex flex-column gap-2 mt-2 w-100">
+<button class="btn btn-primary w-100" id="botonAplicarEstiloTexto" onclick="aplicarEstiloInforme()">Aplicar estilo informe (texto)</button>
+<button class="btn btn-primary text-white w-100" onclick="guardarComoWord()">Descargar DOCX</button>
+<div class="mt-2 fw-bold text-center" id="resultadoSuma"></div>
+</div>
+<!-- Librerías externas -->
+<script src="/static/libs/handsontable.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hyperformula@2.6.0/dist/hyperformula.full.min.js"></script>
+<!-- Añádelo en tu HTML (idealmente en el <head> o antes de cerrar </body>) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html-docx-js/0.4.1/html-docx.min.js"></script>
+<!-- Scripts propios modularizados -->
+<!-- ✅ Primero normativa -->
+<script src="/static/js/estado_aplicacion.js"></script>
+<!-- ✅ Luego el chat que la usa -->
+<script src="/static/js/chat.js"></script>
+<script src="/static/js/enviarInstruccionExtendidaIA.js"></script>
+<script src="/static/js/editor_utils.js"></script>
+<script src="/static/js/comun.js"></script>
+<script src="/static/js/html-docx-global.js"></script>
+<script src="/static/js/editor.js"></script>
+<script src="/static/js/excel.js"></script>
+<script src="/static/js/init.js"></script>
+<script src="/static/js/gestor_flujos.js"></script>
+<script src="/static/js/validacion_aprobacion_chat.js"></script>
+<script src="/static/js/flujo_aprobacion_formulario.js"></script>
+<script src="/static/js/flujo_liquidacion_formulario.js"></script>
+<script defer="" src="/static/js/flujo_modificaciones_credito.js"></script>
+<script src="/static/js/flujo_estabilidad_modificaciones.js"></script>
+<script src="/static/js/flujo_reglas_fiscales_liquidacion.js"></script>
+
+<!-- Motores especializados -->
+<script src="/static/js/motores_especializados/mejorador_externo.js"></script>
+<script src="/static/js/motores_especializados/mejorador_liquidacion_AUTO.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_aprobacion.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_modificaciones.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_estabilidad_modificaciones.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_liquidacion.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_reglas.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_cuentageneral.js"></script>
+<script src="/static/js/motores_especializados/bloques_utils.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_endeudamiento.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_subenciones.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_ajustes_prorroga.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_gestion_servicios.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_gastos_plurianuales.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_mayoriaespecial.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_modelocontrol.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_ooff_preciospub.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_personal.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_planajuste.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_plan_economico_financiero.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_plan_saneamiento.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_pms.js"></script>
+<script src="/static/js/motores_especializados/motor_redactor_presupuestos.js"></script>
+
+
+
+
+<!-- Módulo central del copiloto redactor -->
+<script src="/static/js/copiloto_redactor.js"></script>
+<script src="/static/js/detector_flujo_redactor.js"></script>
+
+<script>
+  console.log("🌎 HTML PRINCIPAL CARGADO");
+</script>
+<script src="/static/js/modulo_contabilidad_selector.js"></script>
+<script src="/static/js/chat_upload.js"></script>
+<script src="/static/js/centralizador_ia.js"></script>
+<script src="/static/js/chat_ia_motor.js" defer></script>
+
+<script>
+window.addEventListener("insertarEnEditorTexto", (e) => {
+  const editor = document.getElementById("editorTexto");
+  if (!editor || !e.detail?.contenido) return;
+
+  // Insertar texto
+  if (editor.tagName === "TEXTAREA" || editor.tagName === "INPUT") {
+    editor.value = e.detail.contenido;
+  } else {
+    editor.innerText = e.detail.contenido;
+  }
+
+  // Añadir efecto visual de confirmación
+  editor.classList.add("efecto-aplicado");
+  setTimeout(() => editor.classList.remove("efecto-aplicado"), 800);
+
+  console.log("✅ Texto insertado en editor desde flujo:", window.flujoActivo);
+});
+</script>
+
+<!-- ✅ Carga dinámica del subformulario Copiloto Redactor -->
+<script>
+if (!window.copilotoCargado) {
+  fetch("/static/componentes/copiloto_redactor_formulario.html")
+    .then(r => r.text())
+    .then(html => {
+      const contenedorIA = document.getElementById("moduloAnalisisIA");
+      if (contenedorIA) {
+        contenedorIA.innerHTML = html;
+
+        // 🚀 Activar scripts externos
+        contenedorIA.querySelectorAll("script[src]").forEach(oldScript => {
+          const newScript = document.createElement("script");
+          newScript.src = oldScript.src;
+          document.body.appendChild(newScript);
+        });
+
+        // 🚀 Activar scripts embebidos
+        contenedorIA.querySelectorAll("script:not([src])").forEach(inlineScript => {
+          const newInline = document.createElement("script");
+          newInline.text = inlineScript.textContent;
+          document.body.appendChild(newInline);
+        });
+
+        window.copilotoCargado = true;
+
+        // 🌀 Scroll automático al editor y efecto visual
+        setTimeout(() => {
+          const editor = document.getElementById("editorTextoCopiloto");
+          if (editor) {
+            editor.classList.add("efecto-aplicado");
+            editor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            setTimeout(() => editor.classList.remove("efecto-aplicado"), 800);
+          }
+        }, 500);
+      }
+    });
+}
+</script>
+
+<script>
+function cambiarModulo() {
+  const seleccionado = document.getElementById("selectorModulo").value;
+
+  // Mostrar solo el módulo activo
+  document.querySelectorAll(".modulo-seccion").forEach(seccion => {
+    seccion.style.display = (seccion.id === seleccionado) ? "block" : "none";
+  });
+
+  // Asignar flujo activo solo si es un módulo tradicional
+  switch (seleccionado) {
+    case "moduloAprobacion":
+      window.flujoActivo = "aprobacion";
+      break;
+    case "moduloEstabilidadModificaciones":
+      window.flujoActivo = "modificaciones";
+      break;
+    case "moduloLiquidacion":
+      window.flujoActivo = "liquidacion";
+      break;
+    default:
+      // En Copiloto o futuros módulos: no forzar flujo
+      window.flujoActivo = "";
+  }
+
+  // Control del chat (solo se activa en 'modificaciones')
+  const desactivarChat = (window.flujoActivo !== "modificaciones");
+  document.querySelectorAll('.chat-messages, .chat-input, #fileChatUpload')
+    .forEach(e => e.classList.toggle('desactivado', desactivarChat));
+}
+</script>
+
+<script>
+function copiarTextoAlCopilotoYActivar() {
+  const origen = document.getElementById("editorTexto");
+  const destino = document.getElementById("editorTextoCopiloto");
+
+  if (!origen || !destino) {
+    console.warn("❌ No se encontró alguno de los editores.");
+    return;
+  }
+
+  const texto = origen.innerText || origen.value || "";
+  destino.value = texto;
+
+  // Activar efecto visual (opcional)
+  destino.classList.add("efecto-aplicado");
+  setTimeout(() => destino.classList.remove("efecto-aplicado"), 800);
+
+  console.log("📤 Texto copiado al Copiloto.");
+}
+</script>
+
+<script>
+window.ChatIA = window.ChatIA || {};
+
+ChatIA.insertarMensajeSistema = function (texto) {
+  // ❌ Filtrar mensajes irrelevantes como "Archivo recibido."
+  if (/^Archivo recibido[.:]?$/i.test(texto.trim())) return;
+
+  const chat = document.getElementById("chat");
+  if (!chat) return;
+
+  const div = document.createElement("div");
+  div.className = "bubble ia";
+  div.innerText = texto;
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+};
+
+</script>
+
+<!-- Modal para seleccionar desde Excel -->
+<div id="modalExcelModificaciones" style="display: none; position: fixed; top: 0; left: 0;
+     width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); z-index: 1050; justify-content: center; align-items: center;">
+  <div style="background: white; padding: 20px; border-radius: 10px; width: 80%; max-height: 80%; overflow-y: auto;">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Seleccionar celdas desde Excel</h5>
+      <button onclick="document.getElementById('modalExcelModificaciones').style.display='none'" class="btn btn-sm btn-danger">Cerrar</button>
+    </div>
+    <div id="contenedorExcelModal" style="height: 400px;"></div>
+    <div class="text-end mt-2">
+      <button class="btn btn-primary btn-sm" onclick="insertarFilasDesdeSeleccion()">Insertar en el formulario</button>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const textarea = document.getElementById("userInput");
+  if (!textarea) return;
+
+  const minHeightPx = 5 * 16;  // 5em en píxeles = 80px
+  const maxHeightPx = 15 * 16; // 15em en píxeles = 240px
+
+  // Estilo base
+  textarea.style.minHeight = "5em";
+  textarea.style.maxHeight = "15em";
+  textarea.style.overflowY = "hidden";
+  textarea.style.resize = "none";
+
+  function autoExpand(el) {
+    el.style.height = "auto";
+
+    const scroll = el.scrollHeight;
+
+    if (!el.value.trim()) {
+      el.style.height = minHeightPx + "px";
+      el.style.overflowY = "hidden";
+      return;
+    }
+
+    if (scroll > maxHeightPx) {
+      el.style.height = maxHeightPx + "px";
+      el.style.overflowY = "auto";
+    } else {
+      el.style.height = scroll + "px";
+      el.style.overflowY = "hidden";
+    }
+  }
+
+  textarea.addEventListener("input", () => autoExpand(textarea));
+
+  // También resetear cuando se envía el mensaje (si usas enviarMensaje())
+  const btnEnviar = document.querySelector('button[onclick*="enviarMensaje"]');
+  if (btnEnviar) {
+    btnEnviar.addEventListener("click", () => {
+      setTimeout(() => autoExpand(textarea), 100); // esperar a que se borre el contenido
+    });
+  }
+
+  autoExpand(textarea); // Ejecutar una vez al cargar
+});
+</script>
+
+</body>
+</html>
+

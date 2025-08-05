@@ -1,0 +1,39 @@
+
+<div class="card p-3 shadow-sm rounded-3 mb-4">
+  <h5 class="fw-bold mb-3">Ajustes en la Prórroga Presupuestaria</h5>
+  <form id="formularioAjustesProrroga">
+    <div class="row mb-2">
+      <div class="col">
+        <label>Ejercicio</label>
+        <input type="text" class="form-control" id="ejercicio" oninput="MotorAjustesProrroga.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Tipo de ajuste</label>
+        <select class="form-control" id="tipo_ajuste" onchange="MotorAjustesProrroga.actualizarVisor()">
+          <option value="">-- Selecciona --</option>
+          <option value="a la baja">A la baja</option>
+          <option value="al alza">Al alza</option>
+        </select>
+      </div>
+    </div>
+    <div class="mb-2">
+      <label>Motivo del ajuste</label>
+      <textarea class="form-control" id="motivo_ajuste" oninput="MotorAjustesProrroga.actualizarVisor()"></textarea>
+    </div>
+    <div class="row mb-2">
+      <div class="col">
+        <label>Total prorrogado (€)</label>
+        <input type="number" class="form-control" id="total_prorrogado" oninput="MotorAjustesProrroga.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Total ajustado (€)</label>
+        <input type="number" class="form-control" id="total_ajustado" oninput="MotorAjustesProrroga.actualizarVisor()">
+      </div>
+    </div>
+  </form>
+  <h6 class="fw-bold mt-3">🔎 Previsualización</h6>
+  <div id="visorAjustesProrroga" class="alert alert-info mt-3" contenteditable="true" style="min-height:80px; outline:2px dashed #ccc;"></div>
+  <button onclick="MotorAjustesProrroga.generarInforme()" class="btn w-100 mt-3" style="background-color: #ffcc00; border: 2mm solid white; color: #003366; border-radius: 15px;">
+    Generar Informe
+  </button>
+</div>

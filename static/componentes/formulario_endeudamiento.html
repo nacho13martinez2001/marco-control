@@ -1,0 +1,37 @@
+<!-- formulario_endeudamiento.html -->
+
+<div class="formulario-redactor">
+  <h2>Informe de Endeudamiento</h2>
+
+  <label for="ejercicio_analisis">Ejercicio del análisis:</label>
+  <input type="text" id="ejercicio_analisis" placeholder="Ej: 2025" />
+
+  <label for="ahorro_neto">Ahorro neto (€):</label>
+  <input type="text" id="ahorro_neto" placeholder="Ej: 150000" />
+
+  <label for="deuda_viva">% Deuda viva sobre ingresos:</label>
+  <input type="text" id="deuda_viva" placeholder="Ej: 65" />
+
+  <label for="fecha_informe_tesoreria">Fecha del informe de Tesorería:</label>
+  <input type="date" id="fecha_informe_tesoreria" />
+
+  <label for="cumple_prudencia">¿Cumple principio de prudencia financiera?</label>
+  <select id="cumple_prudencia">
+    <option value="sí">Sí</option>
+    <option value="no">No</option>
+  </select>
+
+  <label for="detalle_coste">Detalle del coste financiero:</label>
+  <input type="text" id="detalle_coste" placeholder="Ej: tipo de interés fijo del 2.5%..." />
+
+  <label for="capacidad_pago">¿Tiene capacidad de pago consolidada?</label>
+  <select id="capacidad_pago">
+    <option value="sí">Sí</option>
+    <option value="no">No</option>
+  </select>
+
+  <button onclick="MotorEndeudamiento.generarInforme()">Generar informe</button>
+
+  <h3>Informe generado:</h3>
+  <textarea id="salida_redaccion" rows="25" style="width:100%"></textarea>
+</div>

@@ -1,0 +1,144 @@
+<!-- FORMULARIO DE LIQUIDACIÓN DEL PRESUPUESTO GENERAL -->
+<div id="formulario-liquidacion" class="card p-3 shadow-sm rounded-3 mb-4">
+  <h5 class="mb-3">Formulario de Liquidación del Presupuesto General</h5>
+  <button class="btn w-100 mt-2"
+    style="background-color: #b3d9ff; border: 2mm solid white; color: #003366; border-radius: 15px;"
+    onclick="document.getElementById('fileUploadHojaLiquidacion').click()">
+  Datos Tabla
+  </button> (Hoja: Informe)</button>
+  <input type="file" id="fileUploadHojaLiquidacion" accept=".xlsx,.xls" style="display:none;">
+
+  <!-- Bloque 1: Resultado Presupuestario -->
+  <h6 class="mt-4">1. Resultado Presupuestario</h6>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="Derechos_Reconocidos_Netos" class="form-label">Derechos Reconocidos Netos</label>
+      <input id="Derechos_Reconocidos_Netos" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6">
+      <label for="Obligaciones_Reconocidas_Netas" class="form-label">Obligaciones Reconocidas Netas</label>
+      <input id="Obligaciones_Reconocidas_Netas" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="Gastos_financiados_con_remanente_de_tesoreria" class="form-label">Gastos financiados con remanente de tesorería</label>
+      <input id="Gastos_financiados_con_remanente_de_tesoreria" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="Desviaciones_positivas_de_financiacion" class="form-label">Desviaciones positivas de financiación</label>
+      <input id="Desviaciones_positivas_de_financiacion" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="Desviaciones_negativas_de_financiacion" class="form-label">Desviaciones negativas de financiación</label>
+      <input id="Desviaciones_negativas_de_financiacion" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="RESULTADO_PRESUPUESTARIO_DEL_EJERCICIO" class="form-label">RESULTADO PRESUPUESTARIO DEL EJERCICIO</label>
+      <input id="RESULTADO_PRESUPUESTARIO_DEL_EJERCICIO" type="text" class="form-control" />
+    </div>
+  </div>
+
+  <!-- Bloque 2: Remanente de Tesorería -->
+  <h6 class="mt-4">2. Remanente de Tesorería</h6>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="Fondos_Liquidos" class="form-label">Fondos Líquidos</label>
+      <input id="Fondos_Liquidos" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6">
+      <label for="Derechos_Pendientes_de_Cobro" class="form-label">Derechos Pendientes de Cobro</label>
+      <input id="Derechos_Pendientes_de_Cobro" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="Obligaciones_Pendientes_de_Pago" class="form-label">Obligaciones Pendientes de Pago</label>
+      <input id="Obligaciones_Pendientes_de_Pago" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="REMANENTE_DE_TESORERIA_TOTAL" class="form-label">REMANENTE DE TESORERÍA TOTAL</label>
+      <input id="REMANENTE_DE_TESORERIA_TOTAL" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="REMANENTE_DE_TESORERIA_PARA_GASTOS_GENERALES" class="form-label">REMANENTE DE TESORERÍA PARA GASTOS GENERALES</label>
+      <input id="REMANENTE_DE_TESORERIA_PARA_GASTOS_GENERALES" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="Remanente_de_Tesoreria_para_Gastos_con_financiacion_afectada" class="form-label">Remanente de Tesorería para Gastos con financiación afectada</label>
+      <input id="Remanente_de_Tesoreria_para_Gastos_con_financiacion_afectada" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="Remanente_de_Tesoreria_ajustado" class="form-label">Remanente de Tesorería ajustado</label>
+      <input id="Remanente_de_Tesoreria_ajustado" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="Capacidad_Necesidad_de_financiacion_antes_de_ajustes_SEC10" class="form-label">Capacidad/Necesidad de financiación antes de ajustes SEC10</label>
+      <input id="Capacidad_Necesidad_de_financiacion_antes_de_ajustes_SEC10" type="text" class="form-control" />
+    </div>
+  </div>
+
+  <!-- Bloque 3: Estabilidad Presupuestaria -->
+  <h6 class="mt-4">3. Estabilidad Presupuestaria</h6>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="Capacidad_de_Financiacion_Bruta" class="form-label">Capacidad de Financiación Bruta</label>
+      <input id="Capacidad_de_Financiacion_Bruta" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6">
+      <label for="Ajustes_SEC10_Estabilidad" class="form-label">Ajustes SEC10 Estabilidad</label>
+      <input id="Ajustes_SEC10_Estabilidad" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="Estabilidad_Presupuestaria_en_la_Liquidacion" class="form-label">Estabilidad Presupuestaria en la Liquidación</label>
+      <input id="Estabilidad_Presupuestaria_en_la_Liquidacion" type="text" class="form-control" />
+    </div>
+  </div>
+
+  <!-- Bloque 4: Regla de Gasto -->
+  <h6 class="mt-4">4. Regla de Gasto</h6>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="Limite_de_Gasto_No_Financiero" class="form-label">Límite de Gasto No Financiero</label>
+      <input id="Limite_de_Gasto_No_Financiero" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6">
+      <label for="Empleos_No_Financieros" class="form-label">Empleos No Financieros</label>
+      <input id="Empleos_No_Financieros" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <label for="Regla_de_Gasto" class="form-label">Regla de Gasto</label>
+      <input id="Regla_de_Gasto" type="text" class="form-control" />
+    </div>
+  </div>
+
+  <!-- Bloque 5: Deuda Financiera -->
+  <h6 class="mt-4">5. Deuda Financiera</h6>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="Deuda_Viva" class="form-label">Deuda Viva</label>
+      <input id="Deuda_Viva" type="text" class="form-control" />
+    </div>
+    <div class="col-md-6">
+      <label for="Porcentaje_Deuda_Viva" class="form-label">% Deuda Viva</label>
+      <input id="Porcentaje_Deuda_Viva" type="text" class="form-control" />
+    </div>
+  </div>
+
+  <!-- Bloque 6: Deuda Comercial -->
+  <h6 class="mt-4">6. Deuda Comercial</h6>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="PMP" class="form-label">Periodo Medio de Pago (PMP)</label>
+      <input id="PMP" type="text" class="form-control" />
+    </div>
+  </div>
+
+  <div id="panel_resultados_liquidacion" class="alert alert-info mt-3" contenteditable="true" style="min-height:100px; outline:2px dashed #ccc;"></div>
+</div>
+
+
+<!-- 🔘 Botón para insertar informe técnico generado -->
+<div class="text-center my-3">
+  <button class="btn w-100"
+    style="background-color: #ffcc00; border: 2mm solid white; color: #003366; border-radius: 15px;"
+    onclick="insertarInformeTecnicoLiquidacion()">
+    Generar Informe
+  </button>
+</div>

@@ -1,0 +1,130 @@
+<div id="formularioModificaciones" class="p-3">
+
+  <!-- 🔽 Tipo de modificación y financiación -->
+  
+<!-- 🔄 Subformulario horizontal con botón debajo -->
+<div class="row g-2 mb-2">
+  <div class="col-md-4">
+    <label for="tipoModificacion" class="form-label">Tipo de Modificación</label>
+    <select id="tipoModificacion" class="form-select">
+      <option value="" selected disabled>Seleccione...</option>
+      <option value="Incorporación de remanente">Incorporación de remanente</option>
+      <option value="Crédito extraordinario">Crédito extraordinario</option>
+      <option value="Suplemento de crédito">Suplemento de crédito</option>
+      <option value="Transferencia de crédito">Transferencia de crédito</option>
+      <option value="Generación de crédito">Generación de crédito</option>
+      <option value="Ampliación de crédito">Ampliación de crédito</option>
+      <option value="Baja por anulación">Baja por anulación</option>
+      <option value="Ajuste al alza">Ajuste al alza</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label for="tipoFinanciacion" class="form-label">Financiación</label>
+    <select id="tipoFinanciacion" class="form-select">
+      <option selected disabled>Seleccione...</option>
+      <option value="Remanente afectado">Remanente afectado</option>
+      <option value="Remanente general">Remanente general</option>
+      <option value="Nuevos ingresos">Nuevos ingresos</option>
+      <option value="Mayores ingresos">Mayores ingresos</option>
+      <option value="Baja de otra partida">Baja de otra partida</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label for="importeFinanciacion" class="form-label">Importe:</label>
+    <input type="number" class="form-control" id="importeFinanciacion" placeholder="Importe en €">
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col-12">
+    <button class="btn btn-sm w-100" type="button"
+      style="background-color: #b3d9ff; border: 2mm solid white; color: #003366; border-radius: 15px;"
+      onclick="guardarFuenteFinanciacion()">Guardar</button>
+  </div>
+</div>
+ </div>
+  </div>
+
+  <!-- 📋 Tabla dinámica de aplicaciones -->
+
+<!-- 💰 Tabla de recursos de financiación -->
+<div class="table-responsive mt-4">
+  <label class="form-label fw-bold">Recursos que financian la modificación</label>
+  <table id="tablaFinanciacion" class="table table-bordered table-sm align-middle text-center">
+    <thead class="table-info">
+      <tr>
+        <th>Programa</th>
+        <th>Económina</th>
+        <th>Denominación</th>
+        <th>Recurso</th>
+        <th>Importe</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Filas insertadas dinámicamente -->
+    </tbody>
+  </table>
+  <button class="btn btn-sm w-100" style="background-color: #b3d9ff; border: 2mm solid white; color: #003366; border-radius: 15px;" onclick="agregarFilaFinanciacion()">Añadir recurso</button>
+</div>
+
+<!-- 🧾 Título para la tabla de nuevos o mayores gastos -->
+<label class="form-label fw-bold mt-4">Nuevos o Mayores Gastos</label>
+<div class="table-responsive">
+  <table id="tablaModificaciones" class="table table-bordered table-sm align-middle text-center">
+    <thead class="table-info">
+      <tr>
+        <th>Programa</th>
+        <th>Económica</th>
+        <th>Área</th>
+        <th>Capítulo</th>
+        <th>Aplicación</th>
+        <th>Denominación</th>
+        <th>Importe</th>
+        
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Filas se insertan aquí dinámicamente -->
+    </tbody>
+  </table>
+</div>
+
+
+  <!-- ➕ Botones -->
+
+ <div class="d-flex gap-2 mt-3">
+  <button class="btn btn-sm w-100" onclick="abrirVisorExcelEnModal()"
+          style="background-color: #b3d9ff; border: 2mm solid white; color: #003366; border-radius: 15px;">
+    Datos Tabla
+  </button>
+
+  <button id="btnAgregarFila" class="btn btn-sm w-100"
+          onclick="agregarFilaManualModificacion()"
+          style="background-color: #b3d9ff; border: 2mm solid white; color: #003366; border-radius: 15px;">
+    Añadir Gasto
+  </button>
+
+  <button id="btnGenerarInformeModificaciones" class="btn btn-warning btn-sm w-100"
+          onclick="insertarInformeTecnicoEnEditor()"
+          style="border-radius: 15px;">
+    Generar informe
+  </button>
+</div>
+
+
+  <!-- 📘 Visor doctrinal del tipo de modificación -->
+  <div class="mt-3">
+    <label class="form-label fw-bold" for="visorTipoModificacion">Explicación del tipo seleccionado</label>
+    <div id="visorTipoModificacion"
+         class="alert alert-info"
+         style="min-height: 180px; max-height: 250px; overflow-y: auto;
+                border: 1mm solid #05fcfe; border-radius: 12px;
+                box-shadow: 0 0 10px rgba(5,252,254,0.3);
+                background-color: #e6f0f5; color: #003366;
+                font-size: 0.9rem; white-space: pre-wrap;">
+      Seleccione un tipo de modificación para ver su explicación aquí.
+    </div>
+ </div>
+
+</div>

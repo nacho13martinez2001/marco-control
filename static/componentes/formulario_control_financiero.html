@@ -1,0 +1,24 @@
+
+<!-- FORMULARIO CONTROL FINANCIERO -->
+<div id="formularioCF" style="display: block;">
+  <h5 class="mt-2">1.- Selección del tipo de informe</h5>
+  <select id="selectorTipoCF" class="form-select mb-3" onchange="MotorFinanciero.actualizarVisor()">
+    <option value="riesgos">1. Análisis de riesgos</option>
+    <option value="contratacion">2. Contratación menor</option>
+    <option value="ingresos">3. Ingresos con toma de razón</option>
+  </select>
+
+  <div id="formularioCF_Detalle" style="display: block;">
+    <div class="mb-2">
+      <label for="riesgos_identificados" class="form-label">Riesgos identificados:</label>
+      <textarea class="form-control" id="riesgos_identificados" rows="4" oninput="MotorFinanciero.actualizarVisor()"></textarea>
+    </div>
+  </div>
+
+  <div class="text-end mt-2">
+    <button class="btn btn-primary" onclick="MotorFinanciero.generarInforme()">Generar Informe</button>
+  </div>
+
+  <hr>
+  <div id="visorCF" class="p-2 border rounded bg-white" style="min-height: 100px;"></div>
+</div>

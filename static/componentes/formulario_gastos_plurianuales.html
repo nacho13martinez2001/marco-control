@@ -1,0 +1,67 @@
+<!-- formulario_gastos_plurianuales.html -->
+
+<div class="formulario-redactor">
+  <h2>Informe de Gastos Plurianuales</h2>
+
+  <label for="tipo_informe_gastos">Selecciona tipo de informe:</label>
+  <select id="tipo_informe_gastos" onchange="mostrarBloqueGastoPlurianual()">
+    <option value="">-- Selecciona una opción --</option>
+    <option value="limites_excepcionales">Aprobación de límites excepcionales</option>
+    <option value="reajuste_anualidades">Reajuste de anualidades</option>
+  </select>
+
+  <!-- BLOQUE: LÍMITES EXCEPCIONALES -->
+  <div id="bloque_limites_excepcionales" style="display:none;">
+    <h3>Aprobación de límites excepcionales en gastos plurianuales</h3>
+
+    <label for="resultado_control_limites">Resultado del control:</label>
+    <input type="text" id="resultado_control_limites" placeholder="Ej: FAVORABLE" />
+  </div>
+
+  <!-- BLOQUE: REAJUSTE DE ANUALIDADES -->
+  <div id="bloque_reajuste_anualidades" style="display:none;">
+    <h3>Reajuste de anualidades (contrato con financiación plurianual)</h3>
+
+    <label for="motivo_reajuste">Causa del reajuste:</label>
+    <input type="text" id="motivo_reajuste" placeholder="Ej: Retraso en ejecución, modificación de proyecto..." />
+
+    <label for="motivo_autorizado_art_96">Motivo según artículo 96:</label>
+    <input type="text" id="motivo_autorizado_art_96" placeholder="Ej: prórroga, interés público, etc." />
+
+    <h4>Anualidades actuales</h4>
+    <input type="text" id="anualidad_actual_2025" placeholder="2025 (€)" />
+    <input type="text" id="anualidad_actual_2026" placeholder="2026 (€)" />
+    <input type="text" id="anualidad_actual_2027" placeholder="2027 (€)" />
+    <input type="text" id="anualidad_actual_otro" placeholder="Otro/s años (€)" />
+
+    <h4>Anualidades reajustadas</h4>
+    <input type="text" id="nueva_anualidad_2025" placeholder="2025 (€)" />
+    <input type="text" id="nueva_anualidad_2026" placeholder="2026 (€)" />
+    <input type="text" id="nueva_anualidad_2027" placeholder="2027 (€)" />
+    <input type="text" id="nueva_anualidad_otro" placeholder="Otro/s años (€)" />
+
+    <label for="estado_conformidad">¿El contratista ha prestado conformidad?</label>
+    <select id="estado_conformidad">
+      <option value="sí">Sí</option>
+      <option value="no">No</option>
+    </select>
+
+    <label for="resultado_control_reajuste">Resultado del control:</label>
+    <input type="text" id="resultado_control_reajuste" placeholder="Ej: FAVORABLE, CONDICIONADO..." />
+  </div>
+
+  <br>
+  <button onclick="MotorGastosPlurianuales.generarInforme()">Generar informe</button>
+
+  <h3>Informe generado:</h3>
+  <textarea id="salida_redaccion" rows="25" style="width:100%"></textarea>
+</div>
+
+<script>
+function mostrarBloqueGastoPlurianual() {
+  const tipo = document.getElementById("tipo_informe_gastos").value;
+
+  document.getElementById("bloque_limites_excepcionales").style.display = (tipo === "limites_excepcionales") ? "block" : "none";
+  document.getElementById("bloque_reajuste_anualidades").style.display = (tipo === "reajuste_anualidades") ? "block" : "none";
+}
+</script>

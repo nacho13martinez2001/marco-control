@@ -1,0 +1,105 @@
+# Implantación del `systemPrompt` en la Aplicación de Control Permanente
+
+## 🔧 Objetivo
+Integrar un contexto global persistente en la comunicación entre el chat del frontend y la API de OpenAI, para que la IA responda siempre con conocimiento de los módulos presupuestarios activos y sus flujos específicos.
+
+---
+
+## 🔹 Paso 1: Definición modular del `systemPrompt`
+
+Se ha creado el archivo `contexto_chat_sistema.js` con el siguiente contenido:
+
+```js
+window.systemPrompt = `
+Eres un asistente especializado en fiscalización presupuestaria dentro de una aplicación modular de control permanente.
+Tienes acceso a los siguientes módulos:
+
+1️⃣ Aprobación Presupuestaria  
+   - Procesa datos de la hoja 'Aprobación Presupuesto'.
+   - Si la plantilla contiene 'INFORME DE INTERVENCIÓN SOBRE LA APROBACIÓN DEL PRESUPUESTO GENERAL', activa el análisis inicial.
+
+2️⃣ Estabilidad Presupuestaria  
+   - Usa hojas 'Resumen Capítulos' y 'Estabilidad'.
+   - Cálculo base: Cap. 1-7 DRNs – Cap. 1-7 ORNs → Capacidad o Necesidad de Financiación.
+
+3️⃣ Modificaciones Presupuestarias  
+   - Plantilla: 'Informe de Estabilidad en Modificaciones'.
+   - Puede activar proyecciones a fin de ejercicio si se carga la hoja 'EE'.
+
+4️⃣ Funciones Contables (ICAL 2013)  
+   - Aplica criterios de contabilidad pública para devoluciones, anticipos, reintegros.
+
+ℹ️ No actúes por tu cuenta. Espera siempre instrucciones del usuario o de los datos cargados.
+`;
+```
+
+Este script se carga en `formulario_drive.html` **antes de `chat.js`** para asegurar su disponibilidad global.
+
+---
+
+## 🔹 Paso 2: Modificación del `chat.js`
+
+En `chat.js`, se inyecta el prompt en cada petición `fetch` a `/chat`:
+
+```js
+fetch("/chat", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    messages: [
+      { role: "system", content: window.systemPrompt },
+      { role: "user", content: texto }
+    ],
+    textoEditor: textoEditor
+  })
+})
+```
+
+Con esto, cada mensaje de usuario se acompaña del contexto global definido.
+
+---
+
+## 🔹 Paso 3: Adaptación de la ruta `/chat` en `app_drive.py`
+
+El backend recoge los `messages[]` y realiza la llamada a GPT-4:
+
+```python
+messages = data.get("messages", [])
+texto_editor = data.get("textoEditor", "")
+...
+respuesta = openai.ChatCompletion.create(
+    model="gpt-4-turbo",
+    messages=messages,
+    max_tokens=800,
+    temperature=0.7
+)
+```
+
+Esto mantiene la compatibilidad con flujos especiales como proyecciones de estabilidad, pero da prioridad al prompt si no hay coincidencias con patrones.
+
+---
+
+## 📊 Resultado
+
+La IA responde ahora con pleno conocimiento de:
+- Los módulos presupuestarios activos.
+- Las hojas clave y plantillas esperadas.
+- Las reglas de activación de flujos.
+
+🌟 Confirmado mediante pruebas reales en el chat integrado.
+
+---
+
+## 📄 Archivos implicados
+- `/static/js/contexto_chat_sistema.js`
+- `/static/js/chat.js`
+- `formulario_drive.html`
+- `app_drive.py` (ruta `/chat`)
+
+---
+
+## 📅 Fecha de implantación: Mayo 2025
+
+**Responsable:** Paco (Interventor Tesorero de Administración Local)
+
+**Estado:** ✅ Operativo y validado

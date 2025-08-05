@@ -1,0 +1,96 @@
+<div id="formulario-estabilidad-modificaciones" class="card p-3 shadow-sm rounded-3 mb-4">
+  <h5 class="mb-3">Formulario Estabilidad en Modificaciones de Crédito</h5>
+
+  <button class="btn w-100"
+          style="background-color: #b3d9ff; color: #003366; border-radius: 15px; border: 2mm solid white;"
+          onclick="document.getElementById('fileUploadEstabilidad').click()">
+      Cargar Tabla
+  </button>
+  <input type="file" id="fileUploadEstabilidad" accept=".xlsx,.xls" style="display:none;">
+
+  <!-- BLOQUE 1: Estabilidad en Aprobación -->
+  <h6 class="mt-4 text-primary">1. Estabilidad en Aprobación</h6>
+  <div class="row">
+    <div class="col-md-4">
+      <label for="input_previsiones_iniciales" class="form-label">Previsiones Iniciales cap. 1 - 7</label>
+      <input id="input_previsiones_iniciales" type="number" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="input_orns_iniciales" class="form-label">Créditos Iniciales cap. 1 - 7</label>
+      <input id="input_orns_iniciales" type="number" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="input_estabilidad_aprobacion" class="form-label">Estabilidad en Aprobación</label>
+      <input id="input_estabilidad_aprobacion" type="number" class="form-control" />
+    </div>
+  </div>
+
+  <!-- BLOQUE 2: Estabilidad en Ejecución -->
+  <h6 class="mt-4 text-primary">2. Estabilidad en Ejecución</h6>
+  <div class="row">
+    <div class="col-md-4">
+      <label for="input_previsiones_ejecucion" class="form-label">DRNs en Ejecución cap. 1 - 7</label>
+      <input id="input_previsiones_ejecucion" type="number" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="input_orns_ejecucion" class="form-label">ORNs en Ejecución cap. 1 - 7</label>
+      <input id="input_orns_ejecucion" type="number" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="input_estabilidad_ejecucion" class="form-label">Estabilidad en Ejecución </label>
+      <input id="input_estabilidad_ejecucion" type="number" class="form-control" />
+    </div>
+  </div>
+
+  <!-- BLOQUE 3: Proyección de Estabilidad a Fin de Ejercicio -->
+  <h6 class="mt-4 text-primary">3. Proyección de Estabilidad a Fin de Ejercicio</h6>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="input_proyeccion_ingresos" class="form-label">Proyección Ingresos caps. 1 - 7</label>
+      <input id="input_proyeccion_ingresos" type="number" class="form-control" />
+    </div>
+    <div class="col-md-6">
+      <label for="input_proyeccion_orns" class="form-label">Proyección ORNs caps. 1 - 7</label>
+      <input id="input_proyeccion_orns" type="number" class="form-control" />
+    </div>
+  </div>
+  
+  <!-- EXTRAS -->
+  <div class="row mt-3">
+    <div class="col-md-4">
+      <label for="input_pct_ejecucion_ingresos" class="form-label">% Ejecución Ingresos Previsto (0-100)</label>
+      <input id="input_pct_ejecucion_ingresos" type="number" class="form-control" min="0" max="100" />
+    </div>
+    <div class="col-md-4">
+      <label for="input_importe_modificacion" class="form-label">Importe de la Modificación</label>
+      <input id="input_importe_modificacion" type="number" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="input_fecha_informe" class="form-label">Fecha de los Datos del Informe</label>
+      <input id="input_fecha_informe" type="date" class="form-control" />
+    </div>
+  </div>
+
+  <!-- Panel resultados -->
+  <div id="panel_resultados_estabilidad_mod"
+       class="alert alert-info mt-4"
+       contenteditable="true"
+       style="min-height:80px; border: 1mm solid #05fcfe; border-radius: 12px; box-shadow: 0 0 10px rgba(5,252,254,0.3); background-color: #e6f0f5; color: #003366;">
+  </div>
+
+  <button id="btnInsertarResultadosEstabilidadMod" 
+    class="btn w-100 mt-2"
+    style="background-color: #b3d9ff; color: #003366; border-radius: 15px; border: 2mm solid white;"
+	    onclick="insertarResultadosEnInformeEstabilidadMod()">
+	    Consulta directa a IA
+  </button>
+
+  <button onclick="insertarInformeEstabilidadModificacionesEnEditor()" 
+          class="btn w-100 mt-2"
+          style="background-color: #ffcc00; color: #003366; border-radius: 15px; border: 2mm solid white;">
+    Generar Informe
+  </button>
+
+
+
+</div>

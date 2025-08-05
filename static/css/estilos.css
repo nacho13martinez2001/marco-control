@@ -1,0 +1,443 @@
+.matrixCanvasLocal {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 10;
+  }
+#botonInicioMatrix {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  font-size: 1rem; /* 🔽 tamaño de texto más armónico */
+  color: #003366;
+  background: #b3d9ff;
+  padding: 0.6rem 1.2rem; /* 🔽 menos padding */
+  border: none;
+  border-radius: 10px;
+  z-index: 9999;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* 🔽 menos espacio entre icono y texto */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#botonInicioMatrix img {
+  height: 16px;  /* 🔽 tamaño más discreto */
+  width: 16px;
+  vertical-align: middle;
+}
+
+  html, body { height: 100%; margin: 0; }
+  .full-height { height: 100vh; display: flex; flex-direction: row; overflow: hidden; }
+  
+  .form-column {
+    width: 33.3%;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #editorTexto {
+    background-color: #e6f0f5 !important;   /* Gris azulado claro */
+    color: #003366 !important;              /* Azul, legible */
+    font-family: "Century Gothic", monospace !important;
+    font-size: 20px;
+    white-space: pre-wrap;
+    padding: 1rem;
+    animation: parpadeoTexto 1.2s infinite alternate;
+  }
+
+
+  @keyframes parpadeoTexto {
+    from { opacity: 0.85; }
+    to { opacity: 1; }
+  }
+
+#buscadorTextoInforme,
+#buscadorExcel {
+  height: 32px;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+}
+
+.input-group > .btn {
+  height: 32px;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+}
+
+#selectorApartadosInforme {
+  height: 32px;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+}
+
+  #visor-texto {
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+
+  .leido {
+    background-color: #d0f0ff !important;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: parpadeoZoom 0.5s ease-in-out 2;
+    border-left: 4px solid #007bff;
+    padding-left: 8px;
+    scroll-margin-top: 40px;
+  }
+
+  @keyframes parpadeoZoom {
+    0% {
+      background-color: #d0f0ff;
+      transform: scale(1.02);
+      opacity: 0.6;
+    }
+    50% {
+      background-color: #bce6ff;
+      transform: scale(1.03);
+      opacity: 1;
+    }
+    100% {
+      background-color: #d0f0ff;
+      transform: scale(1.00);
+      opacity: 1;
+    }
+  }
+
+  .chat-column {
+    width: 33.3%;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 10px;
+  }
+
+  .viewer-column {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    background: #f8f9fa;
+    padding: 1rem;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+    border: 1mm solid #eeeeee;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  .bubble { max-width: 80%; padding: 0.6rem 1rem; margin: 0.3rem 0; border-radius: 15px; clear: both; }
+  .user { background-color: #d0e8ff; float: right; text-align: right; }
+  .ia { background-color: #e9ecef; float: left; text-align: left; }
+
+  .chat-input { display: flex; gap: 0.5rem; padding: 0.5rem; background: #fff; border-top: 1px solid #ddd; }
+  .chat-input textarea { flex-grow: 1; resize: none; }
+
+  .form-column .form-control, .form-column .form-select {
+    max-width: 95%;
+    height: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-column .form-label {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .htCenter {
+    text-align: center !important;
+  }
+
+  .htCustomFont {
+    font-family: "Century Gothic", sans-serif !important;
+    font-size: 8pt !important;
+  }
+
+  #layout {
+    border: 1mm solid #05fcfe;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(5, 252, 254, 0.3);
+  }
+
+  /* 📝 Editor de texto (panel derecho) */
+  #editorTexto {
+    border: 1mm solid #05fcfe;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(5, 252, 254, 0.3);
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 800px;
+    resize: none;
+    background-color: #e6f0f5 !important;
+    font-family: "Century Gothic", monospace !important;
+    font-size: 15px;
+    white-space: pre-wrap;
+    padding: 1rem;
+    animation: parpadeoTexto 1.2s infinite alternate;
+  }
+
+  /* 📊 Editor Handsontable (panel izquierdo) */
+  #editorHandsontable {
+    border: 1mm solid #05fcfe;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(5, 252, 254, 0.3);
+    box-sizing: border-box;
+    min-height: 100px;
+    background-color: #e6f0f5 !important;
+  }
+
+  /* 🧱 Contenedor padre del editor Handsontable */
+  #contenedorHandsontable {
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+  }
+
+  #userInput {
+    border: 1mm solid #05fcfe;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(5, 252, 254, 0.3);
+    box-sizing: border-box;
+  }
+
+  .form-column button.btn {
+    border: 1mm solid white !important;
+  }
+
+  .viewer-column button.btn {
+    border: 1mm solid white !important;
+  }
+
+  .leido {
+    background-color: #d0f0ff !important;
+    transition: background-color 0.2s ease;
+  }
+
+  #mensajeAnalisis {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #28a745;
+    display: none;
+  }
+
+  .leido {
+    background-color: #d0f0ff !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: parpadeo 0.3s ease-in-out alternate;
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+  }
+
+  @keyframes parpadeo {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+  }
+
+  /* ✅ Animación de desvanecimiento para paneles temporales */
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+  }
+  
+  #editorHandsontable .htCore td {
+  color: #003366;
+  border: 2px solid #05fcfe; /* Cian fosforito (a juego con el sistema) */
+  font-family: 'Century Gothic', monospace;
+  border: 1px solid #b3d9ff;
+}
+
+
+  .bloqueado {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+.mensaje {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.mensaje-usuario,
+.mensaje-ia {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.mensaje-usuario {
+  background-color: #e0f2ff;
+}
+
+.mensaje-ia {
+  background-color: #f1f3f5;
+}
+
+/* ✅ Burbujas de la IA con mismo estilo que el usuario */
+.ia,
+.mensaje-ia {
+  background-color: #d0e8ff !important; /* Celeste claro */
+  color: #003366 !important;           /* Azul oscuro */
+  border-radius: 15px;
+  padding: 0.6rem 1rem;
+  float: left;
+  text-align: left;
+}
+
+/* ✅ Corrección de layout global y altura contenida */
+
+body {
+  overflow: hidden;
+}
+
+#layout {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.form-column,
+.chat-column,
+.viewer-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 🔁 Estilo homogéneo para los módulos del panel izquierdo */
+.modulo-seccion {
+  flex-grow: 1;
+  display: none;
+  overflow: hidden;
+}
+
+.modulo-seccion.activo {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.modulo-seccion > div {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* ✅ Ajustes adicionales para robustez visual */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Altura uniforme también en editorHandsontable */
+#editorHandsontable {
+  min-height: 800px !important;
+}
+
+/* Scroll general para todo el panel izquierdo */
+.form-column {
+  overflow-y: auto !important;
+  overflow-x: hidden;
+}
+
+/* ✅ Scroll general en el panel izquierdo, no por módulo */
+.form-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Los módulos ya no expanden con flex-grow */
+.modulo-seccion {
+  display: none;
+}
+
+.modulo-seccion.activo {
+  display: block;
+}
+
+/* ✅ Estilo del Handsontable principal igual al del modal emergente */
+#editorHandsontable .htCore td {
+  font-size: 12px;
+  padding: 2px 4px;
+  height: 15px;
+  line-height: 1.2;
+  vertical-align: middle;
+  font-family: "Century Gothic", sans-serif;
+  border: 1px solid #b3d9ff;
+  color: #003366;
+}
+
+#selectorModulo {
+  background: #b2ffff;
+  color: #003366;
+  height: 80px;       /* o el valor que prefieras: 32px, 36px, etc. */
+  line-height: 50px;  /* centra verticalmente el texto */
+  padding: 0 8px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+/* 🎨 Fondo celeste claro y altura uniforme para todos los formularios principales */
+#formulario-aprobacion input.form-control,
+#formulario-aprobacion select.form-select,
+#formulario-aprobacion textarea.form-control,
+#formularioModificaciones input.form-control,
+#formularioModificaciones select.form-select,
+#formularioModificaciones textarea.form-control,
+#formulario-estabilidad-modificaciones input.form-control,
+#formulario-estabilidad-modificaciones select.form-select,
+#formulario-estabilidad-modificaciones textarea.form-control,
+#formulario-liquidacion input.form-control,
+#formulario-liquidacion select.form-select,
+#formulario-liquidacion textarea.form-control {
+  background-color: #e6ffff !important;
+  color: #102c54;
+  height: 40px;
+  text-align: center;
+  display: block;
+}
+
+/* 🎨 Color azul oscuro para las etiquetas principales del formulario */
+label[for="selectorModulo"],
+label[for="editorTexto"] {
+  color: #003366 !important;
+  text-align: center;
+  display: block; /* necesario para que text-align tenga efecto */
+}
+
+/* 🎯 Botones secundarios: bordes redondeados y fondo suave */
+button#botonAplicarEstiloTexto,
+button#btnDescargarDocx {
+  background-color: #b3d9ff;
+  color: #003366;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 6px 16px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+button#botonAplicarEstiloTexto:hover,
+button#btnDescargarDocx:hover {
+  background-color: #a3ccef;
+}

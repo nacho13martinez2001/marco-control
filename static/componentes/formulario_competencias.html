@@ -1,0 +1,54 @@
+<div class="p-3 border rounded shadow mt-2" id="formularioCompetencias" style="height: 500px; overflow-y: auto; background-color: #e6f0f5; color: #003366; border: 2px solid #b3d9ff;">
+  <h5 class="mb-3">Datos para el Informe sobre Competencias Impropias</h5>
+
+  <!-- Coste y referencia -->
+  <div class="mb-3">
+    <label class="form-label" for="costeActuacion">Coste total de la actuación (€):</label>
+    <input type="number" class="form-control" id="costeActuacion" />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="gastosCorrientes">Gastos corrientes liquidados (€):</label>
+    <input type="number" class="form-control" id="gastosCorrientes" />
+  </div>
+
+  <!-- Ahorro -->
+  <div class="mb-3">
+    <label class="form-label" for="ahorroBruto">Ahorro Bruto (€):</label>
+    <input type="number" class="form-control" id="ahorroBruto" />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="ahorroNeto">Ahorro Neto (€):</label>
+    <input type="number" class="form-control" id="ahorroNeto" />
+  </div>
+
+  <!-- Remanente -->
+  <div class="mb-3">
+    <label class="form-label" for="remanenteTesoreria">Remanente de Tesorería para gastos generales (€):</label>
+    <input type="number" class="form-control" id="remanenteTesoreria" />
+  </div>
+
+  <!-- PMP -->
+  <div class="mb-3">
+    <label class="form-label" for="pmpActual">Periodo Medio de Pago más reciente (días):</label>
+    <input type="number" class="form-control" id="pmpActual" step="0.01" />
+  </div>
+
+  <!-- Deuda -->
+  <div class="mb-3">
+    <label class="form-label">¿Existe deuda financiera viva?</label>
+    <select class="form-select" id="existeDeuda">
+      <option value="">-- Selecciona --</option>
+      <option value="no">No</option>
+      <option value="si">Sí</option>
+    </select>
+  </div>
+
+  <!-- Botón de generar -->
+  <div class="mt-4">
+    <button class="btn w-100" style="background-color: #b3d9ff; color: #003366; border: 2px solid white; border-radius: 15px;" onclick="insertarInformeCompetenciasEnEditor()">
+      Generar informe de competencias impropias
+    </button>
+  </div>
+</div>

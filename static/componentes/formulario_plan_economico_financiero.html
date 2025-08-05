@@ -1,0 +1,79 @@
+<div class="card p-3 shadow-sm rounded-3 mb-4">
+  <h5 class="fw-bold mb-3">Evaluación de Reglas Fiscales – Plan Económico-Financiero</h5>
+
+  <form id="formularioPlanEF">
+    <div class="row mb-2">
+      <div class="col">
+        <label>Ejercicio</label>
+        <input type="text" class="form-control" id="ejercicio" oninput="MotorPlanEF.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Gasto computable previsto (€)</label>
+        <input type="number" class="form-control" id="gasto_previsto" oninput="MotorPlanEF.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Gasto computable ejecutado (€)</label>
+        <input type="number" class="form-control" id="gasto_ejecutado" oninput="MotorPlanEF.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Límite PIB (%)</label>
+        <input type="number" step="0.01" class="form-control" id="limite_pib" oninput="MotorPlanEF.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Ingresos corrientes liquidados (€)</label>
+        <input type="number" class="form-control" id="ingresos_corrientes" oninput="MotorPlanEF.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Deuda viva (€)</label>
+        <input type="number" class="form-control" id="deuda_viva" oninput="MotorPlanEF.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Capacidad/Necesidad financiación SEC prevista (€)</label>
+        <input type="number" class="form-control" id="sec_previsto" oninput="MotorPlanEF.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Capacidad/Necesidad financiación SEC real (€)</label>
+        <input type="number" class="form-control" id="sec_real" oninput="MotorPlanEF.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="mb-2">
+      <label>Medida de contención del gasto</label>
+      <input type="text" class="form-control" id="medida_gasto_1" oninput="MotorPlanEF.actualizarVisor()">
+    </div>
+
+    <div class="mb-2">
+      <label>Medida de incremento de ingresos</label>
+      <input type="text" class="form-control" id="medida_ingreso_1" oninput="MotorPlanEF.actualizarVisor()">
+    </div>
+
+    <div class="mb-2">
+      <label>Detalle refinanciación de deuda</label>
+      <input type="text" class="form-control" id="detalle_refinanciacion" oninput="MotorPlanEF.actualizarVisor()">
+    </div>
+
+    <div class="mb-3">
+      <label>Detalle ajustes SEC</label>
+      <input type="text" class="form-control" id="detalle_sec" oninput="MotorPlanEF.actualizarVisor()">
+    </div>
+  </form>
+
+  <h6 class="fw-bold mt-3">🔎 Previsualización de datos</h6>
+  <div id="visorPlanEF" class="alert alert-info mt-3" contenteditable="true" style="min-height: 100px; outline: 2px dashed #ccc;">
+    Los datos introducidos aparecerán aquí automáticamente.
+  </div>
+
+  <button onclick="MotorPlanEF.generarInforme()" class="btn w-100 mt-3"
+    style="background-color: #ffcc00; border: 2mm solid white; color: #003366; border-radius: 15px;">
+    Generar Informe
+  </button>
+</div>

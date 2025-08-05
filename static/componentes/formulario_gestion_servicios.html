@@ -1,0 +1,90 @@
+<!-- formulario_gestion_servicios.html -->
+
+<div class="formulario-redactor">
+  <h2>Informe de Gestión de Servicios / Actividades Económicas / Medio Propio</h2>
+
+  <label for="tipo_informe_gestion">Selecciona tipo de informe:</label>
+  <select id="tipo_informe_gestion" onchange="mostrarBloqueGestion()">
+    <option value="">-- Selecciona una opción --</option>
+    <option value="medio_propio">Medio propio o servicio técnico</option>
+    <option value="actividad_economica">Actividad económica</option>
+    <option value="gestion_servicios">Gestión de servicios públicos</option>
+  </select>
+
+  <!-- BLOQUE: MEDIO PROPIO -->
+  <div id="bloque_medio_propio" style="display:none">
+    <h3>Declaración de Medio Propio</h3>
+    <input type="text" id="nombre_entidad" placeholder="Nombre de la entidad" />
+    <input type="text" id="naturaleza_juridica" placeholder="Naturaleza jurídica" />
+    <input type="text" id="titularidad_publica" placeholder="Titularidad pública (sí/no)" />
+    <input type="text" id="porcentaje_actividad" placeholder="% actividad para la Admón." />
+    <input type="text" id="descripcion_control" placeholder="Descripción del control ejercido" />
+    <textarea id="objeto_encargo" placeholder="Objeto del encargo" rows="2"></textarea>
+    <input type="text" id="resultado_control_mp" placeholder="Resultado del control" />
+    <textarea id="motivos_resultado_mp" placeholder="Motivos (si desfavorable)" rows="2"></textarea>
+    <textarea id="observaciones_mp" placeholder="Observaciones adicionales" rows="2"></textarea>
+  </div>
+
+  <!-- BLOQUE: ACTIVIDAD ECONÓMICA -->
+  <div id="bloque_actividad_economica" style="display:none">
+    <h3>Ejercicio de Actividad Económica</h3>
+    <select id="conclusion_memoria">
+      <option value="CUMPLE">Cumple requisitos</option>
+      <option value="NO CUMPLE">No cumple requisitos</option>
+    </select>
+    <input type="text" id="impacto_memoria" placeholder="Impacto presupuestario" />
+    <input type="text" id="coste_estimado_ae" placeholder="Coste total estimado (€)" />
+    <input type="text" id="ingresos_previstos_ae" placeholder="Ingresos previstos (€)" />
+    <input type="text" id="equilibrio_explotacion" placeholder="Equilibrio de explotación" />
+    <input type="text" id="financiacion_inicial" placeholder="Financiación inicial (€)" />
+    <input type="text" id="impacto_presupuestario" placeholder="Impacto en presupuesto" />
+    <select id="viabilidad_economica">
+      <option value="CUMPLE">Cumple principios financieros</option>
+      <option value="NO CUMPLE">No cumple</option>
+    </select>
+    <input type="text" id="resultado_control_ae" placeholder="Resultado del control" />
+    <textarea id="motivos_resultado_ae" placeholder="Motivos" rows="2"></textarea>
+    <textarea id="observaciones_ae" placeholder="Observaciones" rows="2"></textarea>
+  </div>
+
+  <!-- BLOQUE: GESTIÓN DE SERVICIOS -->
+  <div id="bloque_gestion_servicios" style="display:none">
+    <h3>Gestión de Servicios Públicos</h3>
+    <input type="text" id="descripcion_servicio" placeholder="Descripción del servicio" />
+    <input type="text" id="alternativas_analizadas" placeholder="Alternativas valoradas" />
+    <input type="text" id="coste_estimado_gs" placeholder="Coste estimado anual (€)" />
+    <input type="text" id="ingresos_estimados" placeholder="Ingresos asociados (€)" />
+    <textarea id="justificacion_eficiencia" placeholder="Justificación de eficiencia" rows="2"></textarea>
+    <input type="text" id="validez_memoria" placeholder="Validez memoria (sí/no)" />
+    <input type="text" id="grado_cumplimiento" placeholder="Grado de cumplimiento legal" />
+    <input type="text" id="coste_total" placeholder="Coste total (€)" />
+    <input type="text" id="fuente_financiacion" placeholder="Fuente de financiación" />
+    <input type="text" id="impacto_presupuestario_gs" placeholder="Impacto presupuestario" />
+    <input type="text" id="regla_gasto" placeholder="Cumple regla de gasto (sí/no)" />
+    <input type="text" id="estabilidad_presupuestaria" placeholder="Cumple estabilidad presupuestaria" />
+    <input type="text" id="conclusion_viabilidad" placeholder="Conclusión de viabilidad" />
+    <input type="text" id="tipo_servicio" placeholder="Tipo de servicio" />
+    <input type="text" id="forma_gestion_elegida" placeholder="Forma de gestión elegida" />
+    <input type="text" id="motivo_1" placeholder="Motivo 1" />
+    <input type="text" id="motivo_2" placeholder="Motivo 2" />
+    <input type="text" id="motivo_3" placeholder="Motivo 3" />
+    <input type="text" id="resultado_control_gs" placeholder="Resultado del control" />
+    <textarea id="motivos_resultado_gs" placeholder="Motivos" rows="2"></textarea>
+    <textarea id="observaciones_gs" placeholder="Observaciones" rows="2"></textarea>
+  </div>
+
+  <br>
+  <button onclick="MotorGestionServicios.generarInforme()">Generar informe</button>
+
+  <h3>Informe generado:</h3>
+  <textarea id="salida_redaccion" rows="25" style="width:100%"></textarea>
+</div>
+
+<script>
+function mostrarBloqueGestion() {
+  const tipo = document.getElementById("tipo_informe_gestion").value;
+  document.getElementById("bloque_medio_propio").style.display = (tipo === "medio_propio") ? "block" : "none";
+  document.getElementById("bloque_actividad_economica").style.display = (tipo === "actividad_economica") ? "block" : "none";
+  document.getElementById("bloque_gestion_servicios").style.display = (tipo === "gestion_servicios") ? "block" : "none";
+}
+</script>

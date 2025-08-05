@@ -1,0 +1,74 @@
+
+<div class="card p-3 shadow-sm rounded-3 mb-4">
+  <h5 class="fw-bold mb-3">Destino del Patrimonio Municipal del Suelo para Reducción de Deuda</h5>
+
+  <form id="formularioPMS">
+    <div class="row mb-2">
+      <div class="col">
+        <label>Ejercicio Presupuesto</label>
+        <input type="text" class="form-control" id="ejercicio_presupuesto" oninput="MotorPMS.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Fecha Aprobación Presupuesto</label>
+        <input type="date" class="form-control" id="fecha_aprobacion_presupuesto" oninput="MotorPMS.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Fecha Publicación BOP</label>
+        <input type="date" class="form-control" id="fecha_publicacion_bop" oninput="MotorPMS.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Ejercicio Liquidación</label>
+        <input type="text" class="form-control" id="ejercicio_liquidacion" oninput="MotorPMS.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Fecha Aprobación Liquidación</label>
+        <input type="date" class="form-control" id="fecha_liquidacion" oninput="MotorPMS.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Fecha del Acuerdo de Pleno</label>
+        <input type="date" class="form-control" id="acuerdo_pleno_fecha" oninput="MotorPMS.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Importe destinado a reducción de deuda (€)</label>
+        <input type="number" class="form-control" id="importe_destinado" oninput="MotorPMS.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Tipo de deuda</label>
+        <select class="form-control" id="tipo_deuda" oninput="MotorPMS.actualizarVisor()">
+          <option value="financiera">Financiera</option>
+          <option value="comercial">Comercial</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Órgano de Tutela Financiera</label>
+        <input type="text" class="form-control" id="organismo_tutela" oninput="MotorPMS.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Fecha Autorización</label>
+        <input type="date" class="form-control" id="fecha_autorizacion" oninput="MotorPMS.actualizarVisor()">
+      </div>
+    </div>
+  </form>
+
+  <h6 class="fw-bold mt-3">🔎 Previsualización de datos</h6>
+  <div id="visorPMS" class="alert alert-info mt-3" contenteditable="true" style="min-height:80px; outline:2px dashed #ccc;">
+    Los datos introducidos aparecerán aquí automáticamente.
+  </div>
+
+  <button onclick="MotorPMS.generarInforme()" class="btn w-100 mt-3"
+    style="background-color: #ffcc00; border: 2mm solid white; color: #003366; border-radius: 15px;">
+    Generar Informe
+  </button>
+</div>

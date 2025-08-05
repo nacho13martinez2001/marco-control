@@ -1,0 +1,34 @@
+<!-- /static/componentes/chatmovil.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copiloto Interventor</title>
+  <link rel="stylesheet" href="/static/css/chatmovil.css" />
+  <!-- Icono para iPhone / Android -->
+  <link rel="apple-touch-icon" href="/static/iconos/icono_chat.png">
+  <link rel="manifest" href="/static/componentes/manifest.json">
+  <meta name="theme-color" content="#003366">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body>
+  <div id="appChatMovil">
+    <header class="chat-header">
+      <img src="/static/iconos/icono_chat.png" alt="icono" style="height: 1.8em; vertical-align: middle; margin-right: 0.4em;">
+      Copiloto Interventor
+  </header>
+    
+    <main id="chatOutput" class="chat-body"></main>
+    
+    <footer class="chat-footer">
+      <textarea id="userInput" placeholder="Escribe tu consulta..." rows="1"></textarea>
+      <button id="enviarMensaje">Enviar</button>
+      <button id="btnVoz" title="Dictar por voz">🎙️</button>
+    </footer>
+  </div>
+
+  <script src="/static/js/chatmovil_motor.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<div class="card p-3 shadow-sm rounded-3 mb-4">
+<h5 class="fw-bold mb-3">Informes sobre Bienes Patrimoniales</h5>
+<form id="formularioBienes">
+<div class="mb-3">
+<label for="tipoInformeBienes"><strong>Selecciona el tipo de informe:</strong></label>
+<select class="form-select" id="tipoInformeBienes" onchange="MotorBienes.actualizarFormulario()">
+<option value="cesion">1. Cesión gratuita sin deuda</option>
+<option value="enajenacion_menor">2. Enajenación (valor NO excede 20%)</option>
+<option value="enajenacion_mayor">3. Enajenación (valor excede 20%)</option>
+</select>
+</div>
+<div id="formularioEnajenacion" style="display: none;">
+<div class="row mb-2">
+<div class="col">
+<label>Valor del bien (€)</label>
+<input class="form-control" id="valor_bien" oninput="MotorBienes.actualizarVisor()" type="number"/>
+</div>
+<div class="col">
+<label>% sobre el Presupuesto de Gastos</label>
+<input class="form-control" id="porcentaje_valor" max="20" min="0" oninput="MotorBienes.actualizarVisor()" step="0.01" type="number" value="0.00"/>
+</div>
+</div>
+</div>
+</form>
+<h6 class="fw-bold mt-3">🔎 Previsualización de datos</h6>
+<div class="alert alert-info mt-3" contenteditable="true" id="visorBienes" style="min-height:80px; outline:2px dashed #ccc;">
+    Los datos introducidos aparecerán aquí automáticamente.
+  </div>
+<button class="btn w-100 mt-3" onclick="MotorBienes.generarInforme()" style="background-color: #ffcc00; border: 2mm solid white; color: #003366; border-radius: 15px;">
+    Generar Informe
+  </button>
+</div>
+<script>
+const MotorBienes = {
+  actualizarFormulario: function () {
+    const tipo = document.getElementById("tipoInformeBienes").value;
+    const bloqueEnajenacion = document.getElementById("formularioEnajenacion");
+    if (tipo === "cesion") {
+      bloqueEnajenacion.style.display = "none";
+    } else {
+      bloqueEnajenacion.style.display = "block";
+    }
+    this.actualizarVisor();
+  },
+
+  actualizarVisor: function () {
+    const tipo = document.getElementById("tipoInformeBienes").value;
+    const valor = parseFloat(document.getElementById("valor_bien").value || "0");
+    const porcentaje = parseFloat(document.getElementById("porcentaje_valor").value || "0");
+    const visor = document.getElementById("visorBienes");
+
+    let texto = `Valor del bien: €${valor.toLocaleString("es-ES", { minimumFractionDigits: 2 })}\n` +
+                `Porcentaje sobre el Presupuesto de Gastos: ${porcentaje.toFixed(2)}%`;
+
+    if (tipo === "enajenacion_menor" && porcentaje > 20) {
+      texto += "\n⚠️ El porcentaje no puede superar el 20%.";
+    } else if (tipo === "enajenacion_mayor" && porcentaje <= 20) {
+      texto += "\n⚠️ El porcentaje debe ser superior al 20%.";
+    }
+
+    visor.innerHTML = texto.replace(/\n/g, "<br>");
+  },
+
+  generarInforme: function () {
+    alert("Generando informe...");
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("tipoInformeBienes").addEventListener("change", MotorBienes.actualizarFormulario);
+  document.getElementById("valor_bien").addEventListener("input", MotorBienes.actualizarVisor);
+  document.getElementById("porcentaje_valor").addEventListener("input", MotorBienes.actualizarVisor);
+  MotorBienes.actualizarFormulario();
+});
+</script>

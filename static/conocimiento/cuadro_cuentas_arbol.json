@@ -1,0 +1,4978 @@
+[
+  {
+    "codigo": "0",
+    "nombre": "CUENTAS DE CONTROL PRESUPUESTARIO",
+    "hijas": [
+      {
+        "codigo": "00",
+        "nombre": "DE CONTROL PRESUPUESTARIO. EJERCICIO CORRIENTE",
+        "hijas": [
+          {
+            "codigo": "000",
+            "nombre": "Presupuesto ejercicio corriente",
+            "hijas": []
+          },
+          {
+            "codigo": "001",
+            "nombre": "Presupuesto de gastos: créditos iniciales",
+            "hijas": []
+          },
+          {
+            "codigo": "002",
+            "nombre": "Presupuesto de gastos: modificaciones de crédito",
+            "hijas": [
+              {
+                "codigo": "0020",
+                "nombre": "Créditos extraordinarios",
+                "hijas": []
+              },
+              {
+                "codigo": "0021",
+                "nombre": "Suplementos de crédito",
+                "hijas": []
+              },
+              {
+                "codigo": "0022",
+                "nombre": "Ampliaciones de crédito",
+                "hijas": []
+              },
+              {
+                "codigo": "0023",
+                "nombre": "Transferencias de crédito",
+                "hijas": []
+              },
+              {
+                "codigo": "0024",
+                "nombre": "Incorporaciones de remanentes de crédito",
+                "hijas": []
+              },
+              {
+                "codigo": "0025",
+                "nombre": "Créditos generados por ingresos",
+                "hijas": []
+              },
+              {
+                "codigo": "0027",
+                "nombre": "Ajustes por prórroga presupuestaria",
+                "hijas": []
+              },
+              {
+                "codigo": "0028",
+                "nombre": "Bajas por anulación",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "003",
+            "nombre": "Presupuesto de gastos: créditos definitivos",
+            "hijas": [
+              {
+                "codigo": "0030",
+                "nombre": "Créditos disponibles",
+                "hijas": []
+              },
+              {
+                "codigo": "0031",
+                "nombre": "Créditos retenidos para gastar",
+                "hijas": []
+              },
+              {
+                "codigo": "0032",
+                "nombre": "Créditos retenidos para transferencias y bajas",
+                "hijas": []
+              },
+              {
+                "codigo": "0033",
+                "nombre": "Créditos retenidos para acuerdos de no disponibilidad",
+                "hijas": []
+              },
+              {
+                "codigo": "0034",
+                "nombre": "Créditos no disponibles",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "004",
+            "nombre": "Presupuesto de gastos: gastos autorizados",
+            "hijas": []
+          },
+          {
+            "codigo": "005",
+            "nombre": "Presupuesto de gastos: gastos comprometidos",
+            "hijas": []
+          },
+          {
+            "codigo": "006",
+            "nombre": "Presupuesto de ingresos: previsiones iniciales",
+            "hijas": []
+          },
+          {
+            "codigo": "007",
+            "nombre": "Presupuesto de ingresos: modificación de previsiones",
+            "hijas": []
+          },
+          {
+            "codigo": "008",
+            "nombre": "Presupuesto de ingresos: previsiones definitivas",
+            "hijas": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo": "1",
+    "nombre": "FINANCIACIÓN BÁSICA",
+    "hijas": [
+      {
+        "codigo": "10",
+        "nombre": "PATRIMONIO",
+        "hijas": [
+          {
+            "codigo": "100",
+            "nombre": "Patrimonio",
+            "hijas": []
+          },
+          {
+            "codigo": "101",
+            "nombre": "Patrimonio recibido",
+            "hijas": [
+              {
+                "codigo": "1010",
+                "nombre": "Aportación patrimonial dineraria",
+                "hijas": []
+              },
+              {
+                "codigo": "1011",
+                "nombre": "Aportación de bienes y derechos",
+                "hijas": []
+              },
+              {
+                "codigo": "1012",
+                "nombre": "Asunción y condonación de pasivos financieros",
+                "hijas": []
+              },
+              {
+                "codigo": "1013",
+                "nombre": "Otras aportaciones de la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "1014",
+                "nombre": "Devolución de bienes y derechos",
+                "hijas": []
+              },
+              {
+                "codigo": "1015",
+                "nombre": "Otras devoluciones",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "12",
+        "nombre": "RESULTADOS",
+        "hijas": [
+          {
+            "codigo": "120",
+            "nombre": "Resultados de ejercicios anteriores",
+            "hijas": []
+          },
+          {
+            "codigo": "129",
+            "nombre": "Resultado del ejercicio",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "13",
+        "nombre": "SUBVENCIONES Y AJUSTES POR CAMBIO DE VALOR",
+        "hijas": [
+          {
+            "codigo": "130",
+            "nombre": "Subvenciones para la financiación del inmovilizado no financiero y de activos en estado de venta",
+            "hijas": []
+          },
+          {
+            "codigo": "131",
+            "nombre": "Subvenciones para la financiación de activos corrientes y gastos",
+            "hijas": []
+          },
+          {
+            "codigo": "132",
+            "nombre": "Subvenciones para la financiación de operaciones financieras",
+            "hijas": []
+          },
+          {
+            "codigo": "133",
+            "nombre": "Ajustes por valoración de activos financieros disponibles para la venta",
+            "hijas": []
+          },
+          {
+            "codigo": "134",
+            "nombre": "Ajustes por valoración de instrumentos de cobertura",
+            "hijas": []
+          },
+          {
+            "codigo": "136",
+            "nombre": "Ajustes por valoración del inmovilizado no financiero",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "14",
+        "nombre": "PROVISIONES A LARGO PLAZO",
+        "hijas": [
+          {
+            "codigo": "142",
+            "nombre": "Provisión a largo plazo para responsabilidades",
+            "hijas": []
+          },
+          {
+            "codigo": "143",
+            "nombre": "Provisión a largo plazo por desmantelamiento, retiro o rehabilitación del inmovilizado no financiero",
+            "hijas": []
+          },
+          {
+            "codigo": "148",
+            "nombre": "Provisión a largo plazo para transferencias y subvenciones",
+            "hijas": []
+          },
+          {
+            "codigo": "149",
+            "nombre": "Otras provisiones a largo plazo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "15",
+        "nombre": "EMPRESTITOS Y OTRAS EMISIONES ANÁLOGAS A LARGO PLAZO",
+        "hijas": [
+          {
+            "codigo": "150",
+            "nombre": "Obligaciones y bonos a largo plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "156",
+            "nombre": "Intereses a largo plazo de empréstitos y otras emisiones análogas",
+            "hijas": [
+              {
+                "codigo": "1560",
+                "nombre": "Intereses a largo plazo de obligaciones y bonos",
+                "hijas": []
+              },
+              {
+                "codigo": "1569",
+                "nombre": "Intereses a largo plazo de otros valores negociables",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "159",
+            "nombre": "Deudas representadas en otros valores negociables a largo plazo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "16",
+        "nombre": "DEUDAS A LARGO PLAZO CON ENTIDADES DEL GRUPO, MULTIGRUPO Y ASOCIADAS",
+        "hijas": [
+          {
+            "codigo": "163",
+            "nombre": "Deudas a largo plazo transformables en subvenciones con entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "164",
+            "nombre": "Deudas a largo plazo con entidades del grupo, multigrupo y asociadas representadas en valores negociables",
+            "hijas": []
+          },
+          {
+            "codigo": "165",
+            "nombre": "Fianzas recibidas a largo plazo de entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "166",
+            "nombre": "Depósitos recibidos a largo plazo de entidades del grupo, multigrupo asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "167",
+            "nombre": "Intereses a largo plazo de deudas con entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "169",
+            "nombre": "Otras deudas a largo plazo con entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "17",
+        "nombre": "DEUDAS A LARGO PLAZO POR PRÉSTAMOS RECIBIDOS Y OTROS CONCEPTOS",
+        "hijas": [
+          {
+            "codigo": "170",
+            "nombre": "Deudas a largo plazo con entidades de crédito",
+            "hijas": []
+          },
+          {
+            "codigo": "172",
+            "nombre": "Deudas a largo plazo transformables en subvenciones",
+            "hijas": []
+          },
+          {
+            "codigo": "173",
+            "nombre": "Proveedores de inmovilizado a largo plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "174",
+            "nombre": "Acreedores por arrendamiento financiero a largo plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "176",
+            "nombre": "Pasivos por derivados financieros a largo plazo",
+            "hijas": [
+              {
+                "codigo": "1760",
+                "nombre": "Pasivos por derivados financieros a largo plazo designados instrumentos de cobertura",
+                "hijas": []
+              },
+              {
+                "codigo": "1761",
+                "nombre": "Pasivos por otros derivados financieros a largo plazo",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "177",
+            "nombre": "Intereses a largo plazo de deudas con entidades de crédito",
+            "hijas": []
+          },
+          {
+            "codigo": "178",
+            "nombre": "Intereses a largo plazo de otras deudas",
+            "hijas": []
+          },
+          {
+            "codigo": "179",
+            "nombre": "Otras deudas a largo plazo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "18",
+        "nombre": "FIANZAS Y DEPOSITOS RECIBIDOS Y AJUSTES POR PERIODIFICACIÓN A LARGO PLAZO",
+        "hijas": [
+          {
+            "codigo": "180",
+            "nombre": "Fianzas recibidas a largo plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "185",
+            "nombre": "Depósitos recibidos a largo plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "186",
+            "nombre": "Ingresos anticipados a largo plazo",
+            "hijas": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo": "2",
+    "nombre": "ACTIVO NO CORRIENTE",
+    "hijas": [
+      {
+        "codigo": "20",
+        "nombre": "INMOVILIZACIONES INTANGIBLES",
+        "hijas": [
+          {
+            "codigo": "200",
+            "nombre": "Inversión en investigación",
+            "hijas": []
+          },
+          {
+            "codigo": "201",
+            "nombre": "Inversión en desarrollo",
+            "hijas": []
+          },
+          {
+            "codigo": "203",
+            "nombre": "Propiedad industrial e intelectual",
+            "hijas": []
+          },
+          {
+            "codigo": "206",
+            "nombre": "Aplicaciones informáticas",
+            "hijas": []
+          },
+          {
+            "codigo": "207",
+            "nombre": "Inversiones sobre activos utilizados en régimen de arrendamiento o cedidos",
+            "hijas": []
+          },
+          {
+            "codigo": "208",
+            "nombre": "Anticipos para inmovilizaciones intangibles",
+            "hijas": []
+          },
+          {
+            "codigo": "209",
+            "nombre": "Otro inmovilizado intangible",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "21",
+        "nombre": "INMOVILIZACIONES MATERIALES",
+        "hijas": [
+          {
+            "codigo": "210",
+            "nombre": "Terrenos y bienes naturales",
+            "hijas": []
+          },
+          {
+            "codigo": "211",
+            "nombre": "Construcciones",
+            "hijas": []
+          },
+          {
+            "codigo": "212",
+            "nombre": "Infraestructuras",
+            "hijas": []
+          },
+          {
+            "codigo": "213",
+            "nombre": "Bienes del patrimonio histórico",
+            "hijas": []
+          },
+          {
+            "codigo": "214",
+            "nombre": "Maquinaria y utillaje",
+            "hijas": []
+          },
+          {
+            "codigo": "215",
+            "nombre": "Instalaciones técnicas y otras instalaciones",
+            "hijas": []
+          },
+          {
+            "codigo": "216",
+            "nombre": "Mobiliario",
+            "hijas": []
+          },
+          {
+            "codigo": "217",
+            "nombre": "Equipos para procesos de información",
+            "hijas": []
+          },
+          {
+            "codigo": "218",
+            "nombre": "Elementos de transporte",
+            "hijas": []
+          },
+          {
+            "codigo": "219",
+            "nombre": "Otro inmovilizado material",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "22",
+        "nombre": "INVERSIONES INMOBILIARIAS",
+        "hijas": [
+          {
+            "codigo": "220",
+            "nombre": "Inversiones en terrenos",
+            "hijas": []
+          },
+          {
+            "codigo": "221",
+            "nombre": "Inversiones en construcciones",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "23",
+        "nombre": "INMOVILIZACIONES MATERIALES E INVERSIONES INMOBILIARIAS EN CURSO",
+        "hijas": [
+          {
+            "codigo": "230",
+            "nombre": "Adaptación de terrenos y bienes naturales",
+            "hijas": [
+              {
+                "codigo": "2300",
+                "nombre": "Adaptación de terrenos y bienes naturales. Inmovilizado material",
+                "hijas": []
+              },
+              {
+                "codigo": "2301",
+                "nombre": "Adaptación de terrenos y bienes naturales. Inversiones inmobiliarias",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "231",
+            "nombre": "Construcciones en curso",
+            "hijas": [
+              {
+                "codigo": "2310",
+                "nombre": "Construcciones en curso. Inmovilizado material",
+                "hijas": []
+              },
+              {
+                "codigo": "2311",
+                "nombre": "Construcciones en curso. Inversiones inmobiliarias",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "232",
+            "nombre": "Infraestructuras en curso",
+            "hijas": []
+          },
+          {
+            "codigo": "233",
+            "nombre": "Bienes del patrimonio histórico en curso",
+            "hijas": []
+          },
+          {
+            "codigo": "234",
+            "nombre": "Maquinaria y utillaje en montaje",
+            "hijas": []
+          },
+          {
+            "codigo": "235",
+            "nombre": "Instalaciones técnicas y otras instalaciones en montaje",
+            "hijas": []
+          },
+          {
+            "codigo": "237",
+            "nombre": "Equipos para procesos de información en montaje",
+            "hijas": []
+          },
+          {
+            "codigo": "238",
+            "nombre": "Otro inmovilizado material en curso",
+            "hijas": []
+          },
+          {
+            "codigo": "239",
+            "nombre": "Anticipos para inmovilizaciones materiales e inversiones inmobiliarias",
+            "hijas": [
+              {
+                "codigo": "2390",
+                "nombre": "Anticipos para inmovilizaciones materiales",
+                "hijas": []
+              },
+              {
+                "codigo": "2391",
+                "nombre": "Anticipos para inversiones inmobiliarias",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "24",
+        "nombre": "PATRIMONIO PÚBLICO DEL SUELO",
+        "hijas": [
+          {
+            "codigo": "240",
+            "nombre": "Terrenos del Patrimonio público del suelo",
+            "hijas": []
+          },
+          {
+            "codigo": "241",
+            "nombre": "Construcciones del Patrimonio público del suelo",
+            "hijas": []
+          },
+          {
+            "codigo": "243",
+            "nombre": "Adaptación de terrenos del Patrimonio público del suelo",
+            "hijas": []
+          },
+          {
+            "codigo": "244",
+            "nombre": "Construcciones en curso del Patrimonio público del suelo",
+            "hijas": []
+          },
+          {
+            "codigo": "248",
+            "nombre": "Anticipos para bienes y derechos del Patrimonio público del suelo",
+            "hijas": []
+          },
+          {
+            "codigo": "249",
+            "nombre": "Otros bienes y derechos del Patrimonio público del suelo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "25",
+        "nombre": "INVERSIONES FINANCIERAS A LARGO PLAZO EN ENTIDADES DEL GRUPO, MULTIGRUPO Y ASOCIADAS",
+        "hijas": [
+          {
+            "codigo": "250",
+            "nombre": "Participaciones a largo plazo en entidades del grupo",
+            "hijas": [
+              {
+                "codigo": "2500",
+                "nombre": "En entidades de derecho público",
+                "hijas": []
+              },
+              {
+                "codigo": "2501",
+                "nombre": "En sociedades mercantiles",
+                "hijas": []
+              },
+              {
+                "codigo": "2502",
+                "nombre": "En otras entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "251",
+            "nombre": "Participaciones a largo plazo en entidades multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "2510",
+                "nombre": "En entidades de derecho público",
+                "hijas": []
+              },
+              {
+                "codigo": "2511",
+                "nombre": "En sociedades mercantiles y sociedades cooperativas",
+                "hijas": []
+              },
+              {
+                "codigo": "2512",
+                "nombre": "En otras entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "252",
+            "nombre": "Valores representativos de deuda a largo plazo de entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "2520",
+                "nombre": "Valores representativos de deuda a largo plazo de entidades del grupo, multigrupo y asociadas mantenidos a vencimiento",
+                "hijas": []
+              },
+              {
+                "codigo": "2521",
+                "nombre": "Valores representativos de deuda a largo plazo de entidades del grupo, multigrupo y asociadas disponibles para la venta",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "253",
+            "nombre": "Créditos a largo plazo a entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "255",
+            "nombre": "Intereses a largo plazo de inversiones financieras en entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "257",
+            "nombre": "Fianzas constituidas a largo plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "258",
+            "nombre": "Depósitos constituidos a largo plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "259",
+            "nombre": "Desembolsos pendientes sobre participaciones a largo plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "26",
+        "nombre": "OTRAS INVERSIONES FINANCIERAS A LARGO PLAZO",
+        "hijas": [
+          {
+            "codigo": "260",
+            "nombre": "Inversiones financieras a largo plazo en instrumentos de patrimonio",
+            "hijas": []
+          },
+          {
+            "codigo": "261",
+            "nombre": "Valores representativos de deuda a largo plazo",
+            "hijas": [
+              {
+                "codigo": "2610",
+                "nombre": "Valores representativos de deuda a largo plazo mantenidos a vencimiento",
+                "hijas": []
+              },
+              {
+                "codigo": "2611",
+                "nombre": "Valores representativos de deuda a largo plazo disponibles para la venta",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "262",
+            "nombre": "Créditos a largo plazo",
+            "hijas": [
+              {
+                "codigo": "2620",
+                "nombre": "Créditos a largo plazo por enajenación de inmovilizado",
+                "hijas": []
+              },
+              {
+                "codigo": "2621",
+                "nombre": "Deudores a largo plazo por aplazamiento y fraccionamiento",
+                "hijas": []
+              },
+              {
+                "codigo": "2629",
+                "nombre": "Otros créditos a largo plazo",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "263",
+            "nombre": "Activos por derivados financieros a largo plazo",
+            "hijas": [
+              {
+                "codigo": "2630",
+                "nombre": "Activos por derivados financieros a largo plazo designados instrumentos de cobertura",
+                "hijas": []
+              },
+              {
+                "codigo": "2631",
+                "nombre": "Activos por otros derivados financieros a largo plazo",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "264",
+            "nombre": "Créditos a largo plazo al personal",
+            "hijas": []
+          },
+          {
+            "codigo": "266",
+            "nombre": "Intereses a largo plazo de valores representativos de deuda",
+            "hijas": []
+          },
+          {
+            "codigo": "267",
+            "nombre": "Intereses a largo plazo de créditos",
+            "hijas": []
+          },
+          {
+            "codigo": "268",
+            "nombre": "Imposiciones a largo plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "269",
+            "nombre": "Desembolsos pendientes sobre participaciones en el patrimonio neto a largo plazo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "27",
+        "nombre": "FIANZAS Y DEPÓSITOS CONSTITUIDOS A LARGO PLAZO",
+        "hijas": [
+          {
+            "codigo": "270",
+            "nombre": "Fianzas constituidas a largo plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "275",
+            "nombre": "Depósitos constituidos a largo plazo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "28",
+        "nombre": "AMORTIZACIÓN ACUMULADA DEL INMOVILIZADO",
+        "hijas": [
+          {
+            "codigo": "280",
+            "nombre": "Amortización acumulada del inmovilizado intangible",
+            "hijas": [
+              {
+                "codigo": "2800",
+                "nombre": "Amortización acumulada de inversión en investigación",
+                "hijas": []
+              },
+              {
+                "codigo": "2801",
+                "nombre": "Amortización acumulada de inversión en desarrollo",
+                "hijas": []
+              },
+              {
+                "codigo": "2803",
+                "nombre": "Amortización acumulada de propiedad industrial e intelectual",
+                "hijas": []
+              },
+              {
+                "codigo": "2806",
+                "nombre": "Amortización acumulada de aplicaciones informáticas",
+                "hijas": []
+              },
+              {
+                "codigo": "2807",
+                "nombre": "Amortización acumulada de inversiones sobre activos utilizados en régimen de arrendamiento o cedidos",
+                "hijas": []
+              },
+              {
+                "codigo": "2809",
+                "nombre": "Amortización acumulada de otro inmovilizado intangible",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "281",
+            "nombre": "Amortización acumulada del inmovilizado material",
+            "hijas": [
+              {
+                "codigo": "2810",
+                "nombre": "Amortización acumulada de terrenos y bienes naturales",
+                "hijas": []
+              },
+              {
+                "codigo": "2811",
+                "nombre": "Amortización acumulada de construcciones",
+                "hijas": []
+              },
+              {
+                "codigo": "2812",
+                "nombre": "Amortización acumulada de infraestructuras",
+                "hijas": []
+              },
+              {
+                "codigo": "2813",
+                "nombre": "Amortización acumulada de bienes del patrimonio histórico",
+                "hijas": []
+              },
+              {
+                "codigo": "2814",
+                "nombre": "Amortización acumulada de maquinaria y utillaje",
+                "hijas": []
+              },
+              {
+                "codigo": "2815",
+                "nombre": "Amortización acumulada de instalaciones técnicas y otras instalaciones",
+                "hijas": []
+              },
+              {
+                "codigo": "2816",
+                "nombre": "Amortización acumulada de mobiliario",
+                "hijas": []
+              },
+              {
+                "codigo": "2817",
+                "nombre": "Amortización acumulada de equipos para procesos de información",
+                "hijas": []
+              },
+              {
+                "codigo": "2818",
+                "nombre": "Amortización acumulada de elementos de transporte",
+                "hijas": []
+              },
+              {
+                "codigo": "2819",
+                "nombre": "Amortización acumulada de otro inmovilizado material",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "282",
+            "nombre": "Amortización acumulada de inversiones inmobiliarias",
+            "hijas": [
+              {
+                "codigo": "2820",
+                "nombre": "Amortización acumulada de inversiones en terrenos",
+                "hijas": []
+              },
+              {
+                "codigo": "2821",
+                "nombre": "Amortización acumulada de inversiones en construcciones",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "284",
+            "nombre": "Amortización acumulada del Patrimonio público del suelo",
+            "hijas": [
+              {
+                "codigo": "2840",
+                "nombre": "Amortización acumulada de terrenos del Patrimonio público del suelo",
+                "hijas": []
+              },
+              {
+                "codigo": "2841",
+                "nombre": "Amortización acumulada de construcciones del Patrimonio público del suelo",
+                "hijas": []
+              },
+              {
+                "codigo": "2849",
+                "nombre": "Amortización acumulada de otros bienes y derechos del Patrimonio público del suelo",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "29",
+        "nombre": "DETERIORO DE VALOR DE ACTIVOS NO CORRIENTES",
+        "hijas": [
+          {
+            "codigo": "290",
+            "nombre": "Deterioro de valor del inmovilizado intangible",
+            "hijas": [
+              {
+                "codigo": "2903",
+                "nombre": "Deterioro de valor de propiedad industrial e intelectual",
+                "hijas": []
+              },
+              {
+                "codigo": "2906",
+                "nombre": "Deterioro de valor de aplicaciones informáticas",
+                "hijas": []
+              },
+              {
+                "codigo": "2907",
+                "nombre": "Deterioro de valor de inversiones sobre activos utilizados en régimen de arrendamiento o cedidos",
+                "hijas": []
+              },
+              {
+                "codigo": "2909",
+                "nombre": "Deterioro de valor de otro inmovilizado intangible",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "291",
+            "nombre": "Deterioro de valor del inmovilizado material",
+            "hijas": [
+              {
+                "codigo": "2910",
+                "nombre": "Deterioro de valor de terrenos y bienes naturales",
+                "hijas": []
+              },
+              {
+                "codigo": "2911",
+                "nombre": "Deterioro de valor de construcciones",
+                "hijas": []
+              },
+              {
+                "codigo": "2912",
+                "nombre": "Deterioro de valor de infraestructuras",
+                "hijas": []
+              },
+              {
+                "codigo": "2913",
+                "nombre": "Deterioro de valor de bienes del patrimonio histórico",
+                "hijas": []
+              },
+              {
+                "codigo": "2914",
+                "nombre": "Deterioro de valor de maquinaria y utillaje",
+                "hijas": []
+              },
+              {
+                "codigo": "2915",
+                "nombre": "Deterioro de valor de instalaciones técnicas y otras instalaciones",
+                "hijas": []
+              },
+              {
+                "codigo": "2916",
+                "nombre": "Deterioro de valor de mobiliario",
+                "hijas": []
+              },
+              {
+                "codigo": "2917",
+                "nombre": "Deterioro de valor de equipos para procesos de información",
+                "hijas": []
+              },
+              {
+                "codigo": "2918",
+                "nombre": "Deterioro de valor de elementos de transporte",
+                "hijas": []
+              },
+              {
+                "codigo": "2919",
+                "nombre": "Deterioro de valor de otro inmovilizado material",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "292",
+            "nombre": "Deterioro de valor de las inversiones inmobiliarias",
+            "hijas": [
+              {
+                "codigo": "2920",
+                "nombre": "Deterioro de valor de inversiones en terrenos",
+                "hijas": []
+              },
+              {
+                "codigo": "2921",
+                "nombre": "Deterioro de valor de inversiones en construcciones",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "293",
+            "nombre": "Deterioro de valor del Patrimonio público del suelo",
+            "hijas": [
+              {
+                "codigo": "2930",
+                "nombre": "Deterioro de valor de terrenos del Patrimonio público del suelo",
+                "hijas": []
+              },
+              {
+                "codigo": "2931",
+                "nombre": "Deterioro de valor de construcciones del Patrimonio público del suelo",
+                "hijas": []
+              },
+              {
+                "codigo": "2939",
+                "nombre": "Deterioro de valor de otros bienes y derechos del Patrimonio público del suelo",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "294",
+            "nombre": "Deterioro de valor de participaciones a largo plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "2940",
+                "nombre": "Deterioro de valor de participaciones a largo plazo en entidades de derecho público del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "2941",
+                "nombre": "Deterioro de valor de participaciones a largo plazo en sociedades mercantiles y cooperativas del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "2942",
+                "nombre": "Deterioro de valor de participaciones a largo plazo en otras entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "295",
+            "nombre": "Deterioro de valor de valores representativos de deuda a largo plazo de entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "2950",
+                "nombre": "Deterioro de valor de valores mantenidos a vencimiento de entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "2951",
+                "nombre": "Deterioro de valor de valores disponibles para la venta de entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "296",
+            "nombre": "Deterioro de valor de créditos y otras inversiones financieras a largo plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "2960",
+                "nombre": "Deterioro de valor de créditos a largo plazo a entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "2961",
+                "nombre": "Deterioro de valor de fianzas constituidas a largo plazo en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "2962",
+                "nombre": "Deterioro de valor de depósitos constituidos en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "297",
+            "nombre": "Deterioro de valor de valores representativos de deuda a largo plazo",
+            "hijas": [
+              {
+                "codigo": "2970",
+                "nombre": "Deterioro de valor de valores mantenidos a vencimiento",
+                "hijas": []
+              },
+              {
+                "codigo": "2971",
+                "nombre": "Deterioro de valor de valores disponibles para la venta",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "298",
+            "nombre": "Deterioro de valor de créditos y otras inversiones financieras a largo plazo",
+            "hijas": [
+              {
+                "codigo": "2980",
+                "nombre": "Deterioro de valor de créditos a largo plazo",
+                "hijas": []
+              },
+              {
+                "codigo": "2981",
+                "nombre": "Deterioro de valor de fianzas constituidas a largo plazo",
+                "hijas": []
+              },
+              {
+                "codigo": "2982",
+                "nombre": "Deterioro de valor de depósitos constituidos",
+                "hijas": []
+              },
+              {
+                "codigo": "2983",
+                "nombre": "Deterioro de valor de créditos por aplazamiento y fraccionamiento a largo plazo",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "299",
+            "nombre": "Deterioro de valor por usufructo cedido del inmovilizado material",
+            "hijas": [
+              {
+                "codigo": "2990",
+                "nombre": "Deterioro de valor por usufructo cedido de terrenos y bienes naturales",
+                "hijas": []
+              },
+              {
+                "codigo": "2991",
+                "nombre": "Deterioro de valor por usufructo cedido de construcciones",
+                "hijas": []
+              },
+              {
+                "codigo": "2992",
+                "nombre": "Deterioro de valor por usufructo cedido de infraestructuras",
+                "hijas": []
+              },
+              {
+                "codigo": "2993",
+                "nombre": "Deterioro de valor por usufructo cedido de bienes del patrimonio histórico",
+                "hijas": []
+              },
+              {
+                "codigo": "2999",
+                "nombre": "Deterioro de valor por usufructo cedido de otro inmovilizado material",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo": "3",
+    "nombre": "EXISTENCIAS Y OTROS ACTIVOS EN ESTADO DE VENTA",
+    "hijas": [
+      {
+        "codigo": "30",
+        "nombre": "COMERCIALES",
+        "hijas": [
+          {
+            "codigo": "300",
+            "nombre": "Mercaderías A",
+            "hijas": []
+          },
+          {
+            "codigo": "301",
+            "nombre": "Mercaderías B",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "31",
+        "nombre": "MATERIAS PRIMAS",
+        "hijas": [
+          {
+            "codigo": "310",
+            "nombre": "Materias primas A",
+            "hijas": []
+          },
+          {
+            "codigo": "311",
+            "nombre": "Materias primas B",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "32",
+        "nombre": "OTROS APROVISIONAMIENTOS",
+        "hijas": [
+          {
+            "codigo": "320",
+            "nombre": "Elementos y conjuntos incorporables",
+            "hijas": []
+          },
+          {
+            "codigo": "321",
+            "nombre": "Combustibles",
+            "hijas": []
+          },
+          {
+            "codigo": "322",
+            "nombre": "Repuestos",
+            "hijas": []
+          },
+          {
+            "codigo": "325",
+            "nombre": "Materiales diversos",
+            "hijas": []
+          },
+          {
+            "codigo": "326",
+            "nombre": "Embalajes",
+            "hijas": []
+          },
+          {
+            "codigo": "327",
+            "nombre": "Envases",
+            "hijas": []
+          },
+          {
+            "codigo": "328",
+            "nombre": "Material de oficina",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "33",
+        "nombre": "PRODUCCIÓN EN CURSO",
+        "hijas": [
+          {
+            "codigo": "330",
+            "nombre": "Productos en curso A",
+            "hijas": []
+          },
+          {
+            "codigo": "331",
+            "nombre": "Productos en curso B",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "34",
+        "nombre": "PRODUCTOS SEMITERMINADOS",
+        "hijas": [
+          {
+            "codigo": "340",
+            "nombre": "Productos semiterminados A",
+            "hijas": []
+          },
+          {
+            "codigo": "341",
+            "nombre": "Productos semiterminados B",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "35",
+        "nombre": "PRODUCTOS TERMINADOS",
+        "hijas": [
+          {
+            "codigo": "350",
+            "nombre": "Productos terminados A",
+            "hijas": []
+          },
+          {
+            "codigo": "351",
+            "nombre": "Productos terminados B",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "36",
+        "nombre": "SUBPRODUCTOS, RESIDUOS Y MATERIALES RECUPERADOS",
+        "hijas": [
+          {
+            "codigo": "360",
+            "nombre": "Subproductos A",
+            "hijas": []
+          },
+          {
+            "codigo": "361",
+            "nombre": "Subproductos B",
+            "hijas": []
+          },
+          {
+            "codigo": "365",
+            "nombre": "Residuos A",
+            "hijas": []
+          },
+          {
+            "codigo": "366",
+            "nombre": "Residuos B",
+            "hijas": []
+          },
+          {
+            "codigo": "368",
+            "nombre": "Materiales recuperados A",
+            "hijas": []
+          },
+          {
+            "codigo": "369",
+            "nombre": "Materiales recuperados B",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "37",
+        "nombre": "ACTIVOS CONSTRUIDOS O ADQUIRIDOS PARA OTRAS ENTIDADES",
+        "hijas": [
+          {
+            "codigo": "370",
+            "nombre": "Activos construidos o adquiridos para otras entidades",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "38",
+        "nombre": "ACTIVOS EN ESTADO DE VENTA",
+        "hijas": [
+          {
+            "codigo": "380",
+            "nombre": "Activos en estado de venta",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "39",
+        "nombre": "DETERIORO DE VALOR DE EXISTENCIAS Y OTROS ACTIVOS EN ESTADO DE VENTA",
+        "hijas": [
+          {
+            "codigo": "390",
+            "nombre": "Deterioro de valor de mercaderías",
+            "hijas": []
+          },
+          {
+            "codigo": "391",
+            "nombre": "Deterioro de valor de materias primas",
+            "hijas": []
+          },
+          {
+            "codigo": "392",
+            "nombre": "Deterioro de valor de otros aprovisionamientos",
+            "hijas": []
+          },
+          {
+            "codigo": "393",
+            "nombre": "Deterioro de valor de producción en curso",
+            "hijas": []
+          },
+          {
+            "codigo": "394",
+            "nombre": "Deterioro de valor de productos semiterminados",
+            "hijas": []
+          },
+          {
+            "codigo": "395",
+            "nombre": "Deterioro de valor de productos terminados",
+            "hijas": []
+          },
+          {
+            "codigo": "396",
+            "nombre": "Deterioro de valor de subproductos, residuos y materiales recuperados",
+            "hijas": []
+          },
+          {
+            "codigo": "398",
+            "nombre": "Deterioro de valor de activos en estado de venta",
+            "hijas": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo": "4",
+    "nombre": "ACREEDORES Y DEUDORES",
+    "hijas": [
+      {
+        "codigo": "40",
+        "nombre": "ACREEDORES PRESUPUESTARIOS",
+        "hijas": [
+          {
+            "codigo": "400",
+            "nombre": "Acreedores por obligaciones reconocidas. Presupuesto de gastos corriente",
+            "hijas": [
+              {
+                "codigo": "4000",
+                "nombre": "Operaciones de gestión",
+                "hijas": []
+              },
+              {
+                "codigo": "4001",
+                "nombre": "Otras cuentas a pagar",
+                "hijas": []
+              },
+              {
+                "codigo": "4002",
+                "nombre": "Deudas con entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "4003",
+                "nombre": "Otras deudas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "401",
+            "nombre": "Acreedores por obligaciones reconocidas. Presupuestos de gastos cerrados",
+            "hijas": [
+              {
+                "codigo": "4010",
+                "nombre": "Operaciones de gestión",
+                "hijas": []
+              },
+              {
+                "codigo": "4011",
+                "nombre": "Otras cuentas a pagar",
+                "hijas": []
+              },
+              {
+                "codigo": "4012",
+                "nombre": "Deudas con entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "4013",
+                "nombre": "Otras deudas",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "41",
+        "nombre": "ACREEDORES NO PRESUPUESTARIOS",
+        "hijas": [
+          {
+            "codigo": "410",
+            "nombre": "Acreedores por IVA soportado",
+            "hijas": []
+          },
+          {
+            "codigo": "411",
+            "nombre": "(Suprimida)",
+            "hijas": []
+          },
+          {
+            "codigo": "413",
+            "nombre": "Acreedores por operaciones devengadas",
+            "hijas": [
+              {
+                "codigo": "4130",
+                "nombre": "Acreedores por operaciones aplicables a presupuesto en períodos posteriores",
+                "hijas": []
+              },
+              {
+                "codigo": "4131",
+                "nombre": "Acreedores por operaciones pendientes de aplicar a presupuesto",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "414",
+            "nombre": "Entes Públicos acreedores por recaudación de recursos",
+            "hijas": []
+          },
+          {
+            "codigo": "416",
+            "nombre": "Anticipos para activos construidos o adquiridos para otras entidades",
+            "hijas": []
+          },
+          {
+            "codigo": "418",
+            "nombre": "Acreedores por devolución de ingresos y otras minoraciones",
+            "hijas": [
+              {
+                "codigo": "4180",
+                "nombre": "Operaciones de gestión",
+                "hijas": []
+              },
+              {
+                "codigo": "4181",
+                "nombre": "Otras cuentas a pagar",
+                "hijas": []
+              },
+              {
+                "codigo": "4182",
+                "nombre": "Deudas con entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "4183",
+                "nombre": "Otras deudas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "419",
+            "nombre": "Otros acreedores no presupuestarios",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "43",
+        "nombre": "DEUDORES PRESUPUESTARIOS",
+        "hijas": [
+          {
+            "codigo": "430",
+            "nombre": "Deudores por derechos reconocidos. Presupuesto de ingresos corriente",
+            "hijas": [
+              {
+                "codigo": "4300",
+                "nombre": "Operaciones de gestión",
+                "hijas": []
+              },
+              {
+                "codigo": "4301",
+                "nombre": "Otras cuentas a cobrar",
+                "hijas": []
+              },
+              {
+                "codigo": "4302",
+                "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "4303",
+                "nombre": "Otras inversiones financieras",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "431",
+            "nombre": "Deudores por derechos reconocidos. Presupuestos de ingresos cerrados",
+            "hijas": [
+              {
+                "codigo": "4310",
+                "nombre": "Operaciones de gestión",
+                "hijas": []
+              },
+              {
+                "codigo": "4311",
+                "nombre": "Otras cuentas a cobrar",
+                "hijas": []
+              },
+              {
+                "codigo": "4312",
+                "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "4313",
+                "nombre": "Otras inversiones financieras",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "433",
+            "nombre": "Derechos anulados de presupuesto corriente",
+            "hijas": [
+              {
+                "codigo": "4330",
+                "nombre": "Por anulación de liquidaciones",
+                "hijas": [
+                  {
+                    "codigo": "43300",
+                    "nombre": "Operaciones de gestión",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43301",
+                    "nombre": "Otras cuentas a cobrar",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43302",
+                    "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43303",
+                    "nombre": "Otras inversiones financieras",
+                    "hijas": []
+                  }
+                ]
+              },
+              {
+                "codigo": "4332",
+                "nombre": "Por aplazamiento y fraccionamiento",
+                "hijas": [
+                  {
+                    "codigo": "43320",
+                    "nombre": "Operaciones de gestión",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43321",
+                    "nombre": "Otras cuentas a cobrar",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43322",
+                    "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43323",
+                    "nombre": "Otras inversiones financieras",
+                    "hijas": []
+                  }
+                ]
+              },
+              {
+                "codigo": "4339",
+                "nombre": "Por devolución de ingresos",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "434",
+            "nombre": "Derechos anulados de presupuestos cerrados",
+            "hijas": [
+              {
+                "codigo": "4340",
+                "nombre": "Por anulación de liquidaciones",
+                "hijas": [
+                  {
+                    "codigo": "43400",
+                    "nombre": "Operaciones de gestión",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43401",
+                    "nombre": "Otras cuentas a cobrar",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43402",
+                    "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43403",
+                    "nombre": "Otras inversiones financieras",
+                    "hijas": []
+                  }
+                ]
+              },
+              {
+                "codigo": "4342",
+                "nombre": "Por aplazamiento y fraccionamiento",
+                "hijas": [
+                  {
+                    "codigo": "43420",
+                    "nombre": "Operaciones de gestión",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43421",
+                    "nombre": "Otras cuentas a cobrar",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43422",
+                    "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43423",
+                    "nombre": "Otras inversiones financieras",
+                    "hijas": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "437",
+            "nombre": "Devolución de ingresos",
+            "hijas": []
+          },
+          {
+            "codigo": "438",
+            "nombre": "Derechos cancelados de presupuesto corriente",
+            "hijas": [
+              {
+                "codigo": "4380",
+                "nombre": "Por cobros en especie",
+                "hijas": [
+                  {
+                    "codigo": "43800",
+                    "nombre": "Operaciones de gestión",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43801",
+                    "nombre": "Otras cuentas a cobrar",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43802",
+                    "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43803",
+                    "nombre": "Otras inversiones financieras",
+                    "hijas": []
+                  }
+                ]
+              },
+              {
+                "codigo": "4381",
+                "nombre": "Por insolvencias y otras causas",
+                "hijas": [
+                  {
+                    "codigo": "43810",
+                    "nombre": "Operaciones de gestión",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43811",
+                    "nombre": "Otras cuentas a cobrar",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43812",
+                    "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43813",
+                    "nombre": "Otras inversiones financieras",
+                    "hijas": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "439",
+            "nombre": "Derechos cancelados de presupuestos cerrados",
+            "hijas": [
+              {
+                "codigo": "4390",
+                "nombre": "Por cobros en especie",
+                "hijas": [
+                  {
+                    "codigo": "43900",
+                    "nombre": "Operaciones de gestión",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43901",
+                    "nombre": "Otras cuentas a cobrar",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43902",
+                    "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43903",
+                    "nombre": "Otras inversiones financieras",
+                    "hijas": []
+                  }
+                ]
+              },
+              {
+                "codigo": "4391",
+                "nombre": "Por insolvencias y otras causas",
+                "hijas": [
+                  {
+                    "codigo": "43910",
+                    "nombre": "Operaciones de gestión",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43911",
+                    "nombre": "Otras cuentas a cobrar",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43912",
+                    "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43913",
+                    "nombre": "Otras inversiones financieras",
+                    "hijas": []
+                  }
+                ]
+              },
+              {
+                "codigo": "4392",
+                "nombre": "Por prescripción",
+                "hijas": [
+                  {
+                    "codigo": "43920",
+                    "nombre": "Operaciones de gestión",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43921",
+                    "nombre": "Otras cuentas a cobrar",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43922",
+                    "nombre": "Inversiones financieras en entidades del grupo, multigrupo o asociadas",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "43923",
+                    "nombre": "Otras inversiones financieras",
+                    "hijas": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "44",
+        "nombre": "DEUDORES NO PRESUPUESTARIOS",
+        "hijas": [
+          {
+            "codigo": "440",
+            "nombre": "Deudores por IVA repercutido",
+            "hijas": []
+          },
+          {
+            "codigo": "441",
+            "nombre": "Deudores por ingresos devengados",
+            "hijas": []
+          },
+          {
+            "codigo": "442",
+            "nombre": "Deudores por servicio de recaudación",
+            "hijas": [
+              {
+                "codigo": "4420",
+                "nombre": "Entes públicos deudores por recursos recaudados",
+                "hijas": []
+              },
+              {
+                "codigo": "4429",
+                "nombre": "Otros deudores por servicio de recaudación",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "443",
+            "nombre": "Deudores a corto plazo por aplazamiento y fraccionamiento",
+            "hijas": [
+              {
+                "codigo": "4430",
+                "nombre": "Operaciones de gestión",
+                "hijas": []
+              },
+              {
+                "codigo": "4431",
+                "nombre": "Otras cuentas a cobrar",
+                "hijas": []
+              },
+              {
+                "codigo": "4432",
+                "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "4433",
+                "nombre": "Otras inversiones financieras",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "446",
+            "nombre": "Deudores por activos construidos para otras entidades pendientes de certificar",
+            "hijas": []
+          },
+          {
+            "codigo": "449",
+            "nombre": "Otros deudores no presupuestarios",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "45",
+        "nombre": "DEUDORES Y ACREEDORES POR ADMINISTRACIÓN DE RECURSOS POR CUENTA DE OTROS ENTES PÚBLICOS",
+        "hijas": [
+          {
+            "codigo": "450",
+            "nombre": "Deudores por derechos reconocidos de recursos de otros entes públicos",
+            "hijas": []
+          },
+          {
+            "codigo": "451",
+            "nombre": "Derechos anulados por recursos de otros entes públicos",
+            "hijas": [
+              {
+                "codigo": "4510",
+                "nombre": "Por anulación de liquidaciones",
+                "hijas": []
+              },
+              {
+                "codigo": "4519",
+                "nombre": "Por devolución de ingresos",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "452",
+            "nombre": "Entes públicos, por derechos a cobrar",
+            "hijas": []
+          },
+          {
+            "codigo": "453",
+            "nombre": "Entes públicos, por ingresos pendientes de liquidar",
+            "hijas": []
+          },
+          {
+            "codigo": "454",
+            "nombre": "Devolución de ingresos por recursos de otros entes públicos",
+            "hijas": []
+          },
+          {
+            "codigo": "455",
+            "nombre": "Entes públicos, por devolución de ingresos pendientes de pago",
+            "hijas": []
+          },
+          {
+            "codigo": "456",
+            "nombre": "Entes públicos, c/c. efectivo",
+            "hijas": []
+          },
+          {
+            "codigo": "457",
+            "nombre": "Acreedores por devolución de ingresos por recursos de otros entes públicos",
+            "hijas": []
+          },
+          {
+            "codigo": "458",
+            "nombre": "Derechos cancelados por recursos de otros entes públicos",
+            "hijas": [
+              {
+                "codigo": "4580",
+                "nombre": "Por cobros en especie",
+                "hijas": []
+              },
+              {
+                "codigo": "4581",
+                "nombre": "Por insolvencias y otras causas",
+                "hijas": []
+              },
+              {
+                "codigo": "4582",
+                "nombre": "Por prescripción",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "47",
+        "nombre": "ADMINISTRACIONES PÚBLICAS",
+        "hijas": [
+          {
+            "codigo": "470",
+            "nombre": "Hacienda Pública, deudor por diversos conceptos",
+            "hijas": [
+              {
+                "codigo": "4700",
+                "nombre": "Hacienda Pública, deudor por IVA",
+                "hijas": []
+              },
+              {
+                "codigo": "4707",
+                "nombre": "Hacienda Pública, deudor por IGIC",
+                "hijas": []
+              },
+              {
+                "codigo": "4709",
+                "nombre": "Hacienda Pública, deudor por otros conceptos",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "471",
+            "nombre": "Organismos de Previsión Social, deudores",
+            "hijas": [
+              {
+                "codigo": "4710",
+                "nombre": "Seguridad Social",
+                "hijas": []
+              },
+              {
+                "codigo": "4719",
+                "nombre": "Otros organismos de Previsión Social, deudores",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "472",
+            "nombre": "Hacienda Pública, IVA soportado",
+            "hijas": [
+              {
+                "codigo": "4720",
+                "nombre": "IVA soportado",
+                "hijas": []
+              },
+              {
+                "codigo": "4727",
+                "nombre": "IGIC soportado",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "475",
+            "nombre": "Hacienda Pública, acreedor por diversos conceptos",
+            "hijas": [
+              {
+                "codigo": "4750",
+                "nombre": "Hacienda Pública, acreedor por IVA",
+                "hijas": []
+              },
+              {
+                "codigo": "4751",
+                "nombre": "Hacienda Pública, acreedor por retenciones practicadas",
+                "hijas": []
+              },
+              {
+                "codigo": "4757",
+                "nombre": "Hacienda Pública, acreedor por IGIC",
+                "hijas": []
+              },
+              {
+                "codigo": "4759",
+                "nombre": "Hacienda Pública, acreedor por otros conceptos",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "476",
+            "nombre": "Organismos de Previsión Social, acreedores",
+            "hijas": [
+              {
+                "codigo": "4760",
+                "nombre": "Seguridad Social",
+                "hijas": []
+              },
+              {
+                "codigo": "4769",
+                "nombre": "Otros organismos de Previsión Social, acreedores",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "477",
+            "nombre": "Hacienda Pública, IVA repercutido",
+            "hijas": [
+              {
+                "codigo": "4770",
+                "nombre": "IVA repercutido",
+                "hijas": []
+              },
+              {
+                "codigo": "4777",
+                "nombre": "IGIC repercutido",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "48",
+        "nombre": "AJUSTES POR PERIODIFICACIÓN",
+        "hijas": [
+          {
+            "codigo": "480",
+            "nombre": "Gastos anticipados",
+            "hijas": []
+          },
+          {
+            "codigo": "485",
+            "nombre": "Ingresos anticipados a corto plazo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "49",
+        "nombre": "DETERIORO DE VALOR DE CREDITOS",
+        "hijas": [
+          {
+            "codigo": "490",
+            "nombre": "Deterioro de valor de créditos",
+            "hijas": [
+              {
+                "codigo": "4900",
+                "nombre": "Operaciones de gestión",
+                "hijas": []
+              },
+              {
+                "codigo": "4901",
+                "nombre": "Otras cuentas a cobrar",
+                "hijas": []
+              },
+              {
+                "codigo": "4902",
+                "nombre": "Inversiones financieras en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "4903",
+                "nombre": "Otras inversiones financieras",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo": "5",
+    "nombre": "CUENTAS FINANCIERAS",
+    "hijas": [
+      {
+        "codigo": "50",
+        "nombre": "EMPRÉSTITOS Y OTRAS EMISIONES ANÁLOGAS A CORTO PLAZO",
+        "hijas": [
+          {
+            "codigo": "500",
+            "nombre": "Obligaciones y bonos a corto plazo",
+            "hijas": [
+              {
+                "codigo": "5000",
+                "nombre": "Obligaciones y bonos a coste amortizado",
+                "hijas": []
+              },
+              {
+                "codigo": "5001",
+                "nombre": "Obligaciones y bonos a valor razonable con cambios en resultados",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "502",
+            "nombre": "Empréstitos y otras emisiones análogas por Operaciones de Tesorería",
+            "hijas": [
+              {
+                "codigo": "5020",
+                "nombre": "Empréstitos por Operaciones de Tesorería a coste amortizado",
+                "hijas": []
+              },
+              {
+                "codigo": "5021",
+                "nombre": "Empréstitos por Operaciones de Tesorería a valor razonable con cambios en resultados",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "506",
+            "nombre": "Intereses a corto plazo de empréstitos y otras emisiones análogas",
+            "hijas": [
+              {
+                "codigo": "5060",
+                "nombre": "Intereses a corto plazo de obligaciones y bonos a coste amortizado",
+                "hijas": []
+              },
+              {
+                "codigo": "5061",
+                "nombre": "Intereses a corto plazo de obligaciones y bonos a valor razonable con cambios en resultados",
+                "hijas": []
+              },
+              {
+                "codigo": "5062",
+                "nombre": "Intereses a corto plazo de empréstitos por Operaciones de Tesorería a coste amortizado",
+                "hijas": []
+              },
+              {
+                "codigo": "5063",
+                "nombre": "Intereses a corto plazo de empréstitos por Operaciones de Tesorería a valor razonable con cambios en resultados",
+                "hijas": []
+              },
+              {
+                "codigo": "5065",
+                "nombre": "Intereses a corto plazo de otros valores negociables a coste amortizado",
+                "hijas": []
+              },
+              {
+                "codigo": "5066",
+                "nombre": "Intereses a corto plazo de otros valores negociables a valor razonable con cambios en resultados",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "509",
+            "nombre": "Deudas representadas en otros valores negociables a corto plazo",
+            "hijas": [
+              {
+                "codigo": "5090",
+                "nombre": "Otros valores negociables a coste amortizado",
+                "hijas": []
+              },
+              {
+                "codigo": "5091",
+                "nombre": "Otros valores negociables a valor razonable con cambios en resultados",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "51",
+        "nombre": "DEUDAS A CORTO PLAZO CON ENTIDADES DEL GRUPO, MULTIGRUPO Y ASOCIADAS",
+        "hijas": [
+          {
+            "codigo": "513",
+            "nombre": "Deudas a corto plazo transformables en subvenciones con entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "514",
+            "nombre": "Deudas a corto plazo con entidades del grupo, multigrupo y asociadas representadas en valores negociables",
+            "hijas": [
+              {
+                "codigo": "5140",
+                "nombre": "Deudas representadas en valores negociables a coste amortizado, entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "5141",
+                "nombre": "Deudas representadas en valores negociables a valor razonable con cambios en resultados, entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "515",
+            "nombre": "Fianzas recibidas a corto plazo de entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "516",
+            "nombre": "Depósitos recibidos a corto plazo de entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "517",
+            "nombre": "Intereses a corto plazo de deudas con entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "519",
+            "nombre": "Otras deudas a corto plazo con entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "52",
+        "nombre": "DEUDAS A CORTO PLAZO POR PRÉSTAMOS RECIBIDOS Y OTROS CONCEPTOS",
+        "hijas": [
+          {
+            "codigo": "520",
+            "nombre": "Deudas a corto plazo con entidades de crédito",
+            "hijas": []
+          },
+          {
+            "codigo": "521",
+            "nombre": "Deudas por Operaciones de Tesorería",
+            "hijas": []
+          },
+          {
+            "codigo": "522",
+            "nombre": "Deudas a corto plazo transformables en subvenciones",
+            "hijas": []
+          },
+          {
+            "codigo": "523",
+            "nombre": "Proveedores de inmovilizado a corto plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "524",
+            "nombre": "Acreedores por arrendamiento financiero a corto plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "526",
+            "nombre": "Pasivos por derivados financieros a corto plazo",
+            "hijas": [
+              {
+                "codigo": "5260",
+                "nombre": "Pasivos por derivados financieros a corto plazo designados instrumentos de cobertura",
+                "hijas": []
+              },
+              {
+                "codigo": "5261",
+                "nombre": "Pasivos por otros derivados financieros a corto plazo",
+                "hijas": []
+              },
+              {
+                "codigo": "5266",
+                "nombre": "Intereses a corto plazo de permutas financieras designadas instrumentos de cobertura",
+                "hijas": []
+              },
+              {
+                "codigo": "5267",
+                "nombre": "Intereses a corto plazo de otras permutas financieras",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "527",
+            "nombre": "Intereses a corto plazo de deudas con entidades de crédito",
+            "hijas": []
+          },
+          {
+            "codigo": "528",
+            "nombre": "Intereses a corto plazo de otras deudas",
+            "hijas": []
+          },
+          {
+            "codigo": "529",
+            "nombre": "Otras deudas a corto plazo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "53",
+        "nombre": "INVERSIONES FINANCIERAS A CORTO PLAZO EN ENTIDADES DEL GRUPO, MULTIGRUPO Y ASOCIADAS",
+        "hijas": [
+          {
+            "codigo": "530",
+            "nombre": "Participaciones a corto plazo en entidades del grupo",
+            "hijas": [
+              {
+                "codigo": "5300",
+                "nombre": "En entidades de derecho público",
+                "hijas": []
+              },
+              {
+                "codigo": "5301",
+                "nombre": "En sociedades mercantiles",
+                "hijas": []
+              },
+              {
+                "codigo": "5302",
+                "nombre": "En otras entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "531",
+            "nombre": "Participaciones a corto plazo en entidades multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "5310",
+                "nombre": "En entidades de derecho público",
+                "hijas": []
+              },
+              {
+                "codigo": "5311",
+                "nombre": "En sociedades mercantiles y sociedades cooperativas",
+                "hijas": []
+              },
+              {
+                "codigo": "5312",
+                "nombre": "En otras entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "532",
+            "nombre": "Valores representativos de deuda a corto plazo de entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "5320",
+                "nombre": "Valores representativos de deuda a corto plazo de entidades del grupo, multigrupo y asociadas mantenidos a vencimiento",
+                "hijas": []
+              },
+              {
+                "codigo": "5321",
+                "nombre": "Valores representativos de deuda a corto plazo de entidades del grupo, multigrupo y asociadas disponibles para la venta",
+                "hijas": []
+              },
+              {
+                "codigo": "5322",
+                "nombre": "Valores representativos de deuda de entidades del grupo, multigrupo y asociadas a valor razonable con cambios en resultados",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "533",
+            "nombre": "Créditos a corto plazo a entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "535",
+            "nombre": "Intereses a corto plazo de inversiones financieras en entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "536",
+            "nombre": "Dividendo a cobrar de inversiones financieras en entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "537",
+            "nombre": "Fianzas constituidas a corto plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "538",
+            "nombre": "Depósitos constituidos a corto plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "539",
+            "nombre": "Desembolsos pendientes sobre participaciones a corto plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "54",
+        "nombre": "OTRAS INVERSIONES FINANCIERAS A CORTO PLAZO",
+        "hijas": [
+          {
+            "codigo": "540",
+            "nombre": "Inversiones financieras a corto plazo en instrumentos de patrimonio",
+            "hijas": [
+              {
+                "codigo": "5400",
+                "nombre": "Inversiones a corto plazo en instrumentos de patrimonio disponibles para la venta",
+                "hijas": []
+              },
+              {
+                "codigo": "5401",
+                "nombre": "Inversiones en instrumentos de patrimonio a valor razonable con cambios en resultados",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "541",
+            "nombre": "Valores representativos de deuda a corto plazo",
+            "hijas": [
+              {
+                "codigo": "5410",
+                "nombre": "Valores representativos de deuda a corto plazo mantenidos a vencimiento",
+                "hijas": []
+              },
+              {
+                "codigo": "5411",
+                "nombre": "Valores representativos de deuda a corto plazo disponibles para la venta",
+                "hijas": []
+              },
+              {
+                "codigo": "5412",
+                "nombre": "Valores representativos de deuda a valor razonable con cambios en resultados",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "542",
+            "nombre": "Créditos a corto plazo",
+            "hijas": [
+              {
+                "codigo": "5420",
+                "nombre": "Créditos a corto plazo por enajenación de inmovilizado",
+                "hijas": []
+              },
+              {
+                "codigo": "5429",
+                "nombre": "Otros créditos a corto plazo",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "543",
+            "nombre": "Activos por derivados financieros a corto plazo",
+            "hijas": [
+              {
+                "codigo": "5430",
+                "nombre": "Activos por derivados financieros a corto plazo designados instrumentos de cobertura",
+                "hijas": []
+              },
+              {
+                "codigo": "5431",
+                "nombre": "Activos por otros derivados financieros a corto plazo",
+                "hijas": []
+              },
+              {
+                "codigo": "5436",
+                "nombre": "Intereses a corto plazo de permutas financieras designadas instrumentos de cobertura",
+                "hijas": []
+              },
+              {
+                "codigo": "5437",
+                "nombre": "Intereses a corto plazo de otras permutas financieras",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "544",
+            "nombre": "Créditos a corto plazo al personal",
+            "hijas": []
+          },
+          {
+            "codigo": "545",
+            "nombre": "Dividendo a cobrar",
+            "hijas": []
+          },
+          {
+            "codigo": "546",
+            "nombre": "Intereses a corto plazo de valores representativos de deuda",
+            "hijas": []
+          },
+          {
+            "codigo": "547",
+            "nombre": "Intereses a corto plazo de créditos",
+            "hijas": []
+          },
+          {
+            "codigo": "548",
+            "nombre": "Imposiciones a corto plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "549",
+            "nombre": "Desembolsos pendientes sobre participaciones en el patrimonio neto a corto plazo",
+            "hijas": [
+              {
+                "codigo": "5490",
+                "nombre": "De activos financieros a valor razonable con cambios en resultados",
+                "hijas": []
+              },
+              {
+                "codigo": "5491",
+                "nombre": "De activos financieros disponibles para la venta",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "55",
+        "nombre": "OTRAS CUENTAS FINANCIERAS",
+        "hijas": [
+          {
+            "codigo": "550",
+            "nombre": "Cuentas corrientes no bancarias",
+            "hijas": [
+              {
+                "codigo": "5500",
+                "nombre": "Cuentas corrientes no bancarias con entes públicos, por administración de recursos",
+                "hijas": []
+              },
+              {
+                "codigo": "5509",
+                "nombre": "Otras cuentas no bancarias",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "554",
+            "nombre": "Cobros pendientes de aplicación",
+            "hijas": []
+          },
+          {
+            "codigo": "555",
+            "nombre": "Pagos pendientes de aplicación",
+            "hijas": []
+          },
+          {
+            "codigo": "556",
+            "nombre": "Movimientos internos de tesorería",
+            "hijas": []
+          },
+          {
+            "codigo": "557",
+            "nombre": "Formalización",
+            "hijas": []
+          },
+          {
+            "codigo": "558",
+            "nombre": "Provisiones de fondos para pagos a justificar y anticipos de caja fija",
+            "hijas": [
+              {
+                "codigo": "5580",
+                "nombre": "Provisiones de fondos para pagos a justificar pendientes de justificación",
+                "hijas": []
+              },
+              {
+                "codigo": "5581",
+                "nombre": "Provisiones de fondos para anticipos de caja fija pendientes de justificación",
+                "hijas": []
+              },
+              {
+                "codigo": "5584",
+                "nombre": "Libramientos para pagos a justificar",
+                "hijas": []
+              },
+              {
+                "codigo": "5585",
+                "nombre": "Libramientos para la reposición de anticipos de caja fija pendientes de pago",
+                "hijas": []
+              },
+              {
+                "codigo": "5586",
+                "nombre": "Gastos realizados con provisiones de fondos para pagos a justificar pendientes de justificación",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "559",
+            "nombre": "Otras partidas pendientes de aplicación",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "56",
+        "nombre": "FIANZAS Y DEPÓSITOS RECIBIDOS Y CONSTITUIDOS A CORTO PLAZO Y AJUSTES POR PERIODIFICACIÓN",
+        "hijas": [
+          {
+            "codigo": "560",
+            "nombre": "Fianzas recibidas a corto plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "561",
+            "nombre": "Depósitos recibidos a corto plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "565",
+            "nombre": "Fianzas constituidas a corto plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "566",
+            "nombre": "Depósitos constituidos a corto plazo",
+            "hijas": []
+          },
+          {
+            "codigo": "567",
+            "nombre": "Gastos financieros pagados por anticipado",
+            "hijas": []
+          },
+          {
+            "codigo": "568",
+            "nombre": "Ingresos financieros cobrados por anticipado",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "57",
+        "nombre": "EFECTIVO Y ACTIVOS LÍQUIDOS EQUIVALENTES",
+        "hijas": [
+          {
+            "codigo": "570",
+            "nombre": "Caja operativa",
+            "hijas": []
+          },
+          {
+            "codigo": "571",
+            "nombre": "Bancos e instituciones de crédito. Cuentas operativas",
+            "hijas": []
+          },
+          {
+            "codigo": "573",
+            "nombre": "Bancos e instituciones de crédito. Cuentas restringidas de recaudación",
+            "hijas": []
+          },
+          {
+            "codigo": "574",
+            "nombre": "Caja restringida",
+            "hijas": [
+              {
+                "codigo": "5740",
+                "nombre": "Caja. Pagos a justificar",
+                "hijas": []
+              },
+              {
+                "codigo": "5741",
+                "nombre": "Caja. Anticipos de caja fija",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "575",
+            "nombre": "Bancos e instituciones de crédito. Cuentas restringidas de pagos",
+            "hijas": [
+              {
+                "codigo": "5750",
+                "nombre": "Bancos e instituciones de crédito. Pagos a justificar",
+                "hijas": []
+              },
+              {
+                "codigo": "5751",
+                "nombre": "Bancos e instituciones de crédito. Anticipos de caja fija",
+                "hijas": []
+              },
+              {
+                "codigo": "5759",
+                "nombre": "Otras cuentas restringidas de pagos",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "577",
+            "nombre": "Activos líquidos equivalentes al efectivo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "58",
+        "nombre": "PROVISIONES A CORTO PLAZO",
+        "hijas": [
+          {
+            "codigo": "582",
+            "nombre": "Provisión a corto plazo para responsabilidades",
+            "hijas": []
+          },
+          {
+            "codigo": "583",
+            "nombre": "Provisión a corto plazo por desmantelamiento, retiro o rehabilitación del inmovilizado no financiero",
+            "hijas": []
+          },
+          {
+            "codigo": "585",
+            "nombre": "Provisión a corto plazo para devolución de ingresos",
+            "hijas": []
+          },
+          {
+            "codigo": "588",
+            "nombre": "Provisión a corto plazo para transferencias y subvenciones",
+            "hijas": []
+          },
+          {
+            "codigo": "589",
+            "nombre": "Otras provisiones a corto plazo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "59",
+        "nombre": "DETERIORO DE VALOR DE INVERSIONES FINANCIERAS A CORTO PLAZO",
+        "hijas": [
+          {
+            "codigo": "594",
+            "nombre": "Deterioro de valor de participaciones a corto plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "5940",
+                "nombre": "Deterioro de valor de participaciones a corto plazo en entidades de derecho público del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "5941",
+                "nombre": "Deterioro de valor de participaciones a corto plazo en sociedades mercantiles y sociedades cooperativas del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "5942",
+                "nombre": "Deterioro de valor de participaciones en otras entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "595",
+            "nombre": "Deterioro de valor de valores representativos de deuda a corto plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "5950",
+                "nombre": "Deterioro de valor de valores mantenidos a vencimiento de entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "5951",
+                "nombre": "Deterioro de valor de valores disponibles para la venta de entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "596",
+            "nombre": "Deterioro de valor de créditos y otras inversiones financieras a corto plazo en entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "5960",
+                "nombre": "Deterioro de valor de créditos a corto plazo a entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "5961",
+                "nombre": "Deterioro de valor de fianzas constituidas a corto plazo en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "5962",
+                "nombre": "Deterioro de valor de depósitos constituidos en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "597",
+            "nombre": "Deterioro de valor de valores representativos de deuda a corto plazo",
+            "hijas": [
+              {
+                "codigo": "5970",
+                "nombre": "Deterioro de valor de valores mantenidos a vencimiento",
+                "hijas": []
+              },
+              {
+                "codigo": "5971",
+                "nombre": "Deterioro de valor de valores disponibles para la venta",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "598",
+            "nombre": "Deterioro de valor de créditos y otras inversiones financieras a corto plazo",
+            "hijas": [
+              {
+                "codigo": "5980",
+                "nombre": "Deterioro de valor de créditos a corto plazo",
+                "hijas": []
+              },
+              {
+                "codigo": "5981",
+                "nombre": "Deterioro de valor de fianzas constituidas a corto plazo",
+                "hijas": []
+              },
+              {
+                "codigo": "5982",
+                "nombre": "Deterioro de valor de depósitos constituidos a corto plazo",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo": "6",
+    "nombre": "COMPRAS Y GASTOS POR NATURALEZA",
+    "hijas": [
+      {
+        "codigo": "60",
+        "nombre": "COMPRAS",
+        "hijas": [
+          {
+            "codigo": "600",
+            "nombre": "Compras de mercaderías",
+            "hijas": []
+          },
+          {
+            "codigo": "601",
+            "nombre": "Compras de materias primas",
+            "hijas": []
+          },
+          {
+            "codigo": "602",
+            "nombre": "Compras de otros aprovisionamientos",
+            "hijas": []
+          },
+          {
+            "codigo": "605",
+            "nombre": "Compras de activos adquiridos para otras entidades",
+            "hijas": []
+          },
+          {
+            "codigo": "607",
+            "nombre": "Trabajos realizados por otras entidades",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "61",
+        "nombre": "VARIACIÓN DE EXISTENCIAS",
+        "hijas": [
+          {
+            "codigo": "610",
+            "nombre": "Variación de existencias de mercaderías",
+            "hijas": []
+          },
+          {
+            "codigo": "611",
+            "nombre": "Variación de existencias de materias primas",
+            "hijas": []
+          },
+          {
+            "codigo": "612",
+            "nombre": "Variación de existencias de otros aprovisionamientos",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "62",
+        "nombre": "SERVICIOS EXTERIORES",
+        "hijas": [
+          {
+            "codigo": "620",
+            "nombre": "Gastos en investigación y desarrollo",
+            "hijas": []
+          },
+          {
+            "codigo": "621",
+            "nombre": "Arrendamientos y cánones",
+            "hijas": []
+          },
+          {
+            "codigo": "622",
+            "nombre": "Reparaciones y conservación",
+            "hijas": []
+          },
+          {
+            "codigo": "623",
+            "nombre": "Servicios de profesionales independientes",
+            "hijas": []
+          },
+          {
+            "codigo": "624",
+            "nombre": "Transportes",
+            "hijas": []
+          },
+          {
+            "codigo": "625",
+            "nombre": "Primas de seguros",
+            "hijas": []
+          },
+          {
+            "codigo": "626",
+            "nombre": "Servicios bancarios y similares",
+            "hijas": []
+          },
+          {
+            "codigo": "627",
+            "nombre": "Publicidad, propaganda y relaciones públicas",
+            "hijas": []
+          },
+          {
+            "codigo": "628",
+            "nombre": "Suministros",
+            "hijas": []
+          },
+          {
+            "codigo": "629",
+            "nombre": "Comunicaciones y otros servicios",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "63",
+        "nombre": "TRIBUTOS",
+        "hijas": [
+          {
+            "codigo": "630",
+            "nombre": "Tributos de carácter local",
+            "hijas": []
+          },
+          {
+            "codigo": "631",
+            "nombre": "Tributos de carácter autonómico",
+            "hijas": []
+          },
+          {
+            "codigo": "632",
+            "nombre": "Tributos de carácter estatal",
+            "hijas": []
+          },
+          {
+            "codigo": "634",
+            "nombre": "Ajustes negativos en la imposición indirecta",
+            "hijas": []
+          },
+          {
+            "codigo": "639",
+            "nombre": "Ajustes positivos en la imposición indirecta",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "64",
+        "nombre": "GASTOS DE PERSONAL Y PRESTACIONES SOCIALES",
+        "hijas": [
+          {
+            "codigo": "640",
+            "nombre": "Sueldos y salarios",
+            "hijas": []
+          },
+          {
+            "codigo": "641",
+            "nombre": "Indemnizaciones",
+            "hijas": []
+          },
+          {
+            "codigo": "642",
+            "nombre": "Cotizaciones sociales a cargo del empleador",
+            "hijas": []
+          },
+          {
+            "codigo": "643",
+            "nombre": "Aportaciones a sistemas complementarios de pensiones",
+            "hijas": []
+          },
+          {
+            "codigo": "644",
+            "nombre": "Otros gastos sociales",
+            "hijas": []
+          },
+          {
+            "codigo": "645",
+            "nombre": "Prestaciones sociales",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "65",
+        "nombre": "TRANSFERENCIAS Y SUBVENCIONES",
+        "hijas": [
+          {
+            "codigo": "650",
+            "nombre": "Transferencias",
+            "hijas": [
+              {
+                "codigo": "6500",
+                "nombre": "A la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "6501",
+                "nombre": "Al resto de entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "651",
+            "nombre": "Subvenciones",
+            "hijas": [
+              {
+                "codigo": "6510",
+                "nombre": "A la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "6511",
+                "nombre": "Al resto de entidades",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "66",
+        "nombre": "GASTOS FINANCIEROS",
+        "hijas": [
+          {
+            "codigo": "660",
+            "nombre": "Gastos financieros por actualización de provisiones",
+            "hijas": []
+          },
+          {
+            "codigo": "661",
+            "nombre": "Intereses de empréstitos y otras emisiones análogas",
+            "hijas": []
+          },
+          {
+            "codigo": "662",
+            "nombre": "Intereses de deudas",
+            "hijas": [
+              {
+                "codigo": "6625",
+                "nombre": "Intereses de deudas con entidades de crédito",
+                "hijas": []
+              },
+              {
+                "codigo": "6626",
+                "nombre": "Intereses de otras deudas",
+                "hijas": []
+              },
+              {
+                "codigo": "6628",
+                "nombre": "Intereses de permutas financieras designadas instrumentos de cobertura",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "663",
+            "nombre": "Intereses de deudas con entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "6630",
+                "nombre": "Intereses de empréstitos y otras emisiones análogas, entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6632",
+                "nombre": "Intereses de otras deudas con entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "664",
+            "nombre": "Pérdidas en instrumentos financieros a valor razonable",
+            "hijas": [
+              {
+                "codigo": "6640",
+                "nombre": "Pérdidas en activos financieros a valor razonable con cambios en resultados",
+                "hijas": []
+              },
+              {
+                "codigo": "6641",
+                "nombre": "Pérdidas en activos financieros disponibles para la venta",
+                "hijas": []
+              },
+              {
+                "codigo": "6642",
+                "nombre": "Pérdidas en pasivos financieros a valor razonable con cambios en resultados",
+                "hijas": []
+              },
+              {
+                "codigo": "6645",
+                "nombre": "Pérdidas en derivados financieros designados instrumentos de cobertura",
+                "hijas": [
+                  {
+                    "codigo": "66451",
+                    "nombre": "De coberturas de los flujos de efectivo de pasivos financieros",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "66452",
+                    "nombre": "De coberturas de participaciones en el patrimonio neto",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "66453",
+                    "nombre": "De coberturas del valor razonable de valores representativos de deuda",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "66454",
+                    "nombre": "De coberturas de los flujos de efectivo de valores representativos de deuda",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "66459",
+                    "nombre": "De transacciones previstas que no se produzcan",
+                    "hijas": []
+                  }
+                ]
+              },
+              {
+                "codigo": "6646",
+                "nombre": "Pérdidas en otros derivados financieros",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "665",
+            "nombre": "Pérdidas en instrumentos financieros a coste amortizado o a coste",
+            "hijas": [
+              {
+                "codigo": "6650",
+                "nombre": "Pérdidas en inversiones financieras a coste amortizado",
+                "hijas": []
+              },
+              {
+                "codigo": "6651",
+                "nombre": "Pérdidas en inversiones en instrumentos de patrimonio valorados a coste",
+                "hijas": []
+              },
+              {
+                "codigo": "6655",
+                "nombre": "Pérdidas en pasivos financieros a coste amortizado",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "666",
+            "nombre": "Pérdidas en instrumentos financieros con entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "6660",
+                "nombre": "Pérdidas en participaciones en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6661",
+                "nombre": "Pérdidas en valores representativos de deuda de entidades del grupo, multigrupo y asociadas a coste amortizado",
+                "hijas": []
+              },
+              {
+                "codigo": "6662",
+                "nombre": "Pérdidas de créditos a entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6663",
+                "nombre": "Pérdidas en pasivos financieros con entidades del grupo, multigrupo y asociadas a coste amortizado",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "667",
+            "nombre": "Pérdidas de créditos incobrables",
+            "hijas": [
+              {
+                "codigo": "6670",
+                "nombre": "Con entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6671",
+                "nombre": "Con otras entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "668",
+            "nombre": "Diferencias negativas de cambio",
+            "hijas": []
+          },
+          {
+            "codigo": "669",
+            "nombre": "Otros gastos financieros",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "67",
+        "nombre": "PÉRDIDAS PROCEDENTES DE ACTIVOS NO CORRIENTES, OTROS GASTOS DE GESTION ORDINARIA Y GASTOS EXCEPCIONALES",
+        "hijas": [
+          {
+            "codigo": "670",
+            "nombre": "Pérdidas procedentes del inmovilizado intangible",
+            "hijas": []
+          },
+          {
+            "codigo": "671",
+            "nombre": "Pérdidas procedentes del inmovilizado material",
+            "hijas": []
+          },
+          {
+            "codigo": "672",
+            "nombre": "Pérdidas procedentes de las inversiones inmobiliarias",
+            "hijas": []
+          },
+          {
+            "codigo": "673",
+            "nombre": "Pérdidas procedentes del Patrimonio público del suelo",
+            "hijas": []
+          },
+          {
+            "codigo": "674",
+            "nombre": "Pérdidas procedentes de activos en estado de venta",
+            "hijas": []
+          },
+          {
+            "codigo": "676",
+            "nombre": "Otras pérdidas de gestión ordinaria",
+            "hijas": []
+          },
+          {
+            "codigo": "678",
+            "nombre": "Gastos excepcionales",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "68",
+        "nombre": "DOTACIONES PARA AMORTIZACIONES",
+        "hijas": [
+          {
+            "codigo": "680",
+            "nombre": "Amortización del inmovilizado intangible",
+            "hijas": [
+              {
+                "codigo": "6800",
+                "nombre": "Amortización de inversión en investigación",
+                "hijas": []
+              },
+              {
+                "codigo": "6801",
+                "nombre": "Amortización de inversión en desarrollo",
+                "hijas": []
+              },
+              {
+                "codigo": "6803",
+                "nombre": "Amortización de propiedad industrial e intelectual",
+                "hijas": []
+              },
+              {
+                "codigo": "6806",
+                "nombre": "Amortización de aplicaciones informáticas",
+                "hijas": []
+              },
+              {
+                "codigo": "6807",
+                "nombre": "Amortización de inversiones sobre activos utilizados en régimen de arrendamiento o cedidos",
+                "hijas": []
+              },
+              {
+                "codigo": "6809",
+                "nombre": "Amortización de otro inmovilizado intangible",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "681",
+            "nombre": "Amortización del inmovilizado material",
+            "hijas": [
+              {
+                "codigo": "6810",
+                "nombre": "Amortización de terrenos y bienes naturales",
+                "hijas": []
+              },
+              {
+                "codigo": "6811",
+                "nombre": "Amortización de construcciones",
+                "hijas": []
+              },
+              {
+                "codigo": "6812",
+                "nombre": "Amortización de infraestructuras",
+                "hijas": []
+              },
+              {
+                "codigo": "6813",
+                "nombre": "Amortización de bienes del patrimonio histórico",
+                "hijas": []
+              },
+              {
+                "codigo": "6814",
+                "nombre": "Amortización de maquinaria y utillaje",
+                "hijas": []
+              },
+              {
+                "codigo": "6815",
+                "nombre": "Amortización de instalaciones técnicas y otras instalaciones",
+                "hijas": []
+              },
+              {
+                "codigo": "6816",
+                "nombre": "Amortización de mobiliario",
+                "hijas": []
+              },
+              {
+                "codigo": "6817",
+                "nombre": "Amortización de equipos para procesos de información",
+                "hijas": []
+              },
+              {
+                "codigo": "6818",
+                "nombre": "Amortización de elementos de transporte",
+                "hijas": []
+              },
+              {
+                "codigo": "6819",
+                "nombre": "Amortización de otro inmovilizado material",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "682",
+            "nombre": "Amortización de las inversiones inmobiliarias",
+            "hijas": [
+              {
+                "codigo": "6820",
+                "nombre": "Amortización de inversiones en terrenos",
+                "hijas": []
+              },
+              {
+                "codigo": "6821",
+                "nombre": "Amortización de inversiones en construcciones",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "684",
+            "nombre": "Amortización del Patrimonio público del suelo",
+            "hijas": [
+              {
+                "codigo": "6840",
+                "nombre": "Amortización de terrenos del Patrimonio público del suelo",
+                "hijas": []
+              },
+              {
+                "codigo": "6841",
+                "nombre": "Amortización de construcciones del Patrimonio público del suelo",
+                "hijas": []
+              },
+              {
+                "codigo": "6849",
+                "nombre": "Amortización de otros bienes y derechos del Patrimonio público del suelo",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "69",
+        "nombre": "PERDIDAS POR DETERIORO",
+        "hijas": [
+          {
+            "codigo": "690",
+            "nombre": "Pérdidas por deterioro del inmovilizado intangible",
+            "hijas": [
+              {
+                "codigo": "6903",
+                "nombre": "Pérdidas por deterioro de propiedad industrial e intelectual",
+                "hijas": []
+              },
+              {
+                "codigo": "6906",
+                "nombre": "Pérdidas por deterioro de aplicaciones informáticas",
+                "hijas": []
+              },
+              {
+                "codigo": "6907",
+                "nombre": "Pérdidas por deterioro de inversiones sobre activos utilizados en régimen de arrendamiento o cedidos",
+                "hijas": []
+              },
+              {
+                "codigo": "6909",
+                "nombre": "Pérdidas por deterioro de otro inmovilizado intangible",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "691",
+            "nombre": "Pérdidas por deterioro del inmovilizado material",
+            "hijas": [
+              {
+                "codigo": "6910",
+                "nombre": "Pérdidas por deterioro de terrenos y bienes naturales",
+                "hijas": []
+              },
+              {
+                "codigo": "6911",
+                "nombre": "Pérdidas por deterioro de construcciones",
+                "hijas": []
+              },
+              {
+                "codigo": "6912",
+                "nombre": "Pérdidas por deterioro de infraestructuras",
+                "hijas": []
+              },
+              {
+                "codigo": "6913",
+                "nombre": "Pérdidas por deterioro de bienes del patrimonio histórico",
+                "hijas": []
+              },
+              {
+                "codigo": "6914",
+                "nombre": "Pérdidas por deterioro de maquinaria y utillaje",
+                "hijas": []
+              },
+              {
+                "codigo": "6915",
+                "nombre": "Pérdidas por deterioro de instalaciones técnicas y otras instalaciones",
+                "hijas": []
+              },
+              {
+                "codigo": "6916",
+                "nombre": "Pérdidas por deterioro de mobiliario",
+                "hijas": []
+              },
+              {
+                "codigo": "6917",
+                "nombre": "Pérdidas por deterioro de equipos para procesos de información",
+                "hijas": []
+              },
+              {
+                "codigo": "6918",
+                "nombre": "Pérdidas por deterioro de elementos de transporte",
+                "hijas": []
+              },
+              {
+                "codigo": "6919",
+                "nombre": "Pérdidas por deterioro de otro inmovilizado material",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "692",
+            "nombre": "Pérdidas por deterioro de las inversiones inmobiliarias",
+            "hijas": [
+              {
+                "codigo": "6920",
+                "nombre": "Pérdidas por deterioro de inversiones en terrenos",
+                "hijas": []
+              },
+              {
+                "codigo": "6921",
+                "nombre": "Pérdidas por deterioro de inversiones en construcciones",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "693",
+            "nombre": "Pérdidas por deterioro del Patrimonio público del suelo",
+            "hijas": [
+              {
+                "codigo": "6930",
+                "nombre": "Pérdidas por deterioro de terrenos del Patrimonio público del suelo",
+                "hijas": []
+              },
+              {
+                "codigo": "6931",
+                "nombre": "Pérdidas por deterioro de construcciones del Patrimonio público del suelo",
+                "hijas": []
+              },
+              {
+                "codigo": "6939",
+                "nombre": "Pérdidas por deterioro de otros bienes y derechos del Patrimonio público del suelo",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "694",
+            "nombre": "Pérdidas por deterioro de existencias y otros activos en estado de venta",
+            "hijas": [
+              {
+                "codigo": "6940",
+                "nombre": "Pérdidas por deterioro de productos terminados y en curso de fabricación",
+                "hijas": []
+              },
+              {
+                "codigo": "6941",
+                "nombre": "Pérdidas por deterioro de mercaderías",
+                "hijas": []
+              },
+              {
+                "codigo": "6942",
+                "nombre": "Pérdidas por deterioro de materias primas",
+                "hijas": []
+              },
+              {
+                "codigo": "6943",
+                "nombre": "Pérdidas por deterioro de otros aprovisionamientos",
+                "hijas": []
+              },
+              {
+                "codigo": "6948",
+                "nombre": "Pérdidas por deterioro de activos en estado de venta",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "696",
+            "nombre": "Pérdidas por deterioro de participaciones",
+            "hijas": [
+              {
+                "codigo": "6960",
+                "nombre": "Pérdidas por deterioro de participaciones en entidades de derecho público del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6961",
+                "nombre": "Pérdidas por deterioro de participaciones en sociedades mercantiles y sociedades cooperativas del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6962",
+                "nombre": "Pérdidas por deterioro de participaciones en otras entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6963",
+                "nombre": "Pérdidas por deterioro de participaciones en el patrimonio neto de otras entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "697",
+            "nombre": "Pérdidas por deterioro de valores representativos de deuda",
+            "hijas": [
+              {
+                "codigo": "6970",
+                "nombre": "Pérdidas por deterioro de valores representativos de deuda de entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6971",
+                "nombre": "Pérdidas por deterioro de valores representativos de deuda de otras entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "698",
+            "nombre": "Pérdidas por deterioro de créditos y otras inversiones financieras",
+            "hijas": [
+              {
+                "codigo": "6980",
+                "nombre": "Pérdidas por deterioro de créditos a entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6981",
+                "nombre": "Pérdidas por deterioro de fianzas constituidas en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6982",
+                "nombre": "Pérdidas por deterioro de depósitos constituidos en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "6983",
+                "nombre": "Pérdidas por deterioro de créditos a otras entidades",
+                "hijas": []
+              },
+              {
+                "codigo": "6984",
+                "nombre": "Pérdidas por deterioro de fianzas constituidas en otras entidades",
+                "hijas": []
+              },
+              {
+                "codigo": "6985",
+                "nombre": "Pérdidas por deterioro de depósitos constituidos en otras entidades",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo": "7",
+    "nombre": "VENTAS E INGRESOS POR NATURALEZA",
+    "hijas": [
+      {
+        "codigo": "70",
+        "nombre": "VENTAS E INGRESOS POR ACTIVOS CONSTRUIDOS O ADQUIRIDOS PARA OTRAS ENTIDADES",
+        "hijas": [
+          {
+            "codigo": "700",
+            "nombre": "Ventas de mercaderías",
+            "hijas": []
+          },
+          {
+            "codigo": "701",
+            "nombre": "Ventas de productos terminados",
+            "hijas": []
+          },
+          {
+            "codigo": "702",
+            "nombre": "Ventas de productos semiterminados",
+            "hijas": []
+          },
+          {
+            "codigo": "703",
+            "nombre": "Ventas de subproductos y residuos",
+            "hijas": []
+          },
+          {
+            "codigo": "704",
+            "nombre": "Ventas de envases y embalajes",
+            "hijas": []
+          },
+          {
+            "codigo": "705",
+            "nombre": "Prestaciones de servicios",
+            "hijas": []
+          },
+          {
+            "codigo": "707",
+            "nombre": "Ingresos por activos construidos o adquiridos para otras entidades",
+            "hijas": [
+              {
+                "codigo": "7070",
+                "nombre": "Ingresos imputados por grado de avance de activos construidos para otras entidades",
+                "hijas": []
+              },
+              {
+                "codigo": "7071",
+                "nombre": "Ingresos imputados por entregas de activos construidos o adquiridos para otras entidades",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "71",
+        "nombre": "VARIACIÓN DE EXISTENCIAS",
+        "hijas": [
+          {
+            "codigo": "710",
+            "nombre": "Variación de existencias de producción en curso",
+            "hijas": []
+          },
+          {
+            "codigo": "711",
+            "nombre": "Variación de existencias de productos semiterminados",
+            "hijas": []
+          },
+          {
+            "codigo": "712",
+            "nombre": "Variación de existencias de productos terminados",
+            "hijas": []
+          },
+          {
+            "codigo": "713",
+            "nombre": "Variación de existencias de subproductos, residuos y materiales recuperados",
+            "hijas": []
+          },
+          {
+            "codigo": "717",
+            "nombre": "Variación de existencias de activos construidos o adquiridos para otras entidades",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "72",
+        "nombre": "IMPUESTOS DIRECTOS",
+        "hijas": [
+          {
+            "codigo": "720",
+            "nombre": "Impuesto sobre la renta de las personas físicas",
+            "hijas": []
+          },
+          {
+            "codigo": "724",
+            "nombre": "Impuesto sobre bienes inmuebles",
+            "hijas": []
+          },
+          {
+            "codigo": "725",
+            "nombre": "Impuesto sobre vehículos de tracción mecánica",
+            "hijas": []
+          },
+          {
+            "codigo": "726",
+            "nombre": "Impuesto sobre el incremento del valor de los terrenos de naturaleza urbana",
+            "hijas": []
+          },
+          {
+            "codigo": "727",
+            "nombre": "Impuesto sobre actividades económicas",
+            "hijas": []
+          },
+          {
+            "codigo": "728",
+            "nombre": "Otros impuestos",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "73",
+        "nombre": "IMPUESTOS INDIRECTOS",
+        "hijas": [
+          {
+            "codigo": "731",
+            "nombre": "Impuestos sobre el valor añadido",
+            "hijas": [
+              {
+                "codigo": "7310",
+                "nombre": "Impuesto sobre el valor añadido",
+                "hijas": []
+              },
+              {
+                "codigo": "7311",
+                "nombre": "Impuesto general indirecto canario",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "732",
+            "nombre": "Impuestos especiales",
+            "hijas": []
+          },
+          {
+            "codigo": "733",
+            "nombre": "Impuesto sobre construcciones, instalaciones y obras",
+            "hijas": []
+          },
+          {
+            "codigo": "735",
+            "nombre": "Impuesto municipal sobre gastos suntuarios",
+            "hijas": []
+          },
+          {
+            "codigo": "736",
+            "nombre": "Impuestos sobre la producción e importación de bienes y servicios",
+            "hijas": [
+              {
+                "codigo": "7360",
+                "nombre": "Impuesto sobre la producción, los servicios y la importación en las ciudades de Ceuta y Melilla",
+                "hijas": []
+              },
+              {
+                "codigo": "7361",
+                "nombre": "Arbitrio sobre importaciones y entregas de mercancías en las islas Canarias",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "739",
+            "nombre": "Otros impuestos",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "74",
+        "nombre": "TASAS, PRECIOS PÚBLICOS, CONTRIBUCIONES ESPECIALES E INGRESOS URBANÍSTICOS",
+        "hijas": [
+          {
+            "codigo": "740",
+            "nombre": "Tasas por prestación de servicios o realización de actividades",
+            "hijas": []
+          },
+          {
+            "codigo": "741",
+            "nombre": "Precios públicos por prestación de servicios o realización de actividades",
+            "hijas": []
+          },
+          {
+            "codigo": "742",
+            "nombre": "Tasas por utilización privativa o aprovechamiento especial del dominio público",
+            "hijas": []
+          },
+          {
+            "codigo": "744",
+            "nombre": "Contribuciones especiales",
+            "hijas": []
+          },
+          {
+            "codigo": "745",
+            "nombre": "Ingresos por actuaciones urbanísticas",
+            "hijas": [
+              {
+                "codigo": "7450",
+                "nombre": "Canon de urbanización",
+                "hijas": []
+              },
+              {
+                "codigo": "7451",
+                "nombre": "Cuotas de urbanización",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "746",
+            "nombre": "Aprovechamientos urbanísticos",
+            "hijas": [
+              {
+                "codigo": "7460",
+                "nombre": "Canon por aprovechamientos urbanísticos",
+                "hijas": []
+              },
+              {
+                "codigo": "7461",
+                "nombre": "Aprovechamiento urbanístico correspondiente a la Administración",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "75",
+        "nombre": "TRANSFERENCIAS Y SUBVENCIONES",
+        "hijas": [
+          {
+            "codigo": "750",
+            "nombre": "Transferencias",
+            "hijas": [
+              {
+                "codigo": "7500",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "7501",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "751",
+            "nombre": "Subvenciones para gastos no financieros del ejercicio",
+            "hijas": [
+              {
+                "codigo": "7510",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "7511",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "752",
+            "nombre": "Subvenciones para la cancelación de deudas genéricas",
+            "hijas": [
+              {
+                "codigo": "7520",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "7521",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "753",
+            "nombre": "Subvenciones para la financiación del inmovilizado no financiero y de activos en estado de venta imputadas al resultado del ejercicio",
+            "hijas": [
+              {
+                "codigo": "7530",
+                "nombre": "Subvenciones para la financiación del inmovilizado no financiero imputadas al resultado del ejercicio por amortización",
+                "hijas": [
+                  {
+                    "codigo": "75300",
+                    "nombre": "De la entidad o entidades propietarias",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "75301",
+                    "nombre": "Del resto de entidades",
+                    "hijas": []
+                  }
+                ]
+              },
+              {
+                "codigo": "7531",
+                "nombre": "Subvenciones para la financiación del inmovilizado no financiero y de activos en estado de venta imputadas al resultado del ejercicio por enajenación o baja",
+                "hijas": [
+                  {
+                    "codigo": "75310",
+                    "nombre": "De la entidad o entidades propietarias",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "75311",
+                    "nombre": "Del resto de entidades",
+                    "hijas": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "754",
+            "nombre": "Subvenciones para activos corrientes y gastos imputadas al ejercicio",
+            "hijas": [
+              {
+                "codigo": "7540",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "7541",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "755",
+            "nombre": "Subvenciones para gastos financieros del ejercicio",
+            "hijas": [
+              {
+                "codigo": "7550",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "7551",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "756",
+            "nombre": "Subvenciones para la financiación de operaciones financieras imputadas al ejercicio",
+            "hijas": [
+              {
+                "codigo": "7560",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "7561",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "76",
+        "nombre": "INGRESOS FINANCIEROS",
+        "hijas": [
+          {
+            "codigo": "760",
+            "nombre": "Ingresos de participaciones en el patrimonio neto",
+            "hijas": []
+          },
+          {
+            "codigo": "761",
+            "nombre": "Ingresos de valores representativos de deuda",
+            "hijas": []
+          },
+          {
+            "codigo": "762",
+            "nombre": "Ingresos de créditos",
+            "hijas": [
+              {
+                "codigo": "7620",
+                "nombre": "Ingresos de créditos",
+                "hijas": []
+              },
+              {
+                "codigo": "7628",
+                "nombre": "Ingresos de permutas financieras designadas instrumentos de cobertura",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "763",
+            "nombre": "Ingresos de inversiones en entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "7630",
+                "nombre": "Ingresos de participaciones en el patrimonio neto de entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "7631",
+                "nombre": "Ingresos de valores representativos de deudas de entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "7632",
+                "nombre": "Ingresos de créditos a entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "764",
+            "nombre": "Beneficios en instrumentos financieros a valor razonable",
+            "hijas": [
+              {
+                "codigo": "7640",
+                "nombre": "Beneficios en activos financieros a valor razonable con cambios en resultados",
+                "hijas": []
+              },
+              {
+                "codigo": "7641",
+                "nombre": "Beneficios en activos financieros disponibles para la venta",
+                "hijas": []
+              },
+              {
+                "codigo": "7642",
+                "nombre": "Beneficios en pasivos financieros a valor razonable con cambios en resultados",
+                "hijas": []
+              },
+              {
+                "codigo": "7645",
+                "nombre": "Beneficios en derivados financieros designados instrumentos de cobertura",
+                "hijas": [
+                  {
+                    "codigo": "76451",
+                    "nombre": "De coberturas de los flujos de efectivo de pasivos financieros",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "76452",
+                    "nombre": "De coberturas de participaciones en el patrimonio neto",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "76453",
+                    "nombre": "De coberturas del valor razonable de valores representativos de deuda",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "76454",
+                    "nombre": "De coberturas de los flujos de efectivo de valores representativos de deuda",
+                    "hijas": []
+                  },
+                  {
+                    "codigo": "76459",
+                    "nombre": "De transacciones previstas que no se produzcan",
+                    "hijas": []
+                  }
+                ]
+              },
+              {
+                "codigo": "7646",
+                "nombre": "Beneficios en otros derivados financieros",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "765",
+            "nombre": "Beneficios en instrumentos financieros a coste amortizado o a coste",
+            "hijas": [
+              {
+                "codigo": "7650",
+                "nombre": "Beneficios en inversiones financieras a coste amortizado",
+                "hijas": []
+              },
+              {
+                "codigo": "7651",
+                "nombre": "Beneficios en inversiones en instrumentos de patrimonio valorados a coste",
+                "hijas": []
+              },
+              {
+                "codigo": "7655",
+                "nombre": "Beneficios en pasivos financieros a coste amortizado",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "766",
+            "nombre": "Beneficios en instrumentos financieros con entidades del grupo, multigrupo y asociadas",
+            "hijas": [
+              {
+                "codigo": "7660",
+                "nombre": "Beneficios en participaciones en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "7661",
+                "nombre": "Beneficios en valores representativos de deuda de entidades del grupo, multigrupo y asociadas a coste amortizado",
+                "hijas": []
+              },
+              {
+                "codigo": "7663",
+                "nombre": "Beneficios en pasivos financieros con entidades del grupo, multigrupo y asociadas a coste amortizado",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "768",
+            "nombre": "Diferencias positivas de cambio",
+            "hijas": []
+          },
+          {
+            "codigo": "769",
+            "nombre": "Otros ingresos financieros",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "77",
+        "nombre": "BENEFICIOS PROCEDENTES DE ACTIVOS NO CORRIENTES, OTROS INGRESOS DE GESTIÓN ORDINARIA E INGRESOS EXCEPCIONALES",
+        "hijas": [
+          {
+            "codigo": "770",
+            "nombre": "Beneficios procedentes del inmovilizado intangible",
+            "hijas": []
+          },
+          {
+            "codigo": "771",
+            "nombre": "Beneficios procedentes del inmovilizado material",
+            "hijas": []
+          },
+          {
+            "codigo": "772",
+            "nombre": "Beneficios procedentes de las inversiones inmobiliarias",
+            "hijas": []
+          },
+          {
+            "codigo": "773",
+            "nombre": "Beneficios procedentes del Patrimonio público del suelo",
+            "hijas": []
+          },
+          {
+            "codigo": "774",
+            "nombre": "Beneficios procedentes de activos en estado de venta",
+            "hijas": []
+          },
+          {
+            "codigo": "775",
+            "nombre": "Reintegros",
+            "hijas": []
+          },
+          {
+            "codigo": "776",
+            "nombre": "Ingresos por arrendamientos",
+            "hijas": []
+          },
+          {
+            "codigo": "777",
+            "nombre": "Otros ingresos",
+            "hijas": []
+          },
+          {
+            "codigo": "778",
+            "nombre": "Ingresos excepcionales",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "78",
+        "nombre": "TRABAJOS REALIZADOS PARA LA ENTIDAD",
+        "hijas": [
+          {
+            "codigo": "780",
+            "nombre": "Trabajos realizados para el inmovilizado intangible",
+            "hijas": []
+          },
+          {
+            "codigo": "781",
+            "nombre": "Trabajos realizados para el inmovilizado material",
+            "hijas": []
+          },
+          {
+            "codigo": "782",
+            "nombre": "Trabajos realizados para inversiones inmobiliarias",
+            "hijas": []
+          },
+          {
+            "codigo": "783",
+            "nombre": "Trabajos realizados para el inmovilizado e inversiones inmobiliarias en curso",
+            "hijas": []
+          },
+          {
+            "codigo": "784",
+            "nombre": "Trabajos realizados para el Patrimonio público del suelo",
+            "hijas": []
+          },
+          {
+            "codigo": "785",
+            "nombre": "Gastos financieros imputados al inmovilizado intangible",
+            "hijas": []
+          },
+          {
+            "codigo": "786",
+            "nombre": "Gastos financieros imputados al inmovilizado material",
+            "hijas": []
+          },
+          {
+            "codigo": "787",
+            "nombre": "Gastos financieros imputados a inversiones inmobiliarias",
+            "hijas": []
+          },
+          {
+            "codigo": "788",
+            "nombre": "Gastos financieros imputados al inmovilizado e inversiones inmobiliarias en curso",
+            "hijas": []
+          },
+          {
+            "codigo": "789",
+            "nombre": "Gastos financieros imputados al Patrimonio público del suelo",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "79",
+        "nombre": "EXCESOS Y APLICACIONES DE PROVISIONES Y DE PÉRDIDAS POR DETERIORO",
+        "hijas": [
+          {
+            "codigo": "790",
+            "nombre": "Reversión del deterioro del inmovilizado intangible",
+            "hijas": [
+              {
+                "codigo": "7903",
+                "nombre": "Reversión del deterioro de propiedad industrial e intelectual",
+                "hijas": []
+              },
+              {
+                "codigo": "7906",
+                "nombre": "Reversión del deterioro de aplicaciones informáticas",
+                "hijas": []
+              },
+              {
+                "codigo": "7907",
+                "nombre": "Reversión del deterioro de inversiones sobre activos utilizados en régimen de arrendamiento o cedidos",
+                "hijas": []
+              },
+              {
+                "codigo": "7909",
+                "nombre": "Reversión del deterioro de otro inmovilizado intangible",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "791",
+            "nombre": "Reversión del deterioro del inmovilizado material",
+            "hijas": [
+              {
+                "codigo": "7910",
+                "nombre": "Reversión del deterioro de terrenos y bienes naturales",
+                "hijas": []
+              },
+              {
+                "codigo": "7911",
+                "nombre": "Reversión del deterioro de construcciones",
+                "hijas": []
+              },
+              {
+                "codigo": "7912",
+                "nombre": "Reversión del deterioro de infraestructuras",
+                "hijas": []
+              },
+              {
+                "codigo": "7913",
+                "nombre": "Reversión del deterioro de bienes del patrimonio histórico",
+                "hijas": []
+              },
+              {
+                "codigo": "7914",
+                "nombre": "Reversión del deterioro de maquinaria y utillaje",
+                "hijas": []
+              },
+              {
+                "codigo": "7915",
+                "nombre": "Reversión del deterioro de instalaciones técnicas y otras instalaciones",
+                "hijas": []
+              },
+              {
+                "codigo": "7916",
+                "nombre": "Reversión del deterioro de mobiliario",
+                "hijas": []
+              },
+              {
+                "codigo": "7917",
+                "nombre": "Reversión del deterioro de equipos para procesos de información",
+                "hijas": []
+              },
+              {
+                "codigo": "7918",
+                "nombre": "Reversión del deterioro de elementos de transporte",
+                "hijas": []
+              },
+              {
+                "codigo": "7919",
+                "nombre": "Reversión del deterioro de otro inmovilizado material",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "792",
+            "nombre": "Reversión del deterioro de las inversiones inmobiliarias",
+            "hijas": [
+              {
+                "codigo": "7920",
+                "nombre": "Reversión del deterioro de terrenos",
+                "hijas": []
+              },
+              {
+                "codigo": "7921",
+                "nombre": "Reversión del deterioro de construcciones",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "793",
+            "nombre": "Reversión del deterioro del Patrimonio público del suelo",
+            "hijas": [
+              {
+                "codigo": "7930",
+                "nombre": "Reversión del deterioro de terrenos del Patrimonio público del suelo",
+                "hijas": []
+              },
+              {
+                "codigo": "7931",
+                "nombre": "Reversión del deterioro de construcciones del Patrimonio público del suelo",
+                "hijas": []
+              },
+              {
+                "codigo": "7939",
+                "nombre": "Reversión del deterioro de otros bienes y derechos del Patrimonio público del suelo",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "794",
+            "nombre": "Reversión del deterioro de existencias y otros activos en estado de venta",
+            "hijas": [
+              {
+                "codigo": "7940",
+                "nombre": "Reversión del deterioro de productos terminados y en curso de fabricación",
+                "hijas": []
+              },
+              {
+                "codigo": "7941",
+                "nombre": "Reversión del deterioro de mercaderías",
+                "hijas": []
+              },
+              {
+                "codigo": "7942",
+                "nombre": "Reversión del deterioro de materias primas",
+                "hijas": []
+              },
+              {
+                "codigo": "7943",
+                "nombre": "Reversión del deterioro de otros aprovisionamientos",
+                "hijas": []
+              },
+              {
+                "codigo": "7948",
+                "nombre": "Reversión del deterioro de activos en estado de venta",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "795",
+            "nombre": "Exceso de provisiones",
+            "hijas": [
+              {
+                "codigo": "7952",
+                "nombre": "Exceso de provisión para responsabilidades",
+                "hijas": []
+              },
+              {
+                "codigo": "7953",
+                "nombre": "Exceso de provisión por desmantelamiento, retiro o rehabilitación del inmovilizado no financiero",
+                "hijas": []
+              },
+              {
+                "codigo": "7955",
+                "nombre": "Exceso de provisión para devolución de ingresos",
+                "hijas": []
+              },
+              {
+                "codigo": "7958",
+                "nombre": "Exceso de provisión para transferencias y subvenciones",
+                "hijas": []
+              },
+              {
+                "codigo": "7959",
+                "nombre": "Exceso de otras provisiones",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "796",
+            "nombre": "Reversión del deterioro de participaciones",
+            "hijas": [
+              {
+                "codigo": "7960",
+                "nombre": "Reversión del deterioro de participaciones en entidades de derecho público del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "7961",
+                "nombre": "Reversión del deterioro de participaciones en sociedades mercantiles y sociedades cooperativas del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "7962",
+                "nombre": "Reversión del deterioro de participaciones en otras entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "797",
+            "nombre": "Reversión del deterioro de valores representativos de deuda",
+            "hijas": [
+              {
+                "codigo": "7970",
+                "nombre": "Reversión del deterioro de valores representativos de deuda de entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "7971",
+                "nombre": "Reversión del deterioro de valores representativos de deuda de otras entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "798",
+            "nombre": "Reversión del deterioro de créditos y otras inversiones financieras",
+            "hijas": [
+              {
+                "codigo": "7980",
+                "nombre": "Reversión del deterioro de créditos a entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "7981",
+                "nombre": "Reversión del deterioro de fianzas constituidas en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "7982",
+                "nombre": "Reversión del deterioro de depósitos constituidos en entidades del grupo, multigrupo y asociadas",
+                "hijas": []
+              },
+              {
+                "codigo": "7983",
+                "nombre": "Reversión del deterioro de créditos a otras entidades",
+                "hijas": []
+              },
+              {
+                "codigo": "7984",
+                "nombre": "Reversión del deterioro de fianzas constituidas en otras entidades",
+                "hijas": []
+              },
+              {
+                "codigo": "7985",
+                "nombre": "Reversión del deterioro de depósitos constituidos en otras entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "799",
+            "nombre": "Reversión del deterioro por el usufructo cedido del inmovilizado material",
+            "hijas": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo": "8",
+    "nombre": "GASTOS IMPUTADOS AL PATRIMONIO NETO",
+    "hijas": [
+      {
+        "codigo": "80",
+        "nombre": "PÉRDIDAS POR VALORACIÓN DE ACTIVOS FINANCIEROS",
+        "hijas": [
+          {
+            "codigo": "800",
+            "nombre": "Pérdidas en activos financieros disponibles para la venta",
+            "hijas": []
+          },
+          {
+            "codigo": "802",
+            "nombre": "Imputación de beneficios en activos financieros disponibles para la venta",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "81",
+        "nombre": "GASTOS EN OPERACIONES DE COBERTURA",
+        "hijas": [
+          {
+            "codigo": "810",
+            "nombre": "Pérdidas por coberturas",
+            "hijas": []
+          },
+          {
+            "codigo": "811",
+            "nombre": "Imputación de beneficios por coberturas",
+            "hijas": [
+              {
+                "codigo": "8110",
+                "nombre": "Imputación de beneficios por coberturas a la cuenta del resultado económico-patrimonial",
+                "hijas": []
+              },
+              {
+                "codigo": "8111",
+                "nombre": "Imputación de beneficios por coberturas al valor inicial de la partida cubierta",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "82",
+        "nombre": "GASTOS POR VALORACION DEL INMOVILIZADO NO FINANCIERO",
+        "hijas": [
+          {
+            "codigo": "820",
+            "nombre": "Ajustes negativos en la valoración del inmovilizado no financiero por disminución de su valor razonable",
+            "hijas": []
+          },
+          {
+            "codigo": "821",
+            "nombre": "Ajustes negativos en la valoración del inmovilizado no financiero por amortizaciones",
+            "hijas": []
+          },
+          {
+            "codigo": "822",
+            "nombre": "Ajustes negativos en la valoración del inmovilizado no financiero por pérdidas de valor en bajas",
+            "hijas": []
+          },
+          {
+            "codigo": "823",
+            "nombre": "Imputación de beneficios en la valoración del inmovilizado no financiero",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "84",
+        "nombre": "IMPUTACIÓN DE SUBVENCIONES",
+        "hijas": [
+          {
+            "codigo": "840",
+            "nombre": "Imputación de subvenciones para la financiación del inmovilizado no financiero y de activos en estado de venta",
+            "hijas": [
+              {
+                "codigo": "8400",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "8401",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "841",
+            "nombre": "Imputación de subvenciones para la financiación de activos corrientes y gastos",
+            "hijas": [
+              {
+                "codigo": "8410",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "8411",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "842",
+            "nombre": "Imputación de subvenciones para la financiación de operaciones financieras",
+            "hijas": [
+              {
+                "codigo": "8420",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "8421",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "89",
+        "nombre": "GASTOS DE PARTICIPACIONES EN ENTIDADES DEL GRUPO, MULTIGRUPO Y ASOCIADAS CON AJUSTES VALORATIVOS POSITIVOS PREVIOS",
+        "hijas": [
+          {
+            "codigo": "891",
+            "nombre": "Deterioro de participaciones en entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "codigo": "9",
+    "nombre": "INGRESOS IMPUTADOS AL PATRIMONIO NETO",
+    "hijas": [
+      {
+        "codigo": "90",
+        "nombre": "INGRESOS POR VALORACIÓN DE ACTIVOS FINANCIEROS",
+        "hijas": [
+          {
+            "codigo": "900",
+            "nombre": "Beneficios en activos financieros disponibles para la venta",
+            "hijas": []
+          },
+          {
+            "codigo": "902",
+            "nombre": "Imputación de pérdidas en activos financieros disponibles para la venta",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "91",
+        "nombre": "INGRESOS EN OPERACIONES DE COBERTURA",
+        "hijas": [
+          {
+            "codigo": "910",
+            "nombre": "Beneficios por coberturas",
+            "hijas": []
+          },
+          {
+            "codigo": "911",
+            "nombre": "Imputación de pérdidas por coberturas",
+            "hijas": [
+              {
+                "codigo": "9110",
+                "nombre": "Imputación de pérdidas por coberturas a la cuenta del resultado económico patrimonial",
+                "hijas": []
+              },
+              {
+                "codigo": "9111",
+                "nombre": "Imputación de pérdidas por coberturas al valor inicial de la partida cubierta",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "92",
+        "nombre": "INGRESOS POR VALORACION DEL INMOVILIZADO NO FINANCIERO",
+        "hijas": [
+          {
+            "codigo": "920",
+            "nombre": "Ajustes positivos en la valoración del inmovilizado no financiero por aumento de su valor razonable",
+            "hijas": []
+          }
+        ]
+      },
+      {
+        "codigo": "94",
+        "nombre": "INGRESOS POR SUBVENCIONES",
+        "hijas": [
+          {
+            "codigo": "940",
+            "nombre": "Ingresos de subvenciones para la financiación del inmovilizado no financiero y de activos en estado de venta",
+            "hijas": [
+              {
+                "codigo": "9400",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "9401",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "941",
+            "nombre": "Ingresos de subvenciones para la financiación de activos corrientes y gastos",
+            "hijas": [
+              {
+                "codigo": "9410",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "9411",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          },
+          {
+            "codigo": "942",
+            "nombre": "Ingresos de subvenciones para la financiación de operaciones financieras",
+            "hijas": [
+              {
+                "codigo": "9420",
+                "nombre": "De la entidad o entidades propietarias",
+                "hijas": []
+              },
+              {
+                "codigo": "9421",
+                "nombre": "Del resto de entidades",
+                "hijas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "99",
+        "nombre": "INGRESOS DE PARTICIPACIONES EN EL PATRIMONIO DE ENTIDADES DEL GRUPO, MULTIGRUPO Y ASOCIADAS CON AJUSTES VALORATIVOS NEGATIVOS PREVIOS",
+        "hijas": [
+          {
+            "codigo": "991",
+            "nombre": "Recuperación de ajustes valorativos negativos previos, entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          },
+          {
+            "codigo": "993",
+            "nombre": "Imputación por deterioro de ajustes valorativos negativos previos, entidades del grupo, multigrupo y asociadas",
+            "hijas": []
+          }
+        ]
+      }
+    ]
+  }
+]

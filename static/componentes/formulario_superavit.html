@@ -1,0 +1,49 @@
+
+<div class="card p-3 shadow-sm rounded-3 mb-4">
+  <h5 class="fw-bold mb-3">Aplicación del Superávit Presupuestario</h5>
+
+  <form id="formularioSuperavit">
+    <div class="row mb-2">
+      <div class="col">
+        <label>Estabilidad presupuestaria (€)</label>
+        <input type="number" class="form-control" id="resultado_estabilidad" oninput="MotorSuperavit.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>Remanente de Tesorería (€)</label>
+        <input type="number" class="form-control" id="remanente_tesoreria" oninput="MotorSuperavit.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+        <label>Deuda viva (€)</label>
+        <input type="number" class="form-control" id="deuda_viva" oninput="MotorSuperavit.actualizarVisor()">
+      </div>
+      <div class="col">
+        <label>% deuda / ingresos corrientes</label>
+        <input type="number" step="0.01" class="form-control" id="porcentaje_deuda" oninput="MotorSuperavit.actualizarVisor()">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <label>Superávit SEC (€)</label>
+        <input type="number" class="form-control" id="superavit_sec" readonly>
+      </div>
+      <div class="col">
+        <label>Importe aplicable (€)</label>
+        <input type="number" class="form-control" id="importe_aplicable_superavit" readonly>
+      </div>
+    </div>
+  </form>
+
+  <h6 class="fw-bold mt-3">🔎 Previsualización de datos</h6>
+  <div id="visorSuperavit" class="alert alert-info mt-3" contenteditable="true" style="min-height:80px; outline:2px dashed #ccc;">
+    Los datos introducidos aparecerán aquí automáticamente.
+  </div>
+
+  <button onclick="MotorSuperavit.generarInforme()" class="btn w-100 mt-3"
+    style="background-color: #ffcc00; border: 2mm solid white; color: #003366; border-radius: 15px;">
+    Generar Informe
+  </button>
+</div>
