@@ -35,6 +35,7 @@ def vista_prueba_estabilidad():
 @app.route("/", methods=["GET", "POST"])
 def index():
     global ultimo_archivo_chat
+    templates = []
 #    templates = list_templates()
     informes = cargar_informes()
     doc_url = informes[0]["url"] if informes else ""
