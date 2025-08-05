@@ -16,7 +16,7 @@ import re
 from werkzeug.utils import secure_filename
 from informes_utils import cargar_informes, guardar_informes
 #from conversion_pdf import convertir_a_pdf
-from drive_utils_editable_google_docx import download_template, upload_document, list_templates
+#from drive_utils_editable_google_docx import download_template, upload_document, list_templates
 
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = "generated"
@@ -35,7 +35,7 @@ def vista_prueba_estabilidad():
 @app.route("/", methods=["GET", "POST"])
 def index():
     global ultimo_archivo_chat
-    templates = list_templates()
+#    templates = list_templates()
     informes = cargar_informes()
     doc_url = informes[0]["url"] if informes else ""
     ultimo_pdf_url = ""
