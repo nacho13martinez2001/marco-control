@@ -1,0 +1,8 @@
+.env
+credentials.json
+__pycache__/
+*.pyc
+temp_archivos/
+uploads/
+.env 
+credentials.json 
